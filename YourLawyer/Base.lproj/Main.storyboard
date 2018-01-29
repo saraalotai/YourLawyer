@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
@@ -15,18 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x6-PZ-z5j">
-                                <rect key="frame" x="172" y="409" width="30" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-yY-pr1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y11-qz-VLr">
+                                <rect key="frame" x="72" y="367" width="176" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="sara"/>
+                                <color key="backgroundColor" red="0.2149183452" green="0.73520106080000003" blue="0.7001633048" alpha="0.81244863010000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="تسجيل الدخول">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO2" translatesAutoresizingMaskIntoConstraints="NO" id="OnK-5n-zpg">
+                                <rect key="frame" x="75" y="62" width="225" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="En1-QW-sKM"/>
+                                    <constraint firstAttribute="height" constant="210" id="vsH-6u-UQW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0am-WR-OF5"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6rw-d4-72d"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HT8-Fd-CFM"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LQt-HE-OSP"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="axU-xY-col"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="top" secondItem="OnK-5n-zpg" secondAttribute="bottom" constant="-272" id="ePK-bd-NI8"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pGj-oK-p7v"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tKt-Xu-8Rx"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x3T-7F-hsD"/>
+                            <constraint firstItem="OnK-5n-zpg" firstAttribute="centerX" secondItem="jH7-yY-pr1" secondAttribute="centerX" id="zCP-hA-gPj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.5" y="57.04225352112676"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LOGO2" width="500" height="500"/>
+        <image name="bg" width="1080" height="2000"/>
+    </resources>
 </document>
