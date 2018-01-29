@@ -21,14 +21,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-yY-pr1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y11-qz-VLr">
-                                <rect key="frame" x="72" y="367" width="176" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2149183452" green="0.73520106080000003" blue="0.7001633048" alpha="0.81244863010000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="تسجيل الدخول">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO2" translatesAutoresizingMaskIntoConstraints="NO" id="OnK-5n-zpg">
                                 <rect key="frame" x="75" y="62" width="225" height="210"/>
                                 <constraints>
@@ -36,13 +28,26 @@
                                     <constraint firstAttribute="height" constant="210" id="vsH-6u-UQW"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y11-qz-VLr">
+                                <rect key="frame" x="142.5" y="404" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.2149183452" green="0.73520106080000003" blue="0.7001633048" alpha="0.81244863010000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Aue-RR-SrC"/>
+                                    <constraint firstAttribute="width" constant="90" id="YSB-Jb-Hnu"/>
+                                </constraints>
+                                <state key="normal" title="تسجيل الدخول">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jH7-yY-pr1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0am-WR-OF5"/>
                             <constraint firstItem="jH7-yY-pr1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6rw-d4-72d"/>
+                            <constraint firstItem="y11-qz-VLr" firstAttribute="top" secondItem="jH7-yY-pr1" secondAttribute="bottom" constant="-263" id="AeK-Bn-rez"/>
                             <constraint firstItem="jH7-yY-pr1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HT8-Fd-CFM"/>
                             <constraint firstItem="jH7-yY-pr1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LQt-HE-OSP"/>
+                            <constraint firstItem="y11-qz-VLr" firstAttribute="centerX" secondItem="jH7-yY-pr1" secondAttribute="centerX" id="Xq0-e5-bMx"/>
                             <constraint firstItem="jH7-yY-pr1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="axU-xY-col"/>
                             <constraint firstItem="jH7-yY-pr1" firstAttribute="top" secondItem="OnK-5n-zpg" secondAttribute="bottom" constant="-272" id="ePK-bd-NI8"/>
                             <constraint firstItem="jH7-yY-pr1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pGj-oK-p7v"/>
