@@ -249,6 +249,78 @@
             <point key="canvasLocation" x="3969.375" y="976.05633802816908"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="1jh-9a-nWw">
+            <objects>
+                <viewController id="RzM-sC-4GD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z6v-ZB-x1E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-Gd-Lgg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.17050674560000001" green="0.4894891381" blue="0.56934028859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="2LC-JW-KhF"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="اتصل بنا" id="F4Q-yt-Ixe"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idd-Q7-K8N">
+                                <rect key="frame" x="33" y="175" width="178" height="37"/>
+                                <color key="backgroundColor" red="0.17050674560000001" green="0.4894891381" blue="0.56934028859999997" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="j5a-Zw-8Du"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="@Yourlawyer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WJ-NZ-USL">
+                                <rect key="frame" x="55" y="393" width="228" height="40"/>
+                                <color key="backgroundColor" red="0.17050674560000001" green="0.4894891381" blue="0.56934028859999997" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xgA-PW-vsO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Yourlawyer@gmail.com">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xu7-f9-lPk">
+                                <rect key="frame" x="33" y="281" width="178" height="37"/>
+                                <color key="backgroundColor" red="0.17050674560000001" green="0.4894891381" blue="0.56934028859999997" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YUE-RA-8vP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="@Yourlawyer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitt" translatesAutoresizingMaskIntoConstraints="NO" id="kqk-7k-bgK">
+                                <rect key="frame" x="37" y="114" width="64" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram.pn" translatesAutoresizingMaskIntoConstraints="NO" id="AeV-uF-ffN">
+                                <rect key="frame" x="33" y="220" width="73" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gmail" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-nx-BVd">
+                                <rect key="frame" x="37" y="328" width="73" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dGp-aB-hN2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dg-hL-rah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4756.875" y="975"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="Q3n-eC-fe8">
             <objects>
                 <viewController id="QcJ-Vd-usv" sceneMemberID="viewController">
@@ -565,13 +637,16 @@
     </scenes>
     <resources>
         <image name="Email-Icon" width="512" height="512"/>
+        <image name="Instagram.pn" width="600" height="600"/>
         <image name="LOGO2" width="500" height="500"/>
         <image name="app-2" width="24" height="24"/>
         <image name="bell" width="24" height="24"/>
         <image name="bg" width="1080" height="2000"/>
         <image name="consulting-message-2" width="24" height="24"/>
+        <image name="gmail" width="1600" height="1600"/>
         <image name="list-square-rounded-interface-symbol-2" width="24" height="24"/>
         <image name="password" width="256" height="256"/>
         <image name="profile-2" width="24" height="24"/>
+        <image name="twitt" width="256" height="256"/>
     </resources>
 </document>
