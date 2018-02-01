@@ -148,7 +148,7 @@
             </objects>
             <point key="canvasLocation" x="37.5" y="57.04225352112676"/>
         </scene>
-        <!--Item 2-->
+        <!--الإشعارات -->
         <scene sceneID="KJu-i8-P64">
             <objects>
                 <viewController id="efB-uI-rKi" sceneMemberID="viewController">
@@ -158,13 +158,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PaC-TY-c9g"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="bell" id="tkM-44-usz"/>
+                    <navigationItem key="navigationItem" title="الإشعارات " id="5Tz-sp-XeX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ux2-eO-yKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3227" y="107"/>
+            <point key="canvasLocation" x="4157" y="-150"/>
         </scene>
-        <!--Item-->
+        <!--قائمة المحامين -->
         <scene sceneID="4hs-ZN-aIu">
             <objects>
                 <viewController id="Mt3-dt-r2P" sceneMemberID="viewController">
@@ -174,29 +174,39 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WwE-09-fL4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="list-square-rounded-interface-symbol-2" id="mLD-BP-1Kg"/>
+                    <navigationItem key="navigationItem" title="قائمة المحامين " id="Wl2-k2-fFa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HX4-eb-bln" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1933" y="1242"/>
+            <point key="canvasLocation" x="4127" y="2055"/>
         </scene>
-        <!--Item-->
+        <!--خدماتنا-->
         <scene sceneID="cl8-rm-esx">
             <objects>
                 <viewController id="V2a-Y9-gQb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MY2-eK-6IT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-TK-Js8" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
+                                <rect key="frame" x="103" y="271" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="من نحن"/>
+                                <connections>
+                                    <segue destination="cIO-ag-65W" kind="presentation" id="CBT-iD-2uw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DDy-kk-kDg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="app-2" id="p2i-Df-apb"/>
+                    <navigationItem key="navigationItem" title="خدماتنا" id="lrG-Ol-Zrx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWY-1V-91X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3137" y="1652"/>
+            <point key="canvasLocation" x="4126.875" y="1356.338028169014"/>
         </scene>
-        <!--Item-->
+        <!--استشاراتي -->
         <scene sceneID="zou-YT-jTS">
             <objects>
                 <viewController id="EVB-LF-cQR" sceneMemberID="viewController">
@@ -206,11 +216,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Bjn-S5-eJd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="consulting-message-2" id="nRs-jN-bBX"/>
+                    <navigationItem key="navigationItem" title="استشاراتي " id="jSE-lG-v4b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFd-qa-u8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3227" y="843"/>
+            <point key="canvasLocation" x="4127" y="554"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ry3-f6-ZYF">
@@ -246,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNc-jA-Jq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3969.375" y="976.05633802816908"/>
+            <point key="canvasLocation" x="5132" y="1364"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1jh-9a-nWw">
@@ -318,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dg-hL-rah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4756.875" y="975"/>
+            <point key="canvasLocation" x="5908" y="473"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q3n-eC-fe8">
@@ -344,7 +354,7 @@
             </objects>
             <point key="canvasLocation" x="2205" y="-794"/>
         </scene>
-        <!--Item 1-->
+        <!--الملف الشخصي-->
         <scene sceneID="i9z-ca-21H">
             <objects>
                 <viewController id="C4i-CG-QPE" sceneMemberID="viewController">
@@ -354,11 +364,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XXb-el-99r"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="profile-2" id="7Db-PJ-99Y"/>
+                    <navigationItem key="navigationItem" title="الملف الشخصي" id="NGi-Jy-8hH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kb3-nB-ifU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3227" y="-662"/>
+            <point key="canvasLocation" x="4157" y="-848"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Tum-e9-CHr">
@@ -370,11 +380,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="C4i-CG-QPE" kind="relationship" relationship="viewControllers" id="j9d-16-ZuF"/>
-                        <segue destination="efB-uI-rKi" kind="relationship" relationship="viewControllers" id="dmG-oS-fwf"/>
-                        <segue destination="EVB-LF-cQR" kind="relationship" relationship="viewControllers" id="2cR-rl-dEU"/>
-                        <segue destination="V2a-Y9-gQb" kind="relationship" relationship="viewControllers" id="2Yc-hk-6k0"/>
-                        <segue destination="Mt3-dt-r2P" kind="relationship" relationship="viewControllers" id="b9O-Z5-o48"/>
+                        <segue destination="hLp-2S-lf7" kind="relationship" relationship="viewControllers" id="j9d-16-ZuF"/>
+                        <segue destination="Qa7-VX-Pk8" kind="relationship" relationship="viewControllers" id="dmG-oS-fwf"/>
+                        <segue destination="qq4-FP-EWr" kind="relationship" relationship="viewControllers" id="2cR-rl-dEU"/>
+                        <segue destination="6RQ-f0-Tyw" kind="relationship" relationship="viewControllers" id="2Yc-hk-6k0"/>
+                        <segue destination="yRr-Oo-SzQ" kind="relationship" relationship="viewControllers" id="b9O-Z5-o48"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="toS-Q8-aqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -689,7 +699,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9X-Mg-a0L">
-                                <rect key="frame" x="60" y="269" width="200" height="30"/>
+                                <rect key="frame" x="40" y="210" width="240" height="30"/>
                                 <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="3A7-XU-FQJ"/>
@@ -707,7 +717,102 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5w-o4-6aZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="-325"/>
+            <point key="canvasLocation" x="1080" y="-325.35211267605632"/>
+        </scene>
+        <!--الملف الشخصي-->
+        <scene sceneID="Oh9-oj-ml8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hLp-2S-lf7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="الملف الشخصي" image="profile-2" id="7Db-PJ-99Y"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oKN-tJ-V0l">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="C4i-CG-QPE" kind="relationship" relationship="rootViewController" id="Kl2-qR-wyO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cx-7s-k41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3094" y="-848"/>
+        </scene>
+        <!--الإشعارات-->
+        <scene sceneID="yGQ-2r-BGD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qa7-VX-Pk8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="الإشعارات" image="bell" id="tkM-44-usz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mIQ-uY-Riu">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="efB-uI-rKi" kind="relationship" relationship="rootViewController" id="34P-FK-6Sf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceK-Nr-AAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3093.75" y="-150"/>
+        </scene>
+        <!--استشاراتي-->
+        <scene sceneID="0DY-Cc-y4z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qq4-FP-EWr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="استشاراتي" image="speech-bubble-with-text-lines" id="nRs-jN-bBX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZHm-Un-I5B">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EVB-LF-cQR" kind="relationship" relationship="rootViewController" id="tVw-nf-mr3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxP-VY-SLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3093.75" y="553.52112676056333"/>
+        </scene>
+        <!--خدماتنا-->
+        <scene sceneID="p0P-ho-V5R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6RQ-f0-Tyw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="خدماتنا" image="app-2" id="p2i-Df-apb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jRy-CE-n4z">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V2a-Y9-gQb" kind="relationship" relationship="rootViewController" id="z4n-fG-RY6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rI-n2-jsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3093.75" y="1357.3943661971832"/>
+        </scene>
+        <!--قائمة المحامين-->
+        <scene sceneID="d0A-O6-jU3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yRr-Oo-SzQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="قائمة المحامين" image="list-square-rounded-interface-symbol-2" id="mLD-BP-1Kg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pkQ-uL-kdj">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mt3-dt-r2P" kind="relationship" relationship="rootViewController" id="fOc-hR-jlV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="di5-zI-eqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3093.75" y="2054.5774647887324"/>
         </scene>
     </scenes>
     <resources>
@@ -717,11 +822,11 @@
         <image name="app-2" width="24" height="24"/>
         <image name="bell" width="24" height="24"/>
         <image name="bg" width="1080" height="2000"/>
-        <image name="consulting-message-2" width="24" height="24"/>
         <image name="gmail" width="1600" height="1600"/>
         <image name="list-square-rounded-interface-symbol-2" width="24" height="24"/>
         <image name="password" width="256" height="256"/>
         <image name="profile-2" width="24" height="24"/>
+        <image name="speech-bubble-with-text-lines" width="24" height="24"/>
         <image name="twitt" width="256" height="256"/>
     </resources>
 </document>
