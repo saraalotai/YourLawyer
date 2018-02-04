@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,14 +27,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-yY-pr1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-yY-pr1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muc-B9-beC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muc-B9-beC">
                                 <rect key="frame" x="40" y="385" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.17050674557685852" green="0.48948913812637329" blue="0.5693402886390686" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rAq-u5-DUA"/>
+                                </constraints>
                                 <state key="normal" title="هل نسيت كلمة المرور؟">
                                     <color key="titleColor" red="0.33881461620330811" green="0.59569686651229858" blue="0.65901917219161987" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -41,14 +43,12 @@
                                     <segue destination="8bp-hg-0D6" kind="modal" identifier="forget password" id="ncU-ao-s5U"/>
                                 </connections>
                             </button>
-                            <imageView verifyAmbiguity="ignoreSizes" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGO2" translatesAutoresizingMaskIntoConstraints="NO" id="OnK-5n-zpg">
-                                <rect key="frame" x="-90" y="34" width="500" height="500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiT-iI-xm8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiT-iI-xm8">
                                 <rect key="frame" x="40" y="435" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.17050674557685852" green="0.48948913812637329" blue="0.5693402886390686" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1yu-Qr-xeu"/>
+                                </constraints>
                                 <state key="normal" title="تسجيل حساب جديد">
                                     <color key="titleColor" red="0.38709679245948792" green="0.62721341848373413" blue="0.68224042654037476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -56,10 +56,12 @@
                                     <segue destination="PPZ-YF-tTa" kind="modal" identifier="Sign up" id="DY5-F5-0AW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y11-qz-VLr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y11-qz-VLr">
                                 <rect key="frame" x="40" y="335" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0030407370068132877" green="0.38705790042877197" blue="0.48325443267822266" alpha="0.83144263698630139" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uM6-k7-M7E"/>
+                                </constraints>
                                 <color key="tintColor" red="0.0057498370297253132" green="0.39491754770278931" blue="0.49113589525222778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="تسجيل الدخول">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -68,9 +70,11 @@
                                     <segue destination="WOe-bV-Frt" kind="modal" identifier="sign in" id="x7l-P5-tcN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxT-HH-T2q" customClass="DesignableTextField" customModule="YourLawyer" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxT-HH-T2q" customClass="DesignableTextField" customModule="YourLawyer" customModuleProvider="target">
                                 <rect key="frame" x="40" y="285" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PWT-9h-3ng"/>
+                                </constraints>
                                 <color key="textColor" red="0.17050674557685852" green="0.48948913812637329" blue="0.5693402886390686" alpha="0.88" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -78,9 +82,11 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="password"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الإلكتروني " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDB-3Z-vKE" customClass="DesignableTextField" customModule="YourLawyer" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الإلكتروني " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDB-3Z-vKE" customClass="DesignableTextField" customModule="YourLawyer" customModuleProvider="target">
                                 <rect key="frame" x="40" y="240" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mxr-Dy-3tK"/>
+                                </constraints>
                                 <color key="textColor" red="0.17050674557685852" green="0.48948913812637329" blue="0.5693402886390686" alpha="0.87636451198630139" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -88,8 +94,38 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="Email-Icon"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <imageView verifyAmbiguity="ignoreSizes" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO2" translatesAutoresizingMaskIntoConstraints="NO" id="OnK-5n-zpg">
+                                <rect key="frame" x="40" y="52" width="240" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="ana-Ay-A34"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dxT-HH-T2q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="1xQ-aB-Y0D"/>
+                            <constraint firstItem="IDB-3Z-vKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="5It-ba-Jre"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="muc-B9-beC" secondAttribute="trailing" constant="24" id="5p8-Hb-nS5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KiT-iI-xm8" secondAttribute="trailing" constant="24" id="AT0-JS-szl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y11-qz-VLr" secondAttribute="trailing" constant="24" id="ICg-Tb-8qn"/>
+                            <constraint firstAttribute="trailing" secondItem="jH7-yY-pr1" secondAttribute="trailing" id="J7R-Pw-64t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OnK-5n-zpg" secondAttribute="trailing" constant="24" id="Kec-3h-rjg"/>
+                            <constraint firstItem="KiT-iI-xm8" firstAttribute="top" secondItem="muc-B9-beC" secondAttribute="bottom" constant="20" id="O6U-St-vKa"/>
+                            <constraint firstItem="dxT-HH-T2q" firstAttribute="top" secondItem="IDB-3Z-vKE" secondAttribute="bottom" constant="15" id="OzL-1m-RXq"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Whv-kR-8tF"/>
+                            <constraint firstItem="wde-yt-69d" firstAttribute="top" secondItem="jH7-yY-pr1" secondAttribute="bottom" id="bb0-3C-qeL"/>
+                            <constraint firstItem="KiT-iI-xm8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="da6-aH-DAI"/>
+                            <constraint firstItem="IDB-3Z-vKE" firstAttribute="top" secondItem="7XD-l2-7ae" secondAttribute="bottom" constant="220" id="djg-L3-6HZ"/>
+                            <constraint firstItem="OnK-5n-zpg" firstAttribute="top" secondItem="7XD-l2-7ae" secondAttribute="bottom" constant="32" id="efu-Lg-T7s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dxT-HH-T2q" secondAttribute="trailing" constant="24" id="ffT-nU-kE4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IDB-3Z-vKE" secondAttribute="trailing" constant="24" id="ip5-ge-Wte"/>
+                            <constraint firstItem="jH7-yY-pr1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jxP-fW-6GR"/>
+                            <constraint firstItem="y11-qz-VLr" firstAttribute="top" secondItem="dxT-HH-T2q" secondAttribute="bottom" constant="20" id="loK-1u-Xwk"/>
+                            <constraint firstItem="y11-qz-VLr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="nwP-4x-5Qy"/>
+                            <constraint firstItem="muc-B9-beC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="vZq-oS-TPt"/>
+                            <constraint firstItem="OnK-5n-zpg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="xIS-Yz-iig"/>
+                            <constraint firstItem="muc-B9-beC" firstAttribute="top" secondItem="y11-qz-VLr" secondAttribute="bottom" constant="20" id="z6t-aH-K6A"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="email" destination="IDB-3Z-vKE" id="cfm-fe-nZ9"/>
@@ -1177,6 +1213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqh-ic-TjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="485" y="602"/>
         </scene>
     </scenes>
     <resources>
