@@ -2,29 +2,21 @@
 //  ProfileViewController.swift
 //  YourLawyer
 //
-//  Created by mac on ١٩ جما١، ١٤٣٩ هـ.
+//  Created by mac on ٢٠ جما١، ١٤٣٩ هـ.
 //  Copyright © ١٤٣٩ هـ mac pro retina. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
-    
+class ProfileViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var infotable: UITableView!
-    
     let info = ["الاسم","اسم الشركة","البريد الإلكتوني","المجالات التي يعمل بها "]
-
-
-    @IBOutlet weak var tableview: UITableView!
+    
     override func viewDidLoad() {
         infotable.delegate = self
         infotable.dataSource = self
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
@@ -34,11 +26,14 @@ class ProfileViewController: UIViewController , UITableViewDelegate, UITableView
         let infocell = infotable.dequeueReusableCell(withIdentifier: "infoCell") as! InfoTableViewCell
         infocell.title.text = info[indexPath.row]
         return infocell
-    }
-    
-    
 
-    override func didReceiveMemoryWarning() {
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+        }
+ 
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -54,4 +49,5 @@ class ProfileViewController: UIViewController , UITableViewDelegate, UITableView
     }
     */
 
+}
 }

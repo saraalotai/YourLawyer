@@ -11,9 +11,9 @@
 		040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
 		0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419F6242023B15000637FE9 /* RoundedButton.swift */; };
-		041F066F2028F248003EF857 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F066E2028F248003EF857 /* ProfileViewController.swift */; };
 		044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
 		045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */; };
+		04E6C042202A348A00BAB1ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6C041202A348A00BAB1ED /* ProfileViewController.swift */; };
 		CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED5201E581000CBFA83 /* AppDelegate.swift */; };
 		CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED7201E581000CBFA83 /* ViewController.swift */; };
 		CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CED9201E581000CBFA83 /* Main.storyboard */; };
@@ -28,9 +28,9 @@
 		040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
 		0419F6242023B15000637FE9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		041F066E2028F248003EF857 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		04E6C041202A348A00BAB1ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CC13CED2201E581000CBFA83 /* YourLawyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLawyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC13CED5201E581000CBFA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC13CED7201E581000CBFA83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +94,7 @@
 				0419F6242023B15000637FE9 /* RoundedButton.swift */,
 				0440884F2027369900A33AC8 /* CustomTableView.swift */,
 				045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */,
+				04E6C041202A348A00BAB1ED /* ProfileViewController.swift */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";
@@ -176,6 +177,7 @@
 				044088502027369900A33AC8 /* CustomTableView.swift in Sources */,
 				04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */,
 				CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */,
+				04E6C042202A348A00BAB1ED /* ProfileViewController.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				0409E6022028FE1C00E87A33 /* CTableViewCell.swift in Sources */,
