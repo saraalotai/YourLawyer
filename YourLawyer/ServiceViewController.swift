@@ -23,11 +23,6 @@ class ServiceViewController: UIViewController {
         
         
         mainButton.layer.cornerRadius = mainButton.frame.height / 2
-        secondButton.layer.cornerRadius = secondButton.frame.height / 2
-        thirdButton.layer.cornerRadius = thirdButton.frame.height / 2
-        fourthButton.layer.cornerRadius = fourthButton.frame.height / 2
-        fifthButton.layer.cornerRadius = fifthButton.frame.height / 2
-        sixButton.layer.cornerRadius = sixButton.frame.height / 2
     }
 
     override func didReceiveMemoryWarning() {
