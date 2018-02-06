@@ -13,6 +13,7 @@ class LawyerListViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var tableview: UITableView!
     
     
+    @IBOutlet weak var lawyername: UILabel!
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self

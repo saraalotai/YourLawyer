@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -233,7 +234,10 @@
                                             <outlet property="cellView" destination="tK8-3e-LwO" id="0fo-H9-1LM"/>
                                             <outlet property="lawerImage" destination="ZI6-Hw-U7c" id="JMX-eF-zpk"/>
                                             <outlet property="lawerName" destination="9tu-RQ-XJd" id="YMg-Cq-aZh"/>
-                                            <segue destination="lmZ-Gt-L9M" kind="push" id="qeJ-gL-LRU"/>
+                                            <segue destination="lmZ-Gt-L9M" kind="push" identifier="LawyerInfo" id="qeJ-gL-LRU">
+                                                <segue key="commit" inheritsFrom="parent" id="op5-Vh-p8G"/>
+                                                <segue key="preview" inheritsFrom="commit" id="Qny-w4-DlO"/>
+                                            </segue>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -485,11 +489,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="line-black-1px" translatesAutoresizingMaskIntoConstraints="NO" id="adc-Ex-91P">
+                                        <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line-black-1px" translatesAutoresizingMaskIntoConstraints="NO" id="adc-Ex-91P">
                                             <rect key="frame" x="10" y="30" width="310" height="1"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbc-rC-chj">
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gbc-rC-chj">
                                             <rect key="frame" x="10" y="77" width="298" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3i-hR-ur1">
                                                     <rect key="frame" x="59" y="6" width="146" height="20"/>
@@ -515,11 +521,8 @@
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="48" id="Tnb-Mc-YGZ"/>
-                                            </constraints>
                                         </view>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juk-kq-8wn">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Twitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juk-kq-8wn">
                                             <rect key="frame" x="127" y="127" width="146" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="S7t-c5-OLA"/>
@@ -529,8 +532,9 @@
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OZ-cH-ON3">
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OZ-cH-ON3">
                                             <rect key="frame" x="10" y="30" width="298" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter-xxl" translatesAutoresizingMaskIntoConstraints="NO" id="mEK-qU-8Y1">
                                                     <rect key="frame" x="15" y="9" width="29" height="29"/>
@@ -549,24 +553,11 @@
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="48" id="ReF-c6-AUi"/>
-                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="Gbc-rC-chj" secondAttribute="trailing" constant="12" id="48Q-1L-BzQ"/>
                                         <constraint firstAttribute="trailing" secondItem="juk-kq-8wn" secondAttribute="trailing" constant="47" id="4ef-dx-hKJ"/>
-                                        <constraint firstItem="6OZ-cH-ON3" firstAttribute="leading" secondItem="a9A-zF-Baf" secondAttribute="leading" constant="10" id="A4M-6S-Ey9"/>
-                                        <constraint firstItem="Gbc-rC-chj" firstAttribute="leading" secondItem="adc-Ex-91P" secondAttribute="leading" id="BaN-1m-vap"/>
-                                        <constraint firstItem="Gbc-rC-chj" firstAttribute="leading" secondItem="a9A-zF-Baf" secondAttribute="leading" constant="10" id="FGC-a5-COu"/>
-                                        <constraint firstItem="6OZ-cH-ON3" firstAttribute="top" secondItem="adc-Ex-91P" secondAttribute="top" id="QDn-aL-lFV"/>
-                                        <constraint firstAttribute="trailing" secondItem="6OZ-cH-ON3" secondAttribute="trailing" constant="12" id="Xep-UX-olY"/>
-                                        <constraint firstItem="juk-kq-8wn" firstAttribute="top" secondItem="6OZ-cH-ON3" secondAttribute="bottom" constant="49" id="aD3-Pc-MHn"/>
-                                        <constraint firstItem="Gbc-rC-chj" firstAttribute="top" secondItem="adc-Ex-91P" secondAttribute="bottom" constant="46" id="cFW-oi-vOr"/>
-                                        <constraint firstItem="Gbc-rC-chj" firstAttribute="top" secondItem="a9A-zF-Baf" secondAttribute="top" constant="77" id="oBF-H3-RkX"/>
-                                        <constraint firstItem="juk-kq-8wn" firstAttribute="top" secondItem="Gbc-rC-chj" secondAttribute="bottom" constant="2" id="qFl-4h-OWz"/>
                                     </constraints>
                                 </view>
                             </tableView>
@@ -19399,5 +19390,8 @@ IQsAECEQAAAAAAAABAEAAAAAAAAAVgAAAAAAAAAAAAAAAAAQIRI
         <image name="twitter-xxl" width="256" height="256"/>
         <image name="user" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qeJ-gL-LRU"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
