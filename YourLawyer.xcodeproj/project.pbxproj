@@ -1,369 +1,369 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 48;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 48;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		0409E6022028FE1C00E87A33 /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409E6012028FE1C00E87A33 /* CTableViewCell.swift */; };
-		040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
-		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
-		0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419F6242023B15000637FE9 /* RoundedButton.swift */; };
-		041F066F2028F248003EF857 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F066E2028F248003EF857 /* ProfileViewController.swift */; };
-		044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
-		045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */; };
-		CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED5201E581000CBFA83 /* AppDelegate.swift */; };
-		CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED7201E581000CBFA83 /* ViewController.swift */; };
-		CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CED9201E581000CBFA83 /* Main.storyboard */; };
-		CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDC201E581000CBFA83 /* Assets.xcassets */; };
-		CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
-		CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC592E0E2020F74D007B9082 /* DesignableTextField.swift */; };
-		CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18C2028DEC600B20910 /* IssueViewController.swift */; };
+        0409E6022028FE1C00E87A33 /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409E6012028FE1C00E87A33 /* CTableViewCell.swift */; };
+        040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
+        04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
+        0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419F6242023B15000637FE9 /* RoundedButton.swift */; };
+        041F066F2028F248003EF857 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F066E2028F248003EF857 /* ProfileViewController.swift */; };
+        044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
+        045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */; };
+        CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED5201E581000CBFA83 /* AppDelegate.swift */; };
+        CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED7201E581000CBFA83 /* ViewController.swift */; };
+        CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CED9201E581000CBFA83 /* Main.storyboard */; };
+        CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDC201E581000CBFA83 /* Assets.xcassets */; };
+        CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
+        CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC592E0E2020F74D007B9082 /* DesignableTextField.swift */; };
+        CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18C2028DEC600B20910 /* IssueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0409E6012028FE1C00E87A33 /* CTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
-		040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
-		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
-		0419F6242023B15000637FE9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		041F066E2028F248003EF857 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
-		045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
-		CC13CED2201E581000CBFA83 /* YourLawyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLawyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC13CED5201E581000CBFA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC13CED7201E581000CBFA83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC13CEDA201E581000CBFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC13CEDC201E581000CBFA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CC13CEDF201E581000CBFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CC13CEE1201E581000CBFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC592E0E2020F74D007B9082 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
-		CC86E18C2028DEC600B20910 /* IssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
+        0409E6012028FE1C00E87A33 /* CTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
+        040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+        04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
+        0419F6242023B15000637FE9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+        041F066E2028F248003EF857 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+        0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+        045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+        CC13CED2201E581000CBFA83 /* YourLawyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLawyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        CC13CED5201E581000CBFA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        CC13CED7201E581000CBFA83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        CC13CEDA201E581000CBFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        CC13CEDC201E581000CBFA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        CC13CEDF201E581000CBFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        CC13CEE1201E581000CBFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        CC592E0E2020F74D007B9082 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+        CC86E18C2028DEC600B20910 /* IssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC13CECF201E581000CBFA83 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        CC13CECF201E581000CBFA83 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0473E73D20248335003C658A /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		CC13CEC9201E581000CBFA83 = {
-			isa = PBXGroup;
-			children = (
-				CC13CED4201E581000CBFA83 /* YourLawyer */,
-				CC13CED3201E581000CBFA83 /* Products */,
-				0473E73D20248335003C658A /* Recovered References */,
-			);
-			sourceTree = "<group>";
-		};
-		CC13CED3201E581000CBFA83 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CC13CED2201E581000CBFA83 /* YourLawyer.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CC13CED4201E581000CBFA83 /* YourLawyer */ = {
-			isa = PBXGroup;
-			children = (
-				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
-				CC13CED7201E581000CBFA83 /* ViewController.swift */,
-				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
-				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
-				CC13CED9201E581000CBFA83 /* Main.storyboard */,
-				0409E6012028FE1C00E87A33 /* CTableViewCell.swift */,
-				CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
-				040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
-				CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */,
-				CC13CEE1201E581000CBFA83 /* Info.plist */,
-				CC592E0E2020F74D007B9082 /* DesignableTextField.swift */,
-				0419F6242023B15000637FE9 /* RoundedButton.swift */,
-				0440884F2027369900A33AC8 /* CustomTableView.swift */,
-				045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */,
-			);
-			path = YourLawyer;
-			sourceTree = "<group>";
-		};
+        0473E73D20248335003C658A /* Recovered References */ = {
+            isa = PBXGroup;
+            children = (
+            );
+            name = "Recovered References";
+            sourceTree = "<group>";
+        };
+        CC13CEC9201E581000CBFA83 = {
+            isa = PBXGroup;
+            children = (
+                CC13CED4201E581000CBFA83 /* YourLawyer */,
+                CC13CED3201E581000CBFA83 /* Products */,
+                0473E73D20248335003C658A /* Recovered References */,
+            );
+            sourceTree = "<group>";
+        };
+        CC13CED3201E581000CBFA83 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                CC13CED2201E581000CBFA83 /* YourLawyer.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        CC13CED4201E581000CBFA83 /* YourLawyer */ = {
+            isa = PBXGroup;
+            children = (
+                CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
+                CC13CED7201E581000CBFA83 /* ViewController.swift */,
+                04141EA620274C1900B3266B /* LawyerListViewController.swift */,
+                CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
+                CC13CED9201E581000CBFA83 /* Main.storyboard */,
+                0409E6012028FE1C00E87A33 /* CTableViewCell.swift */,
+                CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
+                040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
+                CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */,
+                CC13CEE1201E581000CBFA83 /* Info.plist */,
+                CC592E0E2020F74D007B9082 /* DesignableTextField.swift */,
+                0419F6242023B15000637FE9 /* RoundedButton.swift */,
+                0440884F2027369900A33AC8 /* CustomTableView.swift */,
+                045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */,
+            );
+            path = YourLawyer;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC13CED1201E581000CBFA83 /* YourLawyer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC13CEE4201E581000CBFA83 /* Build configuration list for PBXNativeTarget "YourLawyer" */;
-			buildPhases = (
-				CC13CECE201E581000CBFA83 /* Sources */,
-				CC13CECF201E581000CBFA83 /* Frameworks */,
-				CC13CED0201E581000CBFA83 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = YourLawyer;
-			productName = YourLawyer;
-			productReference = CC13CED2201E581000CBFA83 /* YourLawyer.app */;
-			productType = "com.apple.product-type.application";
-		};
+        CC13CED1201E581000CBFA83 /* YourLawyer */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = CC13CEE4201E581000CBFA83 /* Build configuration list for PBXNativeTarget "YourLawyer" */;
+            buildPhases = (
+                CC13CECE201E581000CBFA83 /* Sources */,
+                CC13CECF201E581000CBFA83 /* Frameworks */,
+                CC13CED0201E581000CBFA83 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = YourLawyer;
+            productName = YourLawyer;
+            productReference = CC13CED2201E581000CBFA83 /* YourLawyer.app */;
+            productType = "com.apple.product-type.application";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC13CECA201E581000CBFA83 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "mac pro retina";
-				TargetAttributes = {
-					CC13CED1201E581000CBFA83 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-				};
-			};
-			buildConfigurationList = CC13CECD201E581000CBFA83 /* Build configuration list for PBXProject "YourLawyer" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = CC13CEC9201E581000CBFA83;
-			productRefGroup = CC13CED3201E581000CBFA83 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CC13CED1201E581000CBFA83 /* YourLawyer */,
-			);
-		};
+        CC13CECA201E581000CBFA83 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0920;
+                LastUpgradeCheck = 0920;
+                ORGANIZATIONNAME = "mac pro retina";
+                TargetAttributes = {
+                    CC13CED1201E581000CBFA83 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                    };
+                };
+            };
+            buildConfigurationList = CC13CECD201E581000CBFA83 /* Build configuration list for PBXProject "YourLawyer" */;
+            compatibilityVersion = "Xcode 8.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = CC13CEC9201E581000CBFA83;
+            productRefGroup = CC13CED3201E581000CBFA83 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                CC13CED1201E581000CBFA83 /* YourLawyer */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CC13CED0201E581000CBFA83 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */,
-				CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */,
-				CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        CC13CED0201E581000CBFA83 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */,
+                CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */,
+                CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CC13CECE201E581000CBFA83 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
-				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
-				CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */,
-				044088502027369900A33AC8 /* CustomTableView.swift in Sources */,
-				04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */,
-				CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */,
-				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
-				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
-				0409E6022028FE1C00E87A33 /* CTableViewCell.swift in Sources */,
-				040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        CC13CECE201E581000CBFA83 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
+                045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
+                CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */,
+                044088502027369900A33AC8 /* CustomTableView.swift in Sources */,
+                04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */,
+                CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */,
+                CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
+                0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
+                0409E6022028FE1C00E87A33 /* CTableViewCell.swift in Sources */,
+                040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC13CED9201E581000CBFA83 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC13CEDA201E581000CBFA83 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC13CEDF201E581000CBFA83 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        CC13CED9201E581000CBFA83 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                CC13CEDA201E581000CBFA83 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                CC13CEDF201E581000CBFA83 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CC13CEE2201E581000CBFA83 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		CC13CEE3201E581000CBFA83 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CC13CEE5201E581000CBFA83 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8ATRJ3648;
-				INFOPLIST_FILE = YourLawyer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ksu.YourLawyer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CC13CEE6201E581000CBFA83 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8ATRJ3648;
-				INFOPLIST_FILE = YourLawyer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ksu.YourLawyer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
+        CC13CEE2201E581000CBFA83 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        CC13CEE3201E581000CBFA83 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        CC13CEE5201E581000CBFA83 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = K8ATRJ3648;
+                INFOPLIST_FILE = YourLawyer/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.ksu.YourLawyer;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        CC13CEE6201E581000CBFA83 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = K8ATRJ3648;
+                INFOPLIST_FILE = YourLawyer/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.ksu.YourLawyer;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC13CECD201E581000CBFA83 /* Build configuration list for PBXProject "YourLawyer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC13CEE2201E581000CBFA83 /* Debug */,
-				CC13CEE3201E581000CBFA83 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC13CEE4201E581000CBFA83 /* Build configuration list for PBXNativeTarget "YourLawyer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC13CEE5201E581000CBFA83 /* Debug */,
-				CC13CEE6201E581000CBFA83 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        CC13CECD201E581000CBFA83 /* Build configuration list for PBXProject "YourLawyer" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                CC13CEE2201E581000CBFA83 /* Debug */,
+                CC13CEE3201E581000CBFA83 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        CC13CEE4201E581000CBFA83 /* Build configuration list for PBXNativeTarget "YourLawyer" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                CC13CEE5201E581000CBFA83 /* Debug */,
+                CC13CEE6201E581000CBFA83 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = CC13CECA201E581000CBFA83 /* Project object */;
+    };
+    rootObject = CC13CECA201E581000CBFA83 /* Project object */;
 }

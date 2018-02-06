@@ -287,20 +287,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prof" translatesAutoresizingMaskIntoConstraints="NO" id="2xn-rc-4OS">
                                 <rect key="frame" x="0.0" y="64" width="320" height="141"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNE-23-Y9j">
-                                <rect key="frame" x="51" y="262" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsp-fo-Kce">
-                                <rect key="frame" x="216" y="262" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="fnK-ve-ILn">
                                 <rect key="frame" x="120" y="134" width="80" height="80"/>
                                 <constraints>
@@ -364,25 +350,43 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="num" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsp-fo-Kce">
+                                <rect key="frame" x="213" y="274" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="num" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNE-23-Y9j">
+                                <rect key="frame" x="67" y="274" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.95677906274795532" green="0.95691639184951782" blue="0.95674902200698853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fnK-ve-ILn" firstAttribute="top" secondItem="JFb-a2-avv" secondAttribute="bottom" constant="70" id="0cT-hz-aC2"/>
                             <constraint firstItem="IU4-02-pkQ" firstAttribute="top" secondItem="auN-6q-FC1" secondAttribute="bottom" constant="20" id="7YZ-mu-1vB"/>
+                            <constraint firstItem="Lsp-fo-Kce" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hcc-Fb-dcu" secondAttribute="leading" constant="20" symbolic="YES" id="8Kq-5t-Xw4"/>
                             <constraint firstItem="auN-6q-FC1" firstAttribute="top" secondItem="2xn-rc-4OS" secondAttribute="bottom" constant="29" id="9jK-Fp-Gc4"/>
+                            <constraint firstItem="dNE-23-Y9j" firstAttribute="leading" secondItem="Hcc-Fb-dcu" secondAttribute="leading" constant="111" id="Gcz-Yd-VCO"/>
                             <constraint firstItem="IU4-02-pkQ" firstAttribute="leading" secondItem="Hcc-Fb-dcu" secondAttribute="leading" id="ICS-1I-sU0"/>
                             <constraint firstItem="2xn-rc-4OS" firstAttribute="top" secondItem="JFb-a2-avv" secondAttribute="bottom" id="KNb-BC-1x8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="89U-CU-hbA" secondAttribute="trailing" constant="19" id="Ljj-tg-rdz"/>
                             <constraint firstAttribute="trailing" secondItem="2xn-rc-4OS" secondAttribute="trailing" id="NAl-qf-D5x"/>
                             <constraint firstAttribute="trailing" secondItem="IU4-02-pkQ" secondAttribute="trailing" id="Oba-zt-GCs"/>
+                            <constraint firstItem="Lsp-fo-Kce" firstAttribute="top" secondItem="89U-CU-hbA" secondAttribute="bottom" constant="-30" id="UUe-Po-5p3"/>
                             <constraint firstItem="8W3-nO-ZFC" firstAttribute="top" secondItem="IU4-02-pkQ" secondAttribute="bottom" id="Uyz-Kz-vAM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fnK-ve-ILn" secondAttribute="trailing" constant="104" id="YBt-L2-BK3"/>
                             <constraint firstItem="2xn-rc-4OS" firstAttribute="top" secondItem="JFb-a2-avv" secondAttribute="bottom" id="bRk-Jk-mId"/>
                             <constraint firstItem="89U-CU-hbA" firstAttribute="top" secondItem="fnK-ve-ILn" secondAttribute="bottom" constant="20" id="bZQ-5h-GzE"/>
                             <constraint firstItem="fnK-ve-ILn" firstAttribute="leading" secondItem="Hcc-Fb-dcu" secondAttribute="leadingMargin" constant="104" id="ht5-Hd-piw"/>
                             <constraint firstItem="2xn-rc-4OS" firstAttribute="leading" secondItem="Hcc-Fb-dcu" secondAttribute="leading" id="ibQ-PK-8uP"/>
+                            <constraint firstItem="dNE-23-Y9j" firstAttribute="baseline" secondItem="Lsp-fo-Kce" secondAttribute="baseline" id="oW9-zz-tyY"/>
+                            <constraint firstItem="dNE-23-Y9j" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="auN-6q-FC1" secondAttribute="trailing" id="pGN-mN-u4E"/>
                             <constraint firstItem="auN-6q-FC1" firstAttribute="leading" secondItem="Hcc-Fb-dcu" secondAttribute="leadingMargin" constant="19" id="sRg-HI-eqK"/>
                             <constraint firstItem="auN-6q-FC1" firstAttribute="top" secondItem="fnK-ve-ILn" secondAttribute="bottom" constant="20" id="t37-4r-DND"/>
+                            <constraint firstItem="89U-CU-hbA" firstAttribute="leading" secondItem="Lsp-fo-Kce" secondAttribute="trailing" constant="-72" id="uDU-9e-DpN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Hy-dm-t17"/>
@@ -406,33 +410,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7vM-qf-GD9">
-                                <rect key="frame" x="78" y="144" width="165" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="اتصل بنا"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4G-ft-RGL" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
+                                <rect key="frame" x="90" y="370" width="140" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="w8M-8c-6Li"/>
+                                </constraints>
+                                <state key="normal" image="telephone"/>
                                 <connections>
-                                    <segue destination="RzM-sC-4GD" kind="push" id="KZu-tM-MTh"/>
+                                    <segue destination="RzM-sC-4GD" kind="push" id="pgY-37-1cJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-TK-Js8" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="130" y="226" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <size key="titleShadowOffset" width="2" height="0.0"/>
-                                <state key="normal" title="من نحن"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تقديم استشارة قانونية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-Vv-BB7">
+                                <rect key="frame" x="90" y="204" width="140" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="81K-xv-yqN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvN-oI-bX3" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
+                                <rect key="frame" x="90" y="248" width="140" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Gjw-wk-bb7"/>
+                                </constraints>
+                                <state key="normal" image="about-us"/>
                                 <connections>
-                                    <segue destination="cIO-ag-65W" kind="push" id="CBT-iD-2uw"/>
+                                    <segue destination="cIO-ag-65W" kind="push" id="oFa-7I-L2O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT5-qJ-xTX">
-                                <rect key="frame" x="118" y="398" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="تقديم قضية"/>
-                                <connections>
-                                    <segue destination="8FH-2c-1NZ" kind="push" id="DA0-cX-Rny"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYM-NW-XNJ" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
+                                <rect key="frame" x="90" y="126" width="140" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="b4X-HL-knX"/>
+                                </constraints>
+                                <state key="normal" image="chat-bubbles"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من نحن" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfV-An-9QP">
+                                <rect key="frame" x="90" y="326" width="140" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="vAW-lG-Se6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اتصل بنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-cp-CYe">
+                                <rect key="frame" x="90" y="448" width="140" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="IoW-E8-bGk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HfV-An-9QP" firstAttribute="top" secondItem="UvN-oI-bX3" secondAttribute="bottom" constant="8" id="Ce7-po-tBq"/>
+                            <constraint firstItem="UvN-oI-bX3" firstAttribute="top" secondItem="afJ-Vv-BB7" secondAttribute="bottom" constant="8" id="JOh-aY-6Ia"/>
+                            <constraint firstItem="4bn-cp-CYe" firstAttribute="top" secondItem="m4G-ft-RGL" secondAttribute="bottom" constant="8" id="Lti-5E-NYG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QYM-NW-XNJ" secondAttribute="trailing" constant="74" id="MVP-rj-kce"/>
+                            <constraint firstItem="afJ-Vv-BB7" firstAttribute="top" secondItem="QYM-NW-XNJ" secondAttribute="bottom" constant="8" id="Op3-C3-CEx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4bn-cp-CYe" secondAttribute="trailing" constant="74" id="PAz-wZ-HaC"/>
+                            <constraint firstItem="m4G-ft-RGL" firstAttribute="leading" secondItem="MY2-eK-6IT" secondAttribute="leadingMargin" constant="74" id="TCX-XJ-qRL"/>
+                            <constraint firstItem="UvN-oI-bX3" firstAttribute="leading" secondItem="MY2-eK-6IT" secondAttribute="leadingMargin" constant="74" id="TkN-le-EOX"/>
+                            <constraint firstItem="afJ-Vv-BB7" firstAttribute="leading" secondItem="MY2-eK-6IT" secondAttribute="leadingMargin" constant="74" id="Xb2-4i-NEv"/>
+                            <constraint firstItem="HfV-An-9QP" firstAttribute="leading" secondItem="MY2-eK-6IT" secondAttribute="leadingMargin" constant="74" id="YyT-pX-mrC"/>
+                            <constraint firstItem="m4G-ft-RGL" firstAttribute="top" secondItem="HfV-An-9QP" secondAttribute="bottom" constant="8" id="Z4e-fd-quQ"/>
+                            <constraint firstItem="QYM-NW-XNJ" firstAttribute="top" secondItem="vw0-nJ-onF" secondAttribute="bottom" constant="62" id="aZa-mC-T44"/>
+                            <constraint firstItem="4bn-cp-CYe" firstAttribute="leading" secondItem="MY2-eK-6IT" secondAttribute="leadingMargin" constant="74" id="auA-rf-kK6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HfV-An-9QP" secondAttribute="trailing" constant="74" id="eKj-jX-K3t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UvN-oI-bX3" secondAttribute="trailing" constant="74" id="eRH-Ui-vQz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="afJ-Vv-BB7" secondAttribute="trailing" constant="74" id="jiX-NZ-vhW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m4G-ft-RGL" secondAttribute="trailing" constant="74" id="mOv-0u-FOw"/>
+                            <constraint firstItem="QYM-NW-XNJ" firstAttribute="leading" secondItem="MY2-eK-6IT" secondAttribute="leadingMargin" constant="74" id="viy-1T-UCa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="خدماتنا" id="lrG-Ol-Zrx"/>
                 </viewController>
@@ -1518,39 +1574,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvN-oI-bX3">
-                                <rect key="frame" x="96" y="163" width="140" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT5-qJ-xTX">
+                                <rect key="frame" x="96" y="269" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="about-us"/>
+                                <state key="normal" title="تقديم قضية"/>
+                                <connections>
+                                    <segue destination="8FH-2c-1NZ" kind="push" id="DA0-cX-Rny"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4G-ft-RGL">
-                                <rect key="frame" x="62" y="381" width="196" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="telephone"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تقديم استشارة قانونية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-Vv-BB7">
-                                <rect key="frame" x="62" y="165" width="196" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="من نحن" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qR-mu-81T">
-                                <rect key="frame" x="62" y="337" width="196" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اتصل بنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-cp-CYe">
-                                <rect key="frame" x="62" y="501" width="196" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -1920,7 +1951,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZwM-18-g82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2795" y="2389"/>
+            <point key="canvasLocation" x="3753" y="3319"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HcC-m6-qSP">
@@ -1980,7 +2011,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1D-Cn-maT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3211" y="2389"/>
+            <point key="canvasLocation" x="3097" y="3468"/>
         </scene>
     </scenes>
     <resources>
@@ -1991,6 +2022,7 @@
         <image name="app-2" width="24" height="24"/>
         <image name="bell" width="24" height="24"/>
         <image name="bg" width="1080" height="2000"/>
+        <image name="chat-bubbles" width="64" height="64"/>
         <image name="imageView:zFS-8C-vBv:image" width="16" height="16"/>
         <image name="images" width="225" height="225"/>
         <image name="line-black-1px" width="16" height="16"/>
