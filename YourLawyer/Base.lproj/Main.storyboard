@@ -466,7 +466,7 @@
         <!--الملف الشخصي-->
         <scene sceneID="i9z-ca-21H">
             <objects>
-                <viewController id="C4i-CG-QPE" customClass="LawyerProfileViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C4i-CG-QPE" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QI2-96-64p"/>
                         <viewControllerLayoutGuide type="bottom" id="lBa-HQ-FGN"/>
@@ -1298,17 +1298,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-jD-1TY">
+                                <rect key="frame" x="60" y="45" width="196" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="chat-bubbles"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPg-id-YXM">
-                                <rect key="frame" x="62" y="228" width="196" height="99"/>
+                                <rect key="frame" x="62" y="208" width="196" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="about-us"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMQ-n8-uML">
-                                <rect key="frame" x="60" y="379" width="196" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="telephone"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="طلب استشارة قانونية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPI-tI-evV">
                                 <rect key="frame" x="60" y="164" width="196" height="36"/>
@@ -1331,11 +1331,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-jD-1TY">
-                                <rect key="frame" x="62" y="57" width="196" height="99"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMQ-n8-uML">
+                                <rect key="frame" x="62" y="389" width="196" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="chat-bubbles"/>
+                                <state key="normal" image="telephone"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
