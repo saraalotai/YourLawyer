@@ -486,7 +486,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="a9A-zF-Baf">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+                                    <rect key="frame" x="0.0" y="181" width="320" height="310"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line-black-1px" translatesAutoresizingMaskIntoConstraints="NO" id="adc-Ex-91P">
@@ -600,12 +600,12 @@
         <!--الملف الشخصي-->
         <scene sceneID="i9z-ca-21H">
             <objects>
-                <viewController id="C4i-CG-QPE" sceneMemberID="viewController">
+                <viewController id="C4i-CG-QPE" customClass="LawyerProfileViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QI2-96-64p"/>
                         <viewControllerLayoutGuide type="bottom" id="lBa-HQ-FGN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AUd-Hi-PEy">
+                    <view key="view" contentMode="scaleToFill" id="AUd-Hi-PEy" customClass="LawyerProfile">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -613,7 +613,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="192" id="cJ2-8S-54a">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellT" rowHeight="192" id="cJ2-8S-54a" customClass="CTableViewCell" customModule="YourLawyer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="192"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cJ2-8S-54a" id="teb-Vd-2u6">
@@ -1464,10 +1464,10 @@
             </objects>
             <point key="canvasLocation" x="1278" y="2788"/>
         </scene>
-        <!--View Controller-->
+        <!--Service View Controller-->
         <scene sceneID="68T-W1-XyZ">
             <objects>
-                <viewController id="Nfh-XO-8ea" sceneMemberID="viewController">
+                <viewController id="Nfh-XO-8ea" customClass="ServiceViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Buo-HN-9mg"/>
                         <viewControllerLayoutGuide type="bottom" id="f2N-ZX-hQd"/>
@@ -1476,40 +1476,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xve-oW-cbY">
-                                <rect key="frame" x="139" y="457" width="0.0" height="0.0"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvN-oI-bX3">
+                                <rect key="frame" x="110" y="55" width="129" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZM-YP-IRL">
-                                <rect key="frame" x="121" y="281" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="اتصل بنا">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSI-tg-yDb">
-                                <rect key="frame" x="121" y="432" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="من نحن">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boI-RI-pWh">
-                                <rect key="frame" x="121" y="154" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="طلب استشاره">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="chat-bubble-2"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="mainButton" destination="UvN-oI-bX3" id="2TV-k7-I27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2c7-AU-hXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -19380,7 +19358,6 @@ IQsAECEQAAAAAAAABAEAAAAAAAAAVgAAAAAAAAAAAAAAAAAQIRI
 </mutableData>
         </image>
         <image name="images" width="225" height="225"/>
-        <image name="line-black-1px" width="16" height="16"/>
         <image name="list-square-rounded-interface-symbol-2" width="24" height="24"/>
         <image name="password" width="256" height="256"/>
         <image name="prof" width="1500" height="611"/>
