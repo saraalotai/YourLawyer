@@ -17,7 +17,7 @@ class ServiceViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        mainButton.layer.cornerRadius = mainButton.frame.width / 2
+        mainButton.layer.cornerRadius = mainButton.frame.height / 2
     }
 
     override func didReceiveMemoryWarning() {
