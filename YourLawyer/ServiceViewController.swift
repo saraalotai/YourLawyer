@@ -9,6 +9,11 @@
 import UIKit
 
 class ServiceViewController: UIViewController {
+    @IBOutlet weak var sixButton: UIButton!
+    @IBOutlet weak var fifthButton: UIButton!
+    @IBOutlet weak var fourthButton: UIButton!
+    @IBOutlet weak var thirdButton: UIButton!
+    @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var mainButton: UIButton!
     
     override func viewDidLoad() {
