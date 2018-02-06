@@ -84,6 +84,7 @@
 				CC13CED7201E581000CBFA83 /* ViewController.swift */,
 				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
 				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
+				04E6C041202A348A00BAB1ED /* ProfileViewController.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
 				0409E6012028FE1C00E87A33 /* CTableViewCell.swift */,
 				CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
@@ -94,7 +95,6 @@
 				0419F6242023B15000637FE9 /* RoundedButton.swift */,
 				0440884F2027369900A33AC8 /* CustomTableView.swift */,
 				045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */,
-				04E6C041202A348A00BAB1ED /* ProfileViewController.swift */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";

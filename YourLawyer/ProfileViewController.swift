@@ -26,19 +26,18 @@ class ProfileViewController: UIViewController ,UITableViewDelegate, UITableViewD
         let infocell = infotable.dequeueReusableCell(withIdentifier: "infoCell") as! InfoTableViewCell
         infocell.title.text = info[indexPath.row]
         return infocell
-
+    }
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 80
         }
  
-        func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
     
-
+    }
     /*
     // MARK: - Navigation
 
@@ -50,4 +49,4 @@ class ProfileViewController: UIViewController ,UITableViewDelegate, UITableViewD
     */
 
 }
-}
+
