@@ -366,6 +366,7 @@
                         <color key="backgroundColor" red="0.95677906274795532" green="0.95691639184951782" blue="0.95674902200698853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fnK-ve-ILn" firstAttribute="top" secondItem="JFb-a2-avv" secondAttribute="bottom" constant="70" id="0cT-hz-aC2"/>
+                            <constraint firstItem="dNE-23-Y9j" firstAttribute="top" secondItem="auN-6q-FC1" secondAttribute="bottom" constant="-34" id="6KE-kh-iXM"/>
                             <constraint firstItem="IU4-02-pkQ" firstAttribute="top" secondItem="auN-6q-FC1" secondAttribute="bottom" constant="20" id="7YZ-mu-1vB"/>
                             <constraint firstItem="Lsp-fo-Kce" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hcc-Fb-dcu" secondAttribute="leading" constant="20" symbolic="YES" id="8Kq-5t-Xw4"/>
                             <constraint firstItem="auN-6q-FC1" firstAttribute="top" secondItem="2xn-rc-4OS" secondAttribute="bottom" constant="29" id="9jK-Fp-Gc4"/>
@@ -380,6 +381,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="fnK-ve-ILn" secondAttribute="trailing" constant="104" id="YBt-L2-BK3"/>
                             <constraint firstItem="2xn-rc-4OS" firstAttribute="top" secondItem="JFb-a2-avv" secondAttribute="bottom" id="bRk-Jk-mId"/>
                             <constraint firstItem="89U-CU-hbA" firstAttribute="top" secondItem="fnK-ve-ILn" secondAttribute="bottom" constant="20" id="bZQ-5h-GzE"/>
+                            <constraint firstItem="Lsp-fo-Kce" firstAttribute="leading" secondItem="auN-6q-FC1" secondAttribute="trailing" constant="66" id="drD-cq-448"/>
+                            <constraint firstItem="89U-CU-hbA" firstAttribute="leading" secondItem="dNE-23-Y9j" secondAttribute="trailing" constant="71" id="e5n-YC-vJs"/>
+                            <constraint firstItem="Lsp-fo-Kce" firstAttribute="top" secondItem="89U-CU-hbA" secondAttribute="bottom" constant="-34" id="gt9-t7-5sB"/>
                             <constraint firstItem="fnK-ve-ILn" firstAttribute="leading" secondItem="Hcc-Fb-dcu" secondAttribute="leadingMargin" constant="104" id="ht5-Hd-piw"/>
                             <constraint firstItem="2xn-rc-4OS" firstAttribute="leading" secondItem="Hcc-Fb-dcu" secondAttribute="leading" id="ibQ-PK-8uP"/>
                             <constraint firstItem="dNE-23-Y9j" firstAttribute="baseline" secondItem="Lsp-fo-Kce" secondAttribute="baseline" id="oW9-zz-tyY"/>
@@ -391,12 +395,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="9Hy-dm-t17"/>
                     <connections>
-                        <outlet property="infotable" destination="IU4-02-pkQ" id="rqp-mo-YEM"/>
+                        <outlet property="infotable" destination="IU4-02-pkQ" id="21B-ny-gx2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTc-kY-9Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="2584"/>
+            <point key="canvasLocation" x="2293" y="2861"/>
         </scene>
         <!--خدماتنا-->
         <scene sceneID="cl8-rm-esx">
