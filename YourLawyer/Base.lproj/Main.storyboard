@@ -948,14 +948,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCL-l3-I4X">
-                                <rect key="frame" x="53" y="247" width="215" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إضافة ملاحظات ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah1-t1-YbB">
                                 <rect key="frame" x="53" y="378" width="215" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -978,6 +970,14 @@
                                 <color key="tintColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="طلب مرافعة">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCL-l3-I4X">
+                                <rect key="frame" x="53" y="269" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="إضافة ملاحظات ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
@@ -1079,15 +1079,6 @@
                                 <color key="textColor" red="0.091656185686588287" green="0.49049574136734009" blue="0.51015275716781616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-Gc-SxI">
-                                <rect key="frame" x="50" y="442" width="220" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="قبول">
-                                    <color key="titleColor" red="0.93588447570800781" green="0.98198264837265015" blue="0.93707364797592163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGO2" translatesAutoresizingMaskIntoConstraints="NO" id="ZcZ-rk-rxt">
                                 <rect key="frame" x="40" y="39" width="240" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1106,6 +1097,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-Gc-SxI">
+                                <rect key="frame" x="50" y="464" width="220" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="قبول">
+                                    <color key="titleColor" red="0.93588447570800781" green="0.98198264837265015" blue="0.93707364797592163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="tintColor" red="0.091656185686588287" green="0.49049574136734009" blue="0.51015275716781616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
