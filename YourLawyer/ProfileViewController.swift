@@ -30,7 +30,7 @@ class ProfileViewController: UIViewController ,UITableViewDelegate, UITableViewD
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 60
         }
  
     override func didReceiveMemoryWarning() {
