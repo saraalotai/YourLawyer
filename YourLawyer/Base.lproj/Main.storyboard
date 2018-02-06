@@ -148,19 +148,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لا يوجد إشعارات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-Lq-97k">
-                                <rect key="frame" x="102" y="294" width="117" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech-bubble-immigration-lawyers-in-london-uk-visa" translatesAutoresizingMaskIntoConstraints="NO" id="bQH-5B-a42">
+                                <rect key="frame" x="104" y="168" width="113" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="YXz-XC-z4m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لا يوجد إشعارات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-Lq-97k">
+                                <rect key="frame" x="102" y="246" width="117" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="r2P-wk-uc1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech-bubble-immigration-lawyers-in-london-uk-visa" translatesAutoresizingMaskIntoConstraints="NO" id="bQH-5B-a42">
-                                <rect key="frame" x="102" y="206" width="113" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bQH-5B-a42" firstAttribute="leading" secondItem="CAh-cs-4PR" secondAttribute="leadingMargin" constant="88" id="9Oe-Tz-PJk"/>
+                            <constraint firstItem="bQH-5B-a42" firstAttribute="top" secondItem="oRb-va-elZ" secondAttribute="bottom" constant="104" id="HpI-fe-aGW"/>
+                            <constraint firstItem="fjo-Lq-97k" firstAttribute="top" secondItem="bQH-5B-a42" secondAttribute="bottom" constant="8" id="cck-Lg-uTH"/>
+                            <constraint firstItem="fjo-Lq-97k" firstAttribute="leading" secondItem="CAh-cs-4PR" secondAttribute="leadingMargin" constant="86" id="kkB-aq-Z9t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fjo-Lq-97k" secondAttribute="trailing" constant="85" id="p6a-qF-TtC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bQH-5B-a42" secondAttribute="trailing" constant="87" id="peU-BS-VH2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="الإشعارات " id="5Tz-sp-XeX"/>
                 </viewController>
@@ -611,7 +623,7 @@
                         <viewControllerLayoutGuide type="top" id="QI2-96-64p"/>
                         <viewControllerLayoutGuide type="bottom" id="lBa-HQ-FGN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AUd-Hi-PEy" customClass="LawyerProfile">
+                    <view key="view" contentMode="scaleToFill" id="AUd-Hi-PEy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1521,7 +1533,6 @@
                     <navigationItem key="navigationItem" id="2Jd-P3-9h2"/>
                     <connections>
                         <outlet property="mainButton" destination="UvN-oI-bX3" id="2TV-k7-I27"/>
-                        <outlet property="secondButton" destination="qiY-V0-9BQ" id="QdV-wS-4Qm"/>
                         <outlet property="thirdButton" destination="m4G-ft-RGL" id="Fjj-SC-ZWv"/>
                     </connections>
                 </viewController>
@@ -1766,7 +1777,6 @@
         <image name="app-2" width="24" height="24"/>
         <image name="bell" width="24" height="24"/>
         <image name="bg" width="1080" height="2000"/>
-        <image name="chat-bubble-2" width="32" height="32"/>
         <image name="imageView:zFS-8C-vBv:image" width="16" height="16"/>
         <image name="images" width="225" height="225"/>
         <image name="line-black-1px" width="16" height="16"/>
