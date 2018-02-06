@@ -394,23 +394,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-zg-qgy" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="103" y="309" width="60" height="60"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7vM-qf-GD9">
+                                <rect key="frame" x="78" y="144" width="165" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="اتصل بنا"/>
-                                <connections>
-                                    <segue destination="RzM-sC-4GD" kind="push" id="KZu-tM-MTh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-TK-Js8" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="130" y="226" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <size key="titleShadowOffset" width="2" height="0.0"/>
-                                <state key="normal" title="من نحن"/>
-                                <connections>
-                                    <segue destination="cIO-ag-65W" kind="push" id="CBT-iD-2uw"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R6m-5b-p0o">
+                                    <size key="itemSize" width="161" height="89"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mOq-rr-nYr">
+                                        <rect key="frame" x="2" y="0.0" width="161" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="161" height="89"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -747,17 +751,17 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="57" id="hJf-Tz-ccM">
-                                        <rect key="frame" x="0.0" y="400" width="320" height="57"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="51" id="DkG-Vy-iSE">
+                                        <rect key="frame" x="0.0" y="400" width="320" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hJf-Tz-ccM" id="LeG-Fc-CrI">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DkG-Vy-iSE" id="JkM-UK-Zx2">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="50.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYB-QR-NBh">
-                                                    <rect key="frame" x="10" y="5" width="300" height="46.5"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlG-2q-n9e">
+                                                    <rect key="frame" x="10" y="5" width="300" height="40.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="الجنس" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0X-nX-0wW">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="البريد الإلكتروني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrD-QG-PAy">
                                                             <rect key="frame" x="91" y="-10" width="201" height="42"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
@@ -765,17 +769,17 @@
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="A0X-nX-0wW" secondAttribute="bottom" constant="8" id="N0c-Cc-eI9"/>
-                                                        <constraint firstItem="A0X-nX-0wW" firstAttribute="leading" secondItem="PYB-QR-NBh" secondAttribute="leading" constant="8" id="mqc-Oj-SNS"/>
-                                                        <constraint firstItem="A0X-nX-0wW" firstAttribute="top" secondItem="PYB-QR-NBh" secondAttribute="top" constant="8" id="uVG-Sd-HBq"/>
+                                                        <constraint firstItem="NrD-QG-PAy" firstAttribute="leading" secondItem="KlG-2q-n9e" secondAttribute="leading" constant="8" id="3bc-et-p9V"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NrD-QG-PAy" secondAttribute="bottom" constant="8" id="md2-t2-DnZ"/>
+                                                        <constraint firstItem="NrD-QG-PAy" firstAttribute="top" secondItem="KlG-2q-n9e" secondAttribute="top" constant="8" id="qWi-nG-B5R"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PYB-QR-NBh" firstAttribute="top" secondItem="LeG-Fc-CrI" secondAttribute="top" constant="5" id="Jqo-hd-HAo"/>
-                                                <constraint firstAttribute="trailing" secondItem="PYB-QR-NBh" secondAttribute="trailing" constant="10" id="LB8-Mg-nTh"/>
-                                                <constraint firstItem="PYB-QR-NBh" firstAttribute="leading" secondItem="LeG-Fc-CrI" secondAttribute="leading" constant="10" id="avt-ze-Rh9"/>
-                                                <constraint firstAttribute="bottom" secondItem="PYB-QR-NBh" secondAttribute="bottom" constant="5" id="hne-1D-BbR"/>
+                                                <constraint firstItem="KlG-2q-n9e" firstAttribute="leading" secondItem="JkM-UK-Zx2" secondAttribute="leading" constant="10" id="HkN-j4-Kgz"/>
+                                                <constraint firstAttribute="trailing" secondItem="KlG-2q-n9e" secondAttribute="trailing" constant="10" id="OKF-2s-BeZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="KlG-2q-n9e" secondAttribute="bottom" constant="5" id="hIC-IM-ZHo"/>
+                                                <constraint firstItem="KlG-2q-n9e" firstAttribute="top" secondItem="JkM-UK-Zx2" secondAttribute="top" constant="5" id="v5m-3l-zQt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1482,14 +1486,43 @@
                                 <rect key="frame" x="96" y="163" width="140" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="chat-bubble-2"/>
+                                <state key="normal" image="about-us"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4G-ft-RGL">
+                                <rect key="frame" x="62" y="381" width="196" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="telephone"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تقديم استشارات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-Vv-BB7">
+                                <rect key="frame" x="62" y="165" width="196" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="من نحن" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qR-mu-81T">
+                                <rect key="frame" x="62" y="337" width="196" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اتصل بنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-cp-CYe">
+                                <rect key="frame" x="62" y="501" width="196" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Jd-P3-9h2"/>
                     <connections>
                         <outlet property="mainButton" destination="UvN-oI-bX3" id="2TV-k7-I27"/>
+                        <outlet property="secondButton" destination="qiY-V0-9BQ" id="QdV-wS-4Qm"/>
+                        <outlet property="thirdButton" destination="m4G-ft-RGL" id="Fjj-SC-ZWv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2c7-AU-hXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1728,6 +1761,7 @@
     <resources>
         <image name="Email-Icon" width="512" height="512"/>
         <image name="LOGO2" width="500" height="500"/>
+        <image name="about-us" width="64" height="64"/>
         <image name="add-2" width="24" height="24"/>
         <image name="app-2" width="24" height="24"/>
         <image name="bell" width="24" height="24"/>
@@ -1742,6 +1776,7 @@
         <image name="profile-2" width="24" height="24"/>
         <image name="speech-bubble-immigration-lawyers-in-london-uk-visa" width="512" height="512"/>
         <image name="speech-bubble-with-text-lines" width="24" height="24"/>
+        <image name="telephone" width="64" height="64"/>
         <image name="twitter-xxl" width="256" height="256"/>
         <image name="user" width="32" height="32"/>
     </resources>
