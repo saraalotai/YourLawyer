@@ -8,7 +8,9 @@
 
 import UIKit
 
-class LawyerProfilesViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
+class LawyerProfilesViewController: UIViewController , UITableViewDelegate , UITableViewDataSource , UINavigationControllerDelegate , UIImagePickerControllerDelegate{
+    
+    @IBOutlet weak var profileL: UIImageView!
     @IBOutlet weak var edit: UIBarButtonItem!
     @IBOutlet weak var tableview: UITableView!
 
@@ -25,6 +27,27 @@ class LawyerProfilesViewController: UIViewController , UITableViewDelegate , UIT
 
         
         // Do any additional setup after loading the view.
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        profileL.image = selectedImage
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let controller = UIImagePickerController()
+        controller.delegate=self
+        controller.sourceType = .photoLibrary
+        
+        present(controller, animated: true, completion: nil)
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4

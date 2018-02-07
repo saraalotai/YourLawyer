@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -673,25 +674,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female-shadow-fill-circle-512" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-8C-vBv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="female-shadow-fill-circle-512" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-5C-vBv">
                                 <rect key="frame" x="121" y="72" width="81" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="81" id="FJL-n6-a4t"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="إجمالي الاستشارات المطروحة" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-LJ-5G8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الاستشارات المطروحة" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-LJ-5G9">
                                 <rect key="frame" x="178" y="163" width="126" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.1603435359589041" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="Gw5-Ux-5rr"/>
-                                    <constraint firstAttribute="height" constant="70" id="Vyb-9L-ci0"/>
-                                </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="إجمالي الخدمات المجانية" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rMD-1u-OB6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الخدمات المجانية" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rMD-1u-OB4">
                                 <rect key="frame" x="26" y="163" width="126" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.16034353600000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -734,11 +731,11 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-8C-vBv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-6C-vBv">
                                 <rect key="frame" x="121" y="72" width="81" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الاستشارات المطروحة" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-LJ-5G8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الاستشارات المطروحة" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-LJ-5G7">
                                 <rect key="frame" x="178" y="163" width="126" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.1603435359589041" colorSpace="custom" customColorSpace="sRGB"/>
@@ -746,7 +743,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الخدمات المجانية" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rMD-1u-OB6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الخدمات المجانية" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rMD-1u-OB5">
                                 <rect key="frame" x="26" y="163" width="126" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.16034353600000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -757,18 +754,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="bottom" secondItem="rMD-1u-OB6" secondAttribute="bottom" id="12e-sB-9ji"/>
-                            <constraint firstItem="tYm-gf-qkF" firstAttribute="top" secondItem="TMW-LJ-5G8" secondAttribute="bottom" constant="23" id="2xH-xD-c7E"/>
                             <constraint firstItem="lBa-HQ-FGN" firstAttribute="top" secondItem="tYm-gf-qkF" secondAttribute="bottom" id="85o-NR-qVK"/>
-                            <constraint firstItem="zFS-8C-vBv" firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leading" constant="121" id="AQ7-t8-FHM"/>
-                            <constraint firstItem="rMD-1u-OB6" firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leadingMargin" constant="10" id="Dry-vX-z5I"/>
+                            <constraint firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leading" constant="121" id="AQ7-t8-FHM"/>
+                            <constraint firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leadingMargin" constant="10" id="Dry-vX-z5I"/>
                             <constraint firstAttribute="trailing" secondItem="tYm-gf-qkF" secondAttribute="trailing" id="HAK-Ip-B86"/>
                             <constraint firstItem="tYm-gf-qkF" firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leading" id="MHw-lP-jal"/>
-                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="trailing" secondItem="AUd-Hi-PEy" secondAttribute="trailingMargin" id="QVR-qe-FMm"/>
-                            <constraint firstItem="zFS-8C-vBv" firstAttribute="top" secondItem="QI2-96-64p" secondAttribute="bottom" constant="8" symbolic="YES" id="bzz-kd-AWr"/>
-                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="top" secondItem="zFS-8C-vBv" secondAttribute="bottom" constant="28" id="hKJ-zo-EFM"/>
-                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="top" secondItem="rMD-1u-OB6" secondAttribute="top" id="lWD-0v-isF"/>
-                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="leading" secondItem="rMD-1u-OB6" secondAttribute="trailing" constant="26" id="sQ2-R0-7RQ"/>
+                            <constraint firstAttribute="trailing" secondItem="AUd-Hi-PEy" secondAttribute="trailingMargin" id="QVR-qe-FMm"/>
+                            <constraint firstAttribute="top" secondItem="QI2-96-64p" secondAttribute="bottom" symbolic="YES" id="bzz-kd-AWr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ملفي الشخصي" id="NGi-Jy-8hH">
@@ -780,6 +772,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="edit" destination="bBv-al-gOz" id="7Ia-IZ-4HN"/>
+                        <outlet property="profileL" destination="zFS-6C-vBv" id="62s-0R-H9k"/>
                         <outlet property="tableview" destination="tYm-gf-qkF" id="HY7-hB-OZE"/>
                     </connections>
                 </viewController>
@@ -1958,6 +1951,7 @@
         <image name="bell" width="24" height="24"/>
         <image name="bg" width="1080" height="2000"/>
         <image name="chat-bubbles" width="64" height="64"/>
+        <image name="female-shadow-fill-circle-512" width="16" height="16"/>
         <image name="images" width="225" height="225"/>
         <image name="line-black-1px" width="16" height="16"/>
         <image name="list-square-rounded-interface-symbol-2" width="24" height="24"/>
