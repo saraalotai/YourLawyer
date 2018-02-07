@@ -55,6 +55,7 @@ class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerVi
         if pickerView == dropIssue{
             self.issueType.text = issue[row]
             self.dropIssue.isHidden = true
+            
         }
         else if pickerView == dropLawyer{
             self.lawyer.text = lawyers[row]
