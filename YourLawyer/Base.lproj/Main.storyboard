@@ -207,7 +207,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tK8-3e-LwO">
                                                     <rect key="frame" x="10" y="5" width="267" height="100"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="ZI6-Hw-U7c">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="ZI6-Hw-U7c">
                                                             <rect key="frame" x="179" y="8" width="80" height="80"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="2x1-ZQ-rtQ"/>
@@ -338,7 +338,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="fnK-ve-ILn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="fnK-ve-ILn">
                                 <rect key="frame" x="120" y="134" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="bA9-xH-1G2"/>
@@ -2006,6 +2006,7 @@
         <image name="about-us" width="64" height="64"/>
         <image name="add-2" width="24" height="24"/>
         <image name="app-2" width="24" height="24"/>
+        <image name="avatar" width="241" height="240"/>
         <image name="bell" width="24" height="24"/>
         <image name="bg" width="1080" height="2000"/>
         <image name="chat-bubbles" width="64" height="64"/>
@@ -2020,7 +2021,6 @@
         <image name="speech-bubble-with-text-lines" width="24" height="24"/>
         <image name="telephone" width="64" height="64"/>
         <image name="twitter-xxl" width="256" height="256"/>
-        <image name="user" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qeJ-gL-LRU"/>

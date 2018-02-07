@@ -34,7 +34,7 @@ class LawyerListViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableview.dequeueReusableCell(withIdentifier: "customCell") as! CustomTableView
         cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
         cell.lawerName.text = names[indexPath.row]
-        cell.lawerImage.image = UIImage(named: "user.png")
+        cell.lawerImage.image = UIImage(named: "avatar.png")
         cell.lawerImage.layer.cornerRadius = cell.lawerImage.frame.height / 2
         cell.lawerImage.clipsToBounds = true
         return cell
