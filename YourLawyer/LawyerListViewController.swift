@@ -13,6 +13,7 @@ class LawyerListViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var tableview: UITableView!
      @IBOutlet weak internal var edit: UIBarButtonItem!
     
+    @IBOutlet weak var lawyername: UILabel!
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
@@ -26,7 +27,7 @@ class LawyerListViewController: UIViewController, UITableViewDelegate, UITableVi
         return names.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 110
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,6 +36,7 @@ class LawyerListViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.lawerName.text = names[indexPath.row]
         cell.lawerImage.image = UIImage(named: "user.png")
         cell.lawerImage.layer.cornerRadius = cell.lawerImage.frame.height / 2
+        cell.lawerImage.clipsToBounds = true
         return cell
     }
     

@@ -13,12 +13,15 @@
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
 		0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419F6242023B15000637FE9 /* RoundedButton.swift */; };
 		044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
+		045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */; };
 		CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED5201E581000CBFA83 /* AppDelegate.swift */; };
 		CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED7201E581000CBFA83 /* ViewController.swift */; };
 		CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CED9201E581000CBFA83 /* Main.storyboard */; };
 		CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDC201E581000CBFA83 /* Assets.xcassets */; };
 		CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
 		CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC592E0E2020F74D007B9082 /* DesignableTextField.swift */; };
+		CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18C2028DEC600B20910 /* IssueViewController.swift */; };
+		CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18E202B393600B20910 /* LawyersVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,7 @@
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
 		0419F6242023B15000637FE9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		CC13CED2201E581000CBFA83 /* YourLawyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLawyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC13CED5201E581000CBFA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC13CED7201E581000CBFA83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		CC13CEDF201E581000CBFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC13CEE1201E581000CBFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC592E0E2020F74D007B9082 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		CC86E18C2028DEC600B20910 /* IssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
+		CC86E18E202B393600B20910 /* LawyersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
 				CC13CED7201E581000CBFA83 /* ViewController.swift */,
 				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
+				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
 				CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
 				040BA70B202A203F00C4B69E /* LawyerProfilesViewController.swift */,
@@ -89,6 +96,8 @@
 				CC592E0E2020F74D007B9082 /* DesignableTextField.swift */,
 				0419F6242023B15000637FE9 /* RoundedButton.swift */,
 				0440884F2027369900A33AC8 /* CustomTableView.swift */,
+				045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */,
+				CC86E18E202B393600B20910 /* LawyersVC.swift */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";
@@ -166,9 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
+				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
 				CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */,
 				044088502027369900A33AC8 /* CustomTableView.swift in Sources */,
 				04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */,
+				CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */,
+				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				040BA70E202A208900C4B69E /* DataTableViewCell.swift in Sources */,
@@ -311,7 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J42QQL7R2N;
+				DEVELOPMENT_TEAM = K8ATRJ3648;
 				INFOPLIST_FILE = YourLawyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksu.YourLawyer;
@@ -326,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J42QQL7R2N;
+				DEVELOPMENT_TEAM = K8ATRJ3648;
 				INFOPLIST_FILE = YourLawyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksu.YourLawyer;
