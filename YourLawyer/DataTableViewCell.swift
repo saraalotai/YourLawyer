@@ -9,10 +9,10 @@
 import UIKit
 
 class DataTableViewCell: UITableViewCell  {
-    @IBOutlet weak var title: UILabel!
-   
-    @IBOutlet weak var subTitle: UILabel!
+
     
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
