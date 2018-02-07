@@ -14,34 +14,33 @@ class LawyerProfilesViewController: UIViewController , UITableViewDelegate , UIT
 
      let str = ["معلومات الحساب","اسم المحامي الكامل" , "البريد الإلكتروني" , "رقم الجوال"]
    
+    override func viewDidLoad() {
+        
+        tableview.delegate = self
+        tableview.dataSource = self
+        super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "تعديل", style: .plain, target: self, action: #selector(getter: edit))
+        
 
+        
+        // Do any additional setup after loading the view.
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview.dequeueReusableCell(withIdentifier: "cellT") as! DataTableViewCell
+        let cell = tableview.dequeueReusableCell(withIdentifier: "cell") as! DataTableViewCell
         
       cell.title.text = str[indexPath.row]
         
         return cell
     }
     
-   
     
     
-    override func viewDidLoad() {
-        
-        tableview.delegate = self
-        tableview.dataSource = self
-        super.viewDidLoad()
-       
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "تعديل", style: .plain, target: self, action: #selector(getter: edit))
-        
-    
-        
-        // Do any additional setup after loading the view.
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -673,11 +673,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tYm-gf-qkF">
-                                <rect key="frame" x="0.0" y="229" width="320" height="290"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female-shadow-fill-circle-512" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-8C-vBv">
+                                <rect key="frame" x="121" y="72" width="81" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="FJL-n6-a4t"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="إجمالي الاستشارات المطروحة" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-LJ-5G8">
+                                <rect key="frame" x="178" y="163" width="126" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.1603435359589041" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="Gw5-Ux-5rr"/>
+                                    <constraint firstAttribute="height" constant="70" id="Vyb-9L-ci0"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="إجمالي الخدمات المجانية" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rMD-1u-OB6">
+                                <rect key="frame" x="26" y="163" width="126" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.16034353600000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tYm-gf-qkF">
+                                <rect key="frame" x="0.0" y="256" width="320" height="263"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="263" id="lG0-0X-70d"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="1wn-w2-5st" detailTextLabel="dOH-b9-DHB" style="IBUITableViewCellStyleSubtitle" id="0Iv-x9-CXi" customClass="DataTableViewCell" customModule="YourLawyer" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cellT" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="1wn-w2-5st" detailTextLabel="dOH-b9-DHB" style="IBUITableViewCellStyleSubtitle" id="0Iv-x9-CXi" customClass="DataTableViewCell" customModule="YourLawyer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Iv-x9-CXi" id="wGj-2b-MgX">
@@ -701,39 +728,27 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="subTitle" destination="dOH-b9-DHB" id="A0r-9F-WHo"/>
-                                            <outlet property="title" destination="1wn-w2-5st" id="Mf1-AU-Tm9"/>
+                                            <outlet property="subtitle" destination="dOH-b9-DHB" id="ukZ-fS-n1n"/>
+                                            <outlet property="title" destination="1wn-w2-5st" id="hi4-0M-6ua"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="female-shadow-fill-circle-512" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-8C-vBv">
-                                <rect key="frame" x="121" y="72" width="81" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الاستشارات المطروحة" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-LJ-5G8">
-                                <rect key="frame" x="178" y="163" width="126" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.1603435359589041" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الخدمات المجانية" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rMD-1u-OB6">
-                                <rect key="frame" x="26" y="163" width="126" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.16034353600000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lBa-HQ-FGN" firstAttribute="top" secondItem="tYm-gf-qkF" secondAttribute="bottom" id="2y3-eg-vhQ"/>
-                            <constraint firstItem="tYm-gf-qkF" firstAttribute="top" secondItem="QI2-96-64p" secondAttribute="bottom" id="JcQ-3O-D3S"/>
-                            <constraint firstItem="tYm-gf-qkF" firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leading" id="McB-Pn-tZE"/>
-                            <constraint firstAttribute="trailing" secondItem="tYm-gf-qkF" secondAttribute="trailing" id="ey9-0G-dhy"/>
+                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="bottom" secondItem="rMD-1u-OB6" secondAttribute="bottom" id="12e-sB-9ji"/>
+                            <constraint firstItem="tYm-gf-qkF" firstAttribute="top" secondItem="TMW-LJ-5G8" secondAttribute="bottom" constant="23" id="2xH-xD-c7E"/>
+                            <constraint firstItem="lBa-HQ-FGN" firstAttribute="top" secondItem="tYm-gf-qkF" secondAttribute="bottom" id="85o-NR-qVK"/>
+                            <constraint firstItem="zFS-8C-vBv" firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leading" constant="121" id="AQ7-t8-FHM"/>
+                            <constraint firstItem="rMD-1u-OB6" firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leadingMargin" constant="10" id="Dry-vX-z5I"/>
+                            <constraint firstAttribute="trailing" secondItem="tYm-gf-qkF" secondAttribute="trailing" id="HAK-Ip-B86"/>
+                            <constraint firstItem="tYm-gf-qkF" firstAttribute="leading" secondItem="AUd-Hi-PEy" secondAttribute="leading" id="MHw-lP-jal"/>
+                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="trailing" secondItem="AUd-Hi-PEy" secondAttribute="trailingMargin" id="QVR-qe-FMm"/>
+                            <constraint firstItem="zFS-8C-vBv" firstAttribute="top" secondItem="QI2-96-64p" secondAttribute="bottom" constant="8" symbolic="YES" id="bzz-kd-AWr"/>
+                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="top" secondItem="zFS-8C-vBv" secondAttribute="bottom" constant="28" id="hKJ-zo-EFM"/>
+                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="top" secondItem="rMD-1u-OB6" secondAttribute="top" id="lWD-0v-isF"/>
+                            <constraint firstItem="TMW-LJ-5G8" firstAttribute="leading" secondItem="rMD-1u-OB6" secondAttribute="trailing" constant="26" id="sQ2-R0-7RQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ملفي الشخصي" id="NGi-Jy-8hH">
@@ -1923,7 +1938,7 @@
         <image name="bell" width="24" height="24"/>
         <image name="bg" width="1080" height="2000"/>
         <image name="chat-bubbles" width="64" height="64"/>
-        <image name="imageView:zFS-8C-vBv:image" width="16" height="16"/>
+        <image name="female-shadow-fill-circle-512" width="512" height="512"/>
         <image name="images" width="225" height="225"/>
         <image name="line-black-1px" width="16" height="16"/>
         <image name="list-square-rounded-interface-symbol-2" width="24" height="24"/>
