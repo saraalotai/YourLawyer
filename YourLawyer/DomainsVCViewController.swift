@@ -1,43 +1,43 @@
 //
-//  ProfileViewController.swift
+//  DomainsVCViewController.swift
 //  YourLawyer
 //
-//  Created by mac on ٢٠ جما١، ١٤٣٩ هـ.
-//  Copyright © ١٤٣٩ هـ mac pro retina. All rights reserved.
+//  Created by mac pro retina on 2/7/18.
+//  Copyright © 2018 mac pro retina. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
-    @IBOutlet weak var infotable: UITableView!
-    let info = ["الاسم","اسم الشركة","البريد الإلكتوني","المجالات التي يعمل بها "]
-    
-    override func viewDidLoad() {
-        infotable.delegate = self
-        infotable.dataSource = self
-        super.viewDidLoad()
-        
-    }
+class DomainsVCViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
+    let legaldomain = ["first","second","third","fourth"]
+     @IBOutlet weak var domains: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return legaldomain.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let infocell = infotable.dequeueReusableCell(withIdentifier: "infoCell") as! InfoTableViewCell
-        infocell.title.text = info[indexPath.row]
-        return infocell
+        let cell = domains.dequeueReusableCell(withIdentifier: "domaincell") as! DisplayDomainsTableViewCell
+        cell.title.text = legaldomain[indexPath.row]
+        return cell
     }
-    
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
-        }
- 
+     return 60
+    }
+   
+    override func viewDidLoad() {
+        domains.delegate = self
+        domains.dataSource = self
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    
     }
+    
+
     /*
     // MARK: - Navigation
 
@@ -49,4 +49,3 @@ class ProfileViewController: UIViewController ,UITableViewDelegate, UITableViewD
     */
 
 }
-
