@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
-		040BA70C202A203F00C4B69E /* LawyerProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA70B202A203F00C4B69E /* LawyerProfilesViewController.swift */; };
-		040BA70E202A208900C4B69E /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA70D202A208900C4B69E /* DataTableViewCell.swift */; };
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
 		0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419F6242023B15000637FE9 /* RoundedButton.swift */; };
 		044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
@@ -24,12 +22,12 @@
 		CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18E202B393600B20910 /* LawyersVC.swift */; };
 		CC86E191202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E190202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift */; };
 		CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */; };
+		CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC25857202C744700641CB5 /* ProfileVC.swift */; };
+		CCC2585A202C7AA000641CB5 /* ProfileDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
-		040BA70B202A203F00C4B69E /* LawyerProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerProfilesViewController.swift; sourceTree = "<group>"; };
-		040BA70D202A208900C4B69E /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
 		0419F6242023B15000637FE9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
@@ -46,6 +44,8 @@
 		CC86E18E202B393600B20910 /* LawyersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersVC.swift; sourceTree = "<group>"; };
 		CC86E190202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDomainsTableViewCell.swift; sourceTree = "<group>"; };
 		CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainsVCViewController.swift; sourceTree = "<group>"; };
+		CCC25857202C744700641CB5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,6 @@
 				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
 				CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
-				040BA70B202A203F00C4B69E /* LawyerProfilesViewController.swift */,
-				040BA70D202A208900C4B69E /* DataTableViewCell.swift */,
 				040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
 				CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */,
 				CC13CEE1201E581000CBFA83 /* Info.plist */,
@@ -104,6 +102,8 @@
 				CC86E18E202B393600B20910 /* LawyersVC.swift */,
 				CC86E190202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift */,
 				CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */,
+				CCC25857202C744700641CB5 /* ProfileVC.swift */,
+				CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";
@@ -181,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC86E191202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift in Sources */,
+				CCC2585A202C7AA000641CB5 /* ProfileDataTableViewCell.swift in Sources */,
 				CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
 				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
 				CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */,
@@ -188,10 +189,10 @@
 				04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */,
 				CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */,
 				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
+				CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
-				0409E6022028FE1C00E87A33 /* CTableViewCell.swift in Sources */,
 				040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

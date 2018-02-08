@@ -1,16 +1,15 @@
 //
-//  DataTableViewCell.swift
+//  ProfileDataTableViewCell.swift
 //  YourLawyer
 //
-//  Created by MAC on 20/05/1439 AH.
-//  Copyright © 1439 mac pro retina. All rights reserved.
+//  Created by mac pro retina on 2/8/18.
+//  Copyright © 2018 mac pro retina. All rights reserved.
 //
 
 import UIKit
 
-class DataTableViewCell: UITableViewCell  {
+class ProfileDataTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var subtitle: UILabel!
     override func awakeFromNib() {
