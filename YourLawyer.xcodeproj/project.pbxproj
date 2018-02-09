@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
 		040BA710202DA65A00C4B69E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA70F202DA65A00C4B69E /* NotificationViewController.swift */; };
+		040BA714202DAB7900C4B69E /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA713202DAB7900C4B69E /* CTableViewCell.swift */; };
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
 		0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419F6242023B15000637FE9 /* RoundedButton.swift */; };
 		044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		040BA70F202DA65A00C4B69E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		040BA713202DAB7900C4B69E /* CTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
 		0419F6242023B15000637FE9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		CC13CEC9201E581000CBFA83 = {
 			isa = PBXGroup;
 			children = (
+				040BA713202DAB7900C4B69E /* CTableViewCell.swift */,
 				CC13CED4201E581000CBFA83 /* YourLawyer */,
 				CC13CED3201E581000CBFA83 /* Products */,
 				0473E73D20248335003C658A /* Recovered References */,
@@ -188,6 +191,7 @@
 				CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
 				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
 				CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */,
+				040BA714202DAB7900C4B69E /* CTableViewCell.swift in Sources */,
 				040BA710202DA65A00C4B69E /* NotificationViewController.swift in Sources */,
 				044088502027369900A33AC8 /* CustomTableView.swift in Sources */,
 				04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */,
