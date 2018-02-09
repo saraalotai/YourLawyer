@@ -47,6 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, willChangeStatusBarFrame newStatusBarFrame: CGRect) {
+        let windows = UIApplication.shared.windows
+        for window in windows {
+            window.removeConstraints(window.constraints)
+        }
+    }
 }
 
