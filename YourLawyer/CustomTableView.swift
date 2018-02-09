@@ -9,6 +9,8 @@
 import UIKit
 class CustomTableView : UITableViewCell
 {
+    @IBOutlet weak var notifi: UILabel!
+    @IBOutlet weak var notiView: UIView!
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var lawerImage: UIImageView!
     @IBOutlet weak var lawerName: UILabel!
