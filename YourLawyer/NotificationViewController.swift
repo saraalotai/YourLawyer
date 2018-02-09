@@ -22,7 +22,7 @@ class NotificationViewController: UIViewController , UITableViewDelegate, UITabl
         return 110
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let str = notifiTable.dequeueReusableCell(withIdentifier: "notifiCel") as! CustomTableView
+        let str = notifiTable.dequeueReusableCell(withIdentifier: "notifiCel") as! CTableViewCell
         str.cellView.layer.cornerRadius = str.cellView.frame.height / 2
         str.notifi.text = notifis[indexPath.row]
         
