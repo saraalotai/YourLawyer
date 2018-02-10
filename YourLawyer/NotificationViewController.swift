@@ -13,7 +13,13 @@ class NotificationViewController: UIViewController , UITableViewDelegate, UITabl
     
     @IBOutlet weak var notifiTable: UITableView!
     
-    
+    override func viewDidLoad() {
+        notifiTable.delegate = self
+        notifiTable.dataSource = self
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notifis.count
     }
@@ -22,7 +28,7 @@ class NotificationViewController: UIViewController , UITableViewDelegate, UITabl
         return 110
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let str = notifiTable.dequeueReusableCell(withIdentifier: "notifiCel") as! CTableViewCell
+        let str = notifiTable.dequeueReusableCell(withIdentifier: "notifiCel") as! CellNTableViewCell
         str.cellView.layer.cornerRadius = str.cellView.frame.height / 2
         str.notifi.text = notifis[indexPath.row]
         
@@ -30,13 +36,7 @@ class NotificationViewController: UIViewController , UITableViewDelegate, UITabl
     }
     
 
-    override func viewDidLoad() {
-        notifiTable.delegate = self
-        notifiTable.dataSource = self
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
