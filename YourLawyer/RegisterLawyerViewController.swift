@@ -41,8 +41,23 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
            cardimg.image = image
+            //upload image
+            let storageRef = Storage.storage().reference(forURL: "gs://mylawyer-f867a.appspot.com")
+            var data = NSData()
+            data = (UIImageJPEGRepresentation(image , 0.8) as? NSData)!
+            let dataFormat = DateFormatter()
+            dataFormat.dateFormat = "MM_DD_yy_hh_mm_a"
+            let imageName = "\(self.UserUID)_\(dataFormat.string(from: NSDate() as Date))"
+            let imagepath = "cardimages/\(imageName).jpg"
+            let childUserImages = storageRef.child(imagepath)
+            let metaData = StorageMetadata()
+            metaData.contentType = "image/jpeg"
+            childUserImages.putData(data as Data, metadata: metaData)
         }
+        imagePacker.dismiss(animated: true, completion: nil)
     }
+    var UserUID:String?
+    
     @IBAction func regButton(_ sender: Any) {
         Auth.auth().createUser(withEmail: emailTF.text! , password: passwordTF.text!) { (user, error) in
             if let error = error{
@@ -50,6 +65,7 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
                 
             }else{
                 print("User ID: \(user?.uid)")
+                self.UserUID = user!.uid
             }
         }
         
