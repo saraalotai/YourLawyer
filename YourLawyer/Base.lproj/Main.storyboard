@@ -886,6 +886,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="إضافة إتفاقية"/>
+                                <connections>
+                                    <segue destination="Q24-Ou-Kln" kind="push" id="tbH-9A-UXr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -894,6 +897,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xou-hr-qxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3374" y="-88"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rvH-dK-0K9">
+            <objects>
+                <viewController id="Q24-Ou-Kln" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ahB-AT-3RH"/>
+                        <viewControllerLayoutGuide type="bottom" id="vhv-E7-NwB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DpU-79-XmZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لتنزيل نماذج اتفاقية اضغط هنا " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gah-Oo-VoE">
+                                <rect key="frame" x="51" y="73" width="219" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECq-BG-DZf">
+                                <rect key="frame" x="40" y="161" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="تنزيل الملف">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DXM-cl-Zxq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uri-5b-Abt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3925" y="-88"/>
         </scene>
         <!--ملفي الشخصي-->
         <scene sceneID="i9z-ca-21H">
@@ -2468,7 +2508,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aMC-3B-7zR"/>
-        <segue reference="OH2-I3-EhP"/>
+        <segue reference="1lc-dv-EeB"/>
         <segue reference="nkK-bw-TYg"/>
         <segue reference="01D-dO-EyT"/>
         <segue reference="qeJ-gL-LRU"/>
