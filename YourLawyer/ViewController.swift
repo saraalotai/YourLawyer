@@ -7,21 +7,31 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
     }
   
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func loginButton(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!) { (user, error) in
+            if let error = error{
+                print(error)
+                
+            }else{
+                print("User ID: \(user?.uid)")
+            }
+        }
     }
-  
+    
 
 }
 

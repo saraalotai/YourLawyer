@@ -28,6 +28,7 @@
 		CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC25857202C744700641CB5 /* ProfileVC.swift */; };
 		CCC2585A202C7AA000641CB5 /* ProfileDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */; };
 		CCC2585C202E1C8D00641CB5 /* CellNTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */; };
+		CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		CCC25857202C744700641CB5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataTableViewCell.swift; sourceTree = "<group>"; };
 		CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNTableViewCell.swift; sourceTree = "<group>"; };
+		CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLawyerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				CCC25857202C744700641CB5 /* ProfileVC.swift */,
 				CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */,
 				CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */,
+				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
 				CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
+				CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
 				040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */,
