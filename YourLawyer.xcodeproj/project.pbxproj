@@ -14,8 +14,7 @@
 		044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
 		0456A3CF203052FF00323026 /* ListIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */; };
 		0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3D0203053EA00323026 /* ListIssuesViewController.swift */; };
-		0456A3D520307A6700323026 /* LawyerIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3D420307A6700323026 /* LawyerIssueTableViewCell.swift */; };
-		0456A3DB20307DFC00323026 /* lawIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3DA20307DFC00323026 /* lawIssuesViewController.swift */; };
+		0456A3DD2030918700323026 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0456A3DC2030918700323026 /* GoogleService-Info.plist */; };
 		045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */; };
 		99282BFA20308EEF0049CD62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99282BF920308EEF0049CD62 /* GoogleService-Info.plist */; };
 		A251A0057CFBDE3130502092 /* Pods_YourLawyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8911963875F60E30F3265A4 /* Pods_YourLawyer.framework */; };
@@ -43,8 +42,7 @@
 		0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIssueTableViewCell.swift; sourceTree = "<group>"; };
 		0456A3D0203053EA00323026 /* ListIssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIssuesViewController.swift; sourceTree = "<group>"; };
-		0456A3D420307A6700323026 /* LawyerIssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerIssueTableViewCell.swift; sourceTree = "<group>"; };
-		0456A3DA20307DFC00323026 /* lawIssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lawIssuesViewController.swift; sourceTree = "<group>"; };
+		0456A3DC2030918700323026 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		4429F85A8E80132FBC4E13AC /* Pods-YourLawyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.debug.xcconfig"; sourceTree = "<group>"; };
 		5A90D45D355DA3FBAAC436FF /* Pods-YourLawyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.release.xcconfig"; sourceTree = "<group>"; };
