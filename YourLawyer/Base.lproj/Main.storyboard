@@ -1330,22 +1330,22 @@
                                     <segue destination="lCL-5W-uNN" kind="push" id="60M-Oc-2jq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4p-ky-FAc" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="62" y="107" width="196" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="تآكيد المرافعة"/>
-                                <connections>
-                                    <segue destination="8X0-HY-S7v" kind="push" id="okl-YZ-mno"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLX-Zp-QHl" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="62" y="399" width="196" height="99"/>
+                                <rect key="frame" x="62" y="389" width="196" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="إضافة سؤال"/>
                                 <connections>
                                     <segue destination="D7n-YO-A6I" kind="push" id="XuD-bJ-L02"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4p-ky-FAc" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
+                                <rect key="frame" x="62" y="123" width="196" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="تآكيد المرافعة"/>
+                                <connections>
+                                    <segue destination="8X0-HY-S7v" kind="push" id="okl-YZ-mno"/>
                                 </connections>
                             </button>
                         </subviews>
