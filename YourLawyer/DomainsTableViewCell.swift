@@ -1,18 +1,16 @@
 //
-//  CellNTableViewCell.swift
+//  DomainsTableViewCell.swift
 //  YourLawyer
 //
-//  Created by mac pro retina on 2/9/18.
-//  Copyright © 2018 mac pro retina. All rights reserved.
+//  Created by mac on ٢٥ جما١، ١٤٣٩ هـ.
+//  Copyright © ١٤٣٩ هـ mac pro retina. All rights reserved.
 //
 
 import UIKit
 
-class CellNTableViewCell: UITableViewCell {
+class DomainsTableViewCell: UITableViewCell {
 
-
-    @IBOutlet weak var left: UILabel!
-    @IBOutlet weak var right: UILabel!
+    @IBOutlet weak var title: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

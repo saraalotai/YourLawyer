@@ -11,6 +11,7 @@ import UIKit
 class LawyersVC: UIViewController ,UITableViewDelegate, UITableViewDataSource{
     let info = ["الاسم","اسم الشركة","البريد الإلكتوني","المجالات التي يعمل بها "]
     
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var infotable: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return 4
@@ -28,6 +29,8 @@ class LawyersVC: UIViewController ,UITableViewDelegate, UITableViewDataSource{
     override func viewDidLoad() {
         infotable.delegate = self
         infotable.dataSource = self
+        self.image.layer.cornerRadius = image.frame.size.height / 2
+        self.image.clipsToBounds = true
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
