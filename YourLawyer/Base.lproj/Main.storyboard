@@ -577,7 +577,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3mS-7y-LcG" id="qj5-fV-fri">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="107.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="96.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vEM-LP-OB1">
@@ -612,7 +612,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ القضية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87X-u7-16j">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ القضية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87X-u7-19j">
                                                             <rect key="frame" x="164" y="57" width="78" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -627,7 +627,6 @@
                                         <connections>
                                             <outlet property="cellview" destination="vEM-LP-OB1" id="38Z-2X-k9V"/>
                                             <outlet property="date" destination="Tk4-CO-mrM" id="2AP-7o-RCO"/>
-                                            <outlet property="status" destination="Nlz-Qr-7r7" id="Lo4-JX-TjB"/>
                                             <outlet property="subject" destination="JJs-X8-6nd" id="CQt-Jk-SD4"/>
                                         </connections>
                                     </tableViewCell>
@@ -2678,7 +2677,6 @@
         <image name="twitter-xxl" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OH2-I3-EhP"/>
         <segue reference="Spd-qS-zgg"/>
         <segue reference="omN-iN-nFL"/>
         <segue reference="qeJ-gL-LRU"/>

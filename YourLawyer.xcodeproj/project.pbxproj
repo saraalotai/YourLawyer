@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
 		040BA710202DA65A00C4B69E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA70F202DA65A00C4B69E /* NotificationViewController.swift */; };
-		0413AA0F20308DFF003BAB64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0413AA0E20308DFF003BAB64 /* GoogleService-Info.plist */; };
 		0413AA112030BB43003BAB64 /* ListDomainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413AA102030BB43003BAB64 /* ListDomainsViewController.swift */; };
 		0413AA132030BC1C003BAB64 /* DomainsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413AA122030BC1C003BAB64 /* DomainsTableViewCell.swift */; };
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
@@ -17,11 +16,9 @@
 		044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
 		0456A3CF203052FF00323026 /* ListIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */; };
 		0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3D0203053EA00323026 /* ListIssuesViewController.swift */; };
-		0456A3DD2030918700323026 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0456A3DC2030918700323026 /* GoogleService-Info.plist */; };
 		045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */; };
-		99282BFA20308EEF0049CD62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99282BF920308EEF0049CD62 /* GoogleService-Info.plist */; };
 		A251A0057CFBDE3130502092 /* Pods_YourLawyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8911963875F60E30F3265A4 /* Pods_YourLawyer.framework */; };
-		CC11876E2030CE9400C82D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC11876D2030CE9300C82D73 /* GoogleService-Info.plist */; };
+		CC1187712030D56200C82D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC1187702030D56100C82D73 /* GoogleService-Info.plist */; };
 		CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED5201E581000CBFA83 /* AppDelegate.swift */; };
 		CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED7201E581000CBFA83 /* ViewController.swift */; };
 		CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CED9201E581000CBFA83 /* Main.storyboard */; };
@@ -41,7 +38,6 @@
 /* Begin PBXFileReference section */
 		040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		040BA70F202DA65A00C4B69E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		0413AA0E20308DFF003BAB64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0413AA102030BB43003BAB64 /* ListDomainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDomainsViewController.swift; sourceTree = "<group>"; };
 		0413AA122030BC1C003BAB64 /* DomainsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainsTableViewCell.swift; sourceTree = "<group>"; };
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
@@ -49,13 +45,12 @@
 		0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIssueTableViewCell.swift; sourceTree = "<group>"; };
 		0456A3D0203053EA00323026 /* ListIssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIssuesViewController.swift; sourceTree = "<group>"; };
-		0456A3DC2030918700323026 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		4429F85A8E80132FBC4E13AC /* Pods-YourLawyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.debug.xcconfig"; sourceTree = "<group>"; };
 		5A90D45D355DA3FBAAC436FF /* Pods-YourLawyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.release.xcconfig"; sourceTree = "<group>"; };
 		99282BF920308EEF0049CD62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8911963875F60E30F3265A4 /* Pods_YourLawyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLawyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC11876D2030CE9300C82D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC1187702030D56100C82D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC13CED2201E581000CBFA83 /* YourLawyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLawyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC13CED5201E581000CBFA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC13CED7201E581000CBFA83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,8 +128,6 @@
 		CC13CED4201E581000CBFA83 /* YourLawyer */ = {
 			isa = PBXGroup;
 			children = (
-				0456A3DA20307DFC00323026 /* lawIssuesViewController.swift */,
-				0456A3D420307A6700323026 /* LawyerIssueTableViewCell.swift */,
 				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
 				CC13CED7201E581000CBFA83 /* ViewController.swift */,
 				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
@@ -142,12 +135,10 @@
 				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
 				0456A3D0203053EA00323026 /* ListIssuesViewController.swift */,
-				0413AA0E20308DFF003BAB64 /* GoogleService-Info.plist */,
 				0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */,
 				CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
 				040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
 				CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */,
-				CC11876D2030CE9300C82D73 /* GoogleService-Info.plist */,
 				CC13CEE1201E581000CBFA83 /* Info.plist */,
 				CC592E0E2020F74D007B9082 /* DesignableTextField.swift */,
 				0419F6242023B15000637FE9 /* RoundedButton.swift */,
@@ -162,6 +153,7 @@
 				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
 				0413AA102030BB43003BAB64 /* ListDomainsViewController.swift */,
 				0413AA122030BC1C003BAB64 /* DomainsTableViewCell.swift */,
+				CC1187702030D56100C82D73 /* GoogleService-Info.plist */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";
@@ -229,7 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */,
-				0413AA0F20308DFF003BAB64 /* GoogleService-Info.plist in Resources */,
+				CC1187712030D56200C82D73 /* GoogleService-Info.plist in Resources */,
 				CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */,
 				CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */,
 			);
@@ -305,7 +297,6 @@
 				0413AA132030BC1C003BAB64 /* DomainsTableViewCell.swift in Sources */,
 				CC86E191202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift in Sources */,
 				CCC2585A202C7AA000641CB5 /* ProfileDataTableViewCell.swift in Sources */,
-				0456A3D520307A6700323026 /* LawyerIssueTableViewCell.swift in Sources */,
 				CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
 				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
 				CCC2585C202E1C8D00641CB5 /* CellNTableViewCell.swift in Sources */,
@@ -324,7 +315,6 @@
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
 				0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */,
 				040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */,
-				0456A3DB20307DFC00323026 /* lawIssuesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
