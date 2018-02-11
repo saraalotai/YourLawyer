@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
     }
   
-    
+    var UserUID = String()
     @IBAction func loginButton(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!) { (user, error) in
             if let error = error{
@@ -28,6 +28,7 @@ class ViewController: UIViewController {
                 
             }else{
                 print("User ID: \(user?.uid)")
+                 self.UserUID = user!.uid
             }
         }
     }
