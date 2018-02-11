@@ -11,7 +11,6 @@ import UIKit
 class LawyerListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     let names = ["احمد","عبدالله","ياسر"]
     @IBOutlet weak var tableview: UITableView!
-     @IBOutlet weak internal var edit: UIBarButtonItem!
     
     @IBOutlet weak var lawyername: UILabel!
     override func viewDidLoad() {
