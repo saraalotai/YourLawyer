@@ -24,7 +24,7 @@ class ListIssuesViewController: UIViewController ,UITableViewDelegate, UITableVi
         let cell = tableview.dequeueReusableCell(withIdentifier: "Issue") as! ListIssueTableViewCell
         cell.cellview.layer.cornerRadius = cell.cellview.frame.height / 2
         cell.subject.text = subjects[indexPath.row]
-        cell.status.text = statues[indexPath.row]
+       cell.status.text = statues[indexPath.row]
         cell.date.text = dates[indexPath.row]
 return cell
     }

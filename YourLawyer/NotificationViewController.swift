@@ -10,7 +10,6 @@ import UIKit
 
 class NotificationViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
     let notifis = [" المحامي فهد قام بإرسال استشارة إلى قضيتك ", "المحامي خالد قام بإرسال سؤال"]
-    
     @IBOutlet weak var notifiTable: UITableView!
     
     override func viewDidLoad() {
@@ -27,11 +26,15 @@ class NotificationViewController: UIViewController , UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let str = notifiTable.dequeueReusableCell(withIdentifier: "notifiCel") as! CellNTableViewCell
-        str.cellView.layer.cornerRadius = str.cellView.frame.height / 2
-        str.notifi.text = notifis[indexPath.row]
-        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short 
+        formatter.timeStyle = .short
+        let date = formatter.string(from: Date())
+  str.left.text = date
+  str.right.text = notifis[indexPath.row]
         return str
     }
     

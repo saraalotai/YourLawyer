@@ -17,9 +17,9 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
-        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "تعديل", style: .plain, target: self, action: #selector(getter: edit))
+        
         self.image.layer.cornerRadius = self.image.frame.size.height / 2
-self.image.clipsToBounds = true
+        self.image.clipsToBounds = true
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
