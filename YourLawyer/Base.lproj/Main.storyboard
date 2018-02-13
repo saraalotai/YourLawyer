@@ -1777,7 +1777,7 @@
                                     <constraint firstAttribute="height" constant="30" id="DQx-gy-Kec"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="تسجيل الدخول">
+                                <state key="normal" title="التسجيل">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
@@ -1825,7 +1825,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rch-ow-Ig8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="id-card" translatesAutoresizingMaskIntoConstraints="NO" id="rch-ow-Ig8">
                                 <rect key="frame" x="117" y="435" width="101" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="lnv-vD-Sk1"/>
@@ -2666,6 +2666,7 @@
         <image name="chat-bubbles" width="64" height="64"/>
         <image name="condenser-microphone-recording-2" width="32" height="32"/>
         <image name="downloading-action" width="32" height="32"/>
+        <image name="id-card" width="64" height="64"/>
         <image name="images" width="225" height="225"/>
         <image name="line-black-1px" width="16" height="16"/>
         <image name="list-square-rounded-interface-symbol-2" width="24" height="24"/>

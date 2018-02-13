@@ -27,8 +27,8 @@ class ViewController: UIViewController {
                 print(error)
                 
             }else{
+                self.UserUID = user!.uid
                 print("User ID: \(user?.uid)")
-                 self.UserUID = user!.uid
             }
         }
     }
