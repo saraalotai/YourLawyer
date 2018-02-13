@@ -539,7 +539,9 @@
                             <constraint firstItem="QYM-NW-XNJ" firstAttribute="top" secondItem="vw0-nJ-onF" secondAttribute="bottom" constant="62" id="zNT-TO-5FA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="خدماتنا" id="lrG-Ol-Zrx"/>
+                    <navigationItem key="navigationItem" title="خدماتنا" id="lrG-Ol-Zrx">
+                        <barButtonItem key="backBarButtonItem" title="  " id="73u-eS-9OA"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWY-1V-91X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -686,7 +688,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QAL-kX-Bx8"/>
+                    <navigationItem key="navigationItem" id="QAL-kX-Bx8">
+                        <barButtonItem key="backBarButtonItem" title="  " id="MKs-tE-XiZ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNc-jA-Jq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -789,7 +793,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2R7-a6-fRb"/>
+                    <navigationItem key="navigationItem" id="2R7-a6-fRb">
+                        <barButtonItem key="backBarButtonItem" title="  " id="bl1-E6-QfR"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dg-hL-rah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -845,7 +851,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHT-yM-uB6">
-                                <rect key="frame" x="33" y="223" width="254" height="30"/>
+                                <rect key="frame" x="33" y="269" width="254" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1111,6 +1117,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ملفي الشخصي" id="NGi-Jy-8hH">
+                        <barButtonItem key="backBarButtonItem" title="  " id="uOa-qs-0Yr"/>
                         <barButtonItem key="rightBarButtonItem" title="تعديل" id="bBv-al-gOz">
                             <connections>
                                 <segue destination="Svm-Qt-PHt" kind="push" id="5tr-RK-2X0"/>
@@ -1294,7 +1301,9 @@
                             <constraint firstItem="HdH-fu-WDa" firstAttribute="top" secondItem="8JW-lS-TOx" secondAttribute="bottom" constant="17" id="sUb-2G-EBF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="التسجيل" id="98I-LH-wLM"/>
+                    <navigationItem key="navigationItem" title="التسجيل" leftItemsSupplementBackButton="YES" id="98I-LH-wLM">
+                        <barButtonItem key="backBarButtonItem" title="   " id="jGS-QR-oxW"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XaX-BN-U7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1637,10 +1646,65 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lS7-YC-a8K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZT-Hu-Zsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="3084"/>
+            <point key="canvasLocation" x="4875" y="1460"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="d8k-RT-QKu">
+            <objects>
+                <tableViewController id="oXQ-7Q-BIH" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="A3p-dN-hlJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="mlM-5I-a0R" style="IBUITableViewCellStyleDefault" id="Yjm-qs-Guh">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yjm-qs-Guh" id="DBd-hQ-5WZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mlM-5I-a0R">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oXQ-7Q-BIH" id="3V5-Fv-h1X"/>
+                            <outlet property="delegate" destination="oXQ-7Q-BIH" id="hmK-jU-QPf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="CIy-Zj-ERM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZZ-nh-A1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4898" y="2134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="utc-WQ-Nwx">
+            <objects>
+                <navigationController id="d5C-EZ-Dg8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oju-Hm-AaW">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oXQ-7Q-BIH" kind="relationship" relationship="rootViewController" id="oKd-hS-xBG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4l9-7l-TT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4359" y="2134"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pHa-1Y-GS7">
@@ -2147,7 +2211,7 @@
             </objects>
             <point key="canvasLocation" x="3223" y="1925"/>
         </scene>
-        <!--List Domains View Controller-->
+        <!--المجالات القانونية-->
         <scene sceneID="hbb-Ub-fmL">
             <objects>
                 <viewController id="0FF-rL-TMv" customClass="ListDomainsViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
@@ -2166,15 +2230,15 @@
                                     <constraint firstAttribute="height" constant="455" id="ocv-Si-obb"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="domain" textLabel="gzP-p7-eem" style="IBUITableViewCellStyleDefault" id="eGp-fK-TcM" customClass="DomainsTableViewCell" customModule="YourLawyer" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="domain" textLabel="gzP-p7-eem" style="IBUITableViewCellStyleDefault" id="eGp-fK-TcM" customClass="DomainsTableViewCell" customModule="YourLawyer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGp-fK-TcM" id="aSu-Hd-bPh">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gzP-p7-eem">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2184,6 +2248,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="title" destination="gzP-p7-eem" id="zCK-mx-c8e"/>
+                                            <segue destination="BQs-ZC-m8m" kind="push" id="Nf6-2w-e5a"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2197,7 +2262,9 @@
                             <constraint firstItem="DMl-fU-jTv" firstAttribute="top" secondItem="qgN-xU-XDp" secondAttribute="bottom" id="ugu-Bg-Waw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GBw-sF-921"/>
+                    <navigationItem key="navigationItem" title="المجالات القانونية" id="GBw-sF-921">
+                        <barButtonItem key="backBarButtonItem" title="  " id="h9b-zc-XfS"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableview" destination="DMl-fU-jTv" id="CbE-KY-thC"/>
                     </connections>
@@ -2205,6 +2272,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODT-jJ-mPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3748" y="1391"/>
+        </scene>
+        <!--القضايا-->
+        <scene sceneID="u3r-iA-eFC">
+            <objects>
+                <viewController id="BQs-ZC-m8m" customClass="ChooseIssueViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2wI-BP-1rB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ril-Wn-F4r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mdY-v7-VJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-Sf-Job">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="issue" rowHeight="115" id="ZDE-Oc-vDR" customClass="ChooseIssueTableViewCell" customModule="YourLawyer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZDE-Oc-vDR" id="m7e-IN-Mgr">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="114.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7M9-Ww-vt8">
+                                                    <rect key="frame" x="10" y="5" width="267" height="104.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDa-Dz-1Ai">
+                                                            <rect key="frame" x="205" y="20" width="42" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.81753772497177124" green="0.92132633924484253" blue="0.9224274754524231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="WDa-Dz-1Ai" firstAttribute="top" secondItem="7M9-Ww-vt8" secondAttribute="top" constant="20" id="Sma-3J-nEx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="WDa-Dz-1Ai" secondAttribute="trailing" constant="20" id="qwJ-Vo-UUX"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="7M9-Ww-vt8" secondAttribute="trailing" constant="10" id="74B-Xi-DLn"/>
+                                                <constraint firstItem="7M9-Ww-vt8" firstAttribute="top" secondItem="m7e-IN-Mgr" secondAttribute="top" constant="5" id="ATm-zl-ATu"/>
+                                                <constraint firstAttribute="bottom" secondItem="7M9-Ww-vt8" secondAttribute="bottom" constant="5" id="CNY-c4-yL7"/>
+                                                <constraint firstItem="7M9-Ww-vt8" firstAttribute="leading" secondItem="m7e-IN-Mgr" secondAttribute="leading" constant="10" id="ikZ-PC-XsJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="clinetName" destination="WDa-Dz-1Ai" id="jkj-VX-0SD"/>
+                                            <outlet property="issueView" destination="m7e-IN-Mgr" id="Cbq-qw-als"/>
+                                            <segue destination="RZ1-u5-hWP" kind="push" id="Ksf-3Y-8y8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cRP-Sf-Job" firstAttribute="leading" secondItem="mdY-v7-VJ3" secondAttribute="leading" id="3Uu-YG-Ba6"/>
+                            <constraint firstAttribute="trailing" secondItem="cRP-Sf-Job" secondAttribute="trailing" id="Gds-6E-ufP"/>
+                            <constraint firstItem="cRP-Sf-Job" firstAttribute="top" secondItem="2wI-BP-1rB" secondAttribute="bottom" id="Uez-lV-0Bc"/>
+                            <constraint firstItem="ril-Wn-F4r" firstAttribute="top" secondItem="cRP-Sf-Job" secondAttribute="bottom" id="gqy-uI-vFY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="القضايا" id="WTB-kG-H6R">
+                        <barButtonItem key="backBarButtonItem" title="  " id="xOf-ap-4mH"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="cRP-Sf-Job" id="IkP-AH-OSc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VtL-Uj-x9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4215" y="1431"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZTt-46-urO">
