@@ -21,17 +21,27 @@ class ViewController: UIViewController {
     }
   
     var UserUID = String()
-    @IBAction func loginButton(_ sender: Any) {
-        Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!) { (user, error) in
+    @IBAction func login(_ sender: Any) {
+        guard let email = emailTF.text, !email.isEmpty else {
+            print("Email is empty")
+            return
+        }
+        guard let password = passwordTF.text, !password.isEmpty else {
+            print("password is empty")
+            return
+        }
+        
+        Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!) { (user: User?, error ) in
             if let error = error{
                 print(error)
                 
             }else{
+                self.UserUID = user!.uid
                 print("User ID: \(user?.uid)")
-                 self.UserUID = user!.uid
             }
-        }
+            }
     }
+
     
 
 }
