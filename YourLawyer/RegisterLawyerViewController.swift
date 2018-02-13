@@ -9,7 +9,12 @@
 import UIKit
 import Firebase
 class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate , UIPickerViewDataSource ,UIPickerViewDelegate ,UITextFieldDelegate{
+    //varibles
     var genders = ["ذكر","أُنثى"]
+     var imagePacker:UIImagePickerController!
+    var UserUID:String?
+       var ref = DatabaseReference.init()
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -25,7 +30,7 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         genderTF.text = genders[row]
     }
-    
+    //Outlest
     @IBOutlet weak var fullnameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var phoneNoTF: UITextField!
@@ -39,9 +44,9 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
     @IBOutlet weak var genderDD: UIPickerView!
     @IBOutlet weak var cardimg: UIImageView!
   
-    var imagePacker:UIImagePickerController!
+   
     
-    var ref = DatabaseReference.init()
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePacker = UIImagePickerController()
@@ -58,8 +63,8 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
         print("اختر صورة")
         present(imagePacker, animated: true, completion: nil)
     }
-      var UserUID:String?
     
+    var imagepath = ""
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
            cardimg.image = image
@@ -69,48 +74,79 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
             data = UIImageJPEGRepresentation(image , 0.8)! as NSData
             let dataFormat = DateFormatter()
             dataFormat.dateFormat = "MM_DD_yy_hh_mm_a"
-            let imageName = "\(self.UserUID)_\(dataFormat.string(from: NSDate() as Date))"
-            let imagepath = "cardimages/\(imageName).jpg"
+            let imageName = "\(self.UserUID ?? "11")_\(dataFormat.string(from: NSDate() as Date))"
+            imagepath = "cardimages/\(imageName).jpg"
             let childUserImages = storageRef.child(imagepath)
             let metaData = StorageMetadata()
             metaData.contentType = "image/jpeg"
             childUserImages.putData(data as Data, metadata: metaData)
             //save to database
-            saveUserInfo(UserImagePath: imagepath, UserName: fullnameTF.text!, email: emailTF.text!, PhoneNo: phoneNoTF.text!, gender: genderTF.text!, city: cityTF.text!, password: passwordTF.text!, ID: IDTF.text!, legalDomain: legalDoTF.text!, oficeName: oficenameTF.text!, cardNo: cardNOTF.text!)
+           
         }
         imagePacker.dismiss(animated: true, completion: nil)
     }
   
     
     @IBAction func regButton(_ sender: Any) {
-        Auth.auth().createUser(withEmail: emailTF.text! , password: passwordTF.text!)
-        { (user, error) in
-            if let error = error{
-            print(error)
-                
-            }else{
-                self.UserUID = user!.uid
-                print("User ID: \(user?.uid)")
-             
-            }
-        }
+         saveUserInfo(UserImagePath: imagepath, UserName: fullnameTF.text!, email: emailTF.text!, PhoneNo: phoneNoTF.text!, gender: genderTF.text!, city: cityTF.text!, password: passwordTF.text!, ID: IDTF.text!, legalDomain: legalDoTF.text!, oficeName: oficenameTF.text!, cardNo: cardNOTF.text!)
+
         
     }
     
     func saveUserInfo(UserImagePath:String,UserName:String,email:String,PhoneNo:String,gender:String,city:String,password:String,ID:String,legalDomain:String,oficeName:String,cardNo:String){
-        let msg = ["fullName":UserName,
-                   "email":email,
-                   "PhoneNo":PhoneNo,
-                   "gender":gender,
-                   "city":city,
-                   "password":password,
-                   "ID":ID,
-                   "legalDomain":legalDomain,
-                   "oficeName":oficeName,
-                   "cardNo":cardNo,
-                   "imagepath":UserImagePath]
-        self.ref.child("users").child(self.UserUID ?? "144").setValue(msg)
         
-    }
+        guard emailTF.text != nil else{
+            print("email issue")
+            return
+        }
+        guard fullnameTF.text != nil else
+        {
+            print("name issue")
+            return
+        }
+        guard passwordTF.text != nil else
+        {
+            print("password issue")
+            return
+        }
+        guard IDTF.text != nil else
+        {
+            print("id issue")
+            return
+        }
+        guard phoneNoTF.text != nil else
+        {
+            print("phone number issue")
+            return
+        }
+        Auth.auth().createUser(withEmail: emailTF.text! , password: passwordTF.text!)
+        { (user, error) in
+            if  error != nil{
+                print(error!)
+                return
+            }
+            guard let uid = user?.uid else{
+                return
+            }
+                self.UserUID = user!.uid
+                print("User ID: \(user?.uid)")
+                let msg = ["fullName":UserName,
+                           "email":email,
+                           "PhoneNo":PhoneNo,
+                           "gender":gender,
+                           "city":city,
+                           "password":password,
+                           "ID":ID,
+                           "legalDomain":legalDomain,
+                           "officeName":oficeName,
+                           "cardNo":cardNo,
+                           "imagepath":UserImagePath,
+                           "UserImage":""]
+              self.ref.child("users").child("lawyer").child(user!.uid).setValue(msg)
+            }
+        }
+
+        
+   
 
 }

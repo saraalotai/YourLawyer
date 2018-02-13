@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -22,27 +23,29 @@ class ViewController: UIViewController {
   
     var UserUID = String()
     @IBAction func login(_ sender: Any) {
-        guard let email = emailTF.text, !email.isEmpty else {
-            print("Email is empty")
-            return
-        }
-        guard let password = passwordTF.text, !password.isEmpty else {
-            print("password is empty")
-            return
-        }
         
-        Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!) { (user: User?, error ) in
-            if let error = error{
-                print(error)
-                
-            }else{
-                self.UserUID = user!.uid
-                print("User ID: \(user?.uid)")
+        if emailTF.text != ""  &&  passwordTF.text != "" {
+            
+            Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!, completion:{ (user, error )in
+            if user != nil
+            {// log in successful
+                self.performSegue(withIdentifier: "Home", sender: self)
+            }// end if
+            else {
+                if let myError = error?.localizedDescription
+                {    print(myError)
+                    
+                }//end else
+                else{
+                    print("error")
+                    return
+                }
             }
-            }
+            })// end auth
+        }
+      
+            }// end login
     }
 
-    
 
-}
 

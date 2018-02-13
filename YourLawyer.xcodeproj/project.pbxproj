@@ -22,6 +22,7 @@
 		CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDC201E581000CBFA83 /* Assets.xcassets */; };
 		CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
 		CC48925720321A5C00F8A2F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC48925620321A5B00F8A2F2 /* GoogleService-Info.plist */; };
+		CC48925B2033305000F8A2F2 /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */; };
 		CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC592E0E2020F74D007B9082 /* DesignableTextField.swift */; };
 		CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18C2028DEC600B20910 /* IssueViewController.swift */; };
 		CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18E202B393600B20910 /* LawyersVC.swift */; };
@@ -54,6 +55,7 @@
 		CC13CEDF201E581000CBFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC13CEE1201E581000CBFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC48925620321A5B00F8A2F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CC592E0E2020F74D007B9082 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		CC86E18C2028DEC600B20910 /* IssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
 		CC86E18E202B393600B20910 /* LawyersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersVC.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */,
 				CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */,
 				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
+				CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				CCC2585A202C7AA000641CB5 /* ProfileDataTableViewCell.swift in Sources */,
 				CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
 				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
+				CC48925B2033305000F8A2F2 /* RegisterClientViewController.swift in Sources */,
 				CCC2585C202E1C8D00641CB5 /* CellNTableViewCell.swift in Sources */,
 				CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */,
 				040BA710202DA65A00C4B69E /* NotificationViewController.swift in Sources */,
