@@ -68,6 +68,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KyQ-Fe-AS7"/>
                                     <segue destination="WOe-bV-Frt" kind="modal" identifier="sign in" id="x7l-P5-tcN"/>
                                 </connections>
                             </button>
@@ -2144,10 +2145,10 @@
             </objects>
             <point key="canvasLocation" x="3223" y="1925"/>
         </scene>
-        <!--Password View Controller-->
+        <!--View Controller-->
         <scene sceneID="ZTt-46-urO">
             <objects>
-                <viewController id="sAE-Wo-ZWZ" customClass="passwordViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sAE-Wo-ZWZ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c8s-jT-kBc"/>
                         <viewControllerLayoutGuide type="bottom" id="ldD-1i-m3n"/>
