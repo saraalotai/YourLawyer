@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class ResetPasswordViewController: UIViewController {
 
+    @IBOutlet weak var userEmail: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +25,27 @@ class ResetPasswordViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func restpassword(email:String)
+    {
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            if error == nil{
+                print("we will send the email ")
+                
+            }
+            else {
+                print(error!.localizedDescription)
+            }
+            
+        }
+        
     }
-    */
+    @IBAction func recoverButtonTapped(_ sender: AnyObject) {
+        
+
+        self.restpassword(email: userEmail.text!)
+        
+    }
+    
+    
 
 }
