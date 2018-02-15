@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
-class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerViewDelegate ,UITextFieldDelegate{
+class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerViewDelegate ,UITextFieldDelegate ,UIImagePickerControllerDelegate , UINavigationControllerDelegate{
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -26,6 +28,37 @@ class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerVi
     var issue = ["جرائم الكترونيه" , "قضايا مدنية"]
     
     var lawyers = ["احمد","سعد"]
+    
+    var imagePacker:UIImagePickerController!
+    
+    
+    @IBOutlet weak var imageofdoc: UIImageView!
+    @IBAction func docPic(_ sender: Any) {
+        print("اختر صورة")
+        present(imagePacker, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let UserUID = Auth.auth().currentUser!.uid
+
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+           imageofdoc.image = image
+            //upload image
+            let storageRef = Storage.storage().reference(forURL:"gs://mylawyer-f867a.appspot.com")
+            var data = NSData()
+            data = UIImageJPEGRepresentation(image , 0.8)! as NSData
+            let dataFormat = DateFormatter()
+            dataFormat.dateFormat = "MM_DD_yy_hh_mm_a"
+       //     let imageName = "\(self.UserUID!)_\(dataFormat.string(from: NSDate() as Date))"
+         //   imagepath = "documentsimages/\(imageName).jpg"
+         //   let childUserImages = storageRef.child(imagepath)
+     //       let metaData = StorageMetadata()
+       //     metaData.contentType = "image/jpeg"
+        //    childUserImages.putData(data as Data, metadata: metaData)
+            //save to database
+            
+        }
+        imagePacker.dismiss(animated: true, completion: nil)
+    }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         var countraws : Int = issue.count
@@ -75,6 +108,8 @@ class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerVi
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePacker=UIImagePickerController()
+        imagePacker.delegate=self
 
         // Do any additional setup after loading the view.
     }

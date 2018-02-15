@@ -141,8 +141,9 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
                            "officeName":oficeName,
                            "cardNo":cardNo,
                            "imagepath":UserImagePath,
-                           "UserImage":""]
-              self.ref.child("users").child("lawyer").child(user!.uid).setValue(msg)
+                           "UserImage":"",
+                           "type":"lawyer"]
+              self.ref.child("users").child(user!.uid).setValue(msg)
             }
         }
 

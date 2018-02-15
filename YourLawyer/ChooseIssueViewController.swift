@@ -28,7 +28,7 @@ class ChooseIssueViewController: UIViewController ,UITableViewDelegate, UITableV
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
-        super.viewDidLoad()
+        tableview.tableFooterView = UIView(frame:.zero)
 
         // Do any additional setup after loading the view.
     }

@@ -29,6 +29,7 @@ class LawyersVC: UIViewController ,UITableViewDelegate, UITableViewDataSource{
     override func viewDidLoad() {
         infotable.delegate = self
         infotable.dataSource = self
+        infotable.tableFooterView = UIView(frame:.zero)
         self.image.layer.cornerRadius = image.frame.size.height / 2
         self.image.clipsToBounds = true
         super.viewDidLoad()

@@ -26,6 +26,7 @@ class ListDomainsViewController: UIViewController,UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
+        tableview.tableFooterView = UIView(frame:.zero)
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.

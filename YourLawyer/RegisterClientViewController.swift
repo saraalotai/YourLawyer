@@ -95,8 +95,9 @@ class RegisterClientViewController: UIViewController, UIPickerViewDataSource ,UI
                        "gender":self.genderTF.text!,
                        "password":self.passwordTF.text!,
                        "ID":self.IDTF.text!,
-                       "UserImage":""]
-            self.ref.child("users").child("client").child(user!.uid).setValue(msg)
+                       "UserImage":"",
+                       "type":"client"]
+            self.ref.child("users").child(user!.uid).setValue(msg)
                 print("User ID: \(user?.uid)")
                 
             }

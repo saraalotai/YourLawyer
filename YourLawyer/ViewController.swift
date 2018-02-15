@@ -8,44 +8,74 @@
 
 import UIKit
 import Firebase
-import FirebaseAuth
-
 class ViewController: UIViewController {
-
+    //Outlet
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
-    
+    //Varibles
+    var ref = DatabaseReference.init()
     override func viewDidLoad() {
+        self.ref = Database.database().reference()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
     }
   
     var UserUID = String()
     @IBAction func login(_ sender: Any) {
-        
-        if emailTF.text != ""  &&  passwordTF.text != "" {
+        if  self.emailTF.text == "" || self.passwordTF.text == "" {
+            let alert = UIAlertController(title: "خطأ", message: "من فضلك ادخل بريدك الإلكتروني وكلمة المرور", preferredStyle: .alert)
             
-            Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!, completion:{ (user, error )in
-            if user != nil
-            {// log in successful
-                self.performSegue(withIdentifier: "Home", sender: self)
-            }// end if
-            else {
-                if let myError = error?.localizedDescription
-                {    print(myError)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            
+            self.present(alert, animated: true)
+            
+            return
+        }else
+        {
+            Auth.auth().signIn(withEmail: self.emailTF.text!, password: self.passwordTF.text!, completion: { (user, error) in
+                if let error = error{
+                   
+                    let alert = UIAlertController(title: "خطأ", message: "البريد الإلكتروني او كلمة المرور خاطئة", preferredStyle: .alert)
                     
-                }//end else
-                else{
-                    print("error")
+                    alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                    
+                    self.present(alert, animated: true)
+                    
                     return
+                    
+        
+                }else
+                {
+                    // Notice "observeSingleEvent", so we don't register for getting an update every time it changes.
+                    Database.database().reference().child("users/\(user!.uid)/type").observeSingleEvent(of: .value, with: {
+                        (snapshot) in
+                        switch snapshot.value as! String {
+                        // If our user is admin...
+                        case "admin":
+                            // ...redirect to the admin page
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AdminVC")
+                            self.present(vc!, animated: true, completion: nil)
+                        // If out user is a regular user...
+                        case "client":
+                            // ...redirect to the user page
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
+                            self.present(vc!, animated: true, completion: nil)
+                        case "lawyer":
+                            // ...redirect to the user page
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
+                            self.present(vc!, animated: true, completion: nil)
+                        // If the type wasn't found...
+                        default:
+                            // ...print an error
+                            print("Error: Couldn't find type for user \(user!.uid)")
+                        }
+                    })
+              
                 }
-            }
-            })// end auth
-        }
-      
-            }// end login
+                
+                })// end auth
+}
+
     }
-
-
+}// end class
 

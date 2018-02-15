@@ -32,7 +32,8 @@
 		CCA1BB8820335D8200A1D1B8 /* ChooseIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8720335D8100A1D1B8 /* ChooseIssueTableViewCell.swift */; };
 		CCA1BB8A20335DED00A1D1B8 /* ChooseIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8920335DED00A1D1B8 /* ChooseIssueViewController.swift */; };
 		CCA1BB8C20335E6400A1D1B8 /* DomainsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8B20335E6400A1D1B8 /* DomainsTableViewCell.swift */; };
-		CCA1BB8E2033610E00A1D1B8 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8D2033610E00A1D1B8 /* ResetPasswordViewController.swift */; };
+		CCA1BB902034DC0B00A1D1B8 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8F2034DC0B00A1D1B8 /* ResetPasswordViewController.swift */; };
+		CCA1BB922034E1F500A1D1B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB912034E1F500A1D1B8 /* User.swift */; };
 		CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC25857202C744700641CB5 /* ProfileVC.swift */; };
 		CCC2585A202C7AA000641CB5 /* ProfileDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */; };
 		CCC2585C202E1C8D00641CB5 /* CellNTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */; };
@@ -70,7 +71,8 @@
 		CCA1BB8720335D8100A1D1B8 /* ChooseIssueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseIssueTableViewCell.swift; sourceTree = "<group>"; };
 		CCA1BB8920335DED00A1D1B8 /* ChooseIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseIssueViewController.swift; sourceTree = "<group>"; };
 		CCA1BB8B20335E6400A1D1B8 /* DomainsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainsTableViewCell.swift; sourceTree = "<group>"; };
-		CCA1BB8D2033610E00A1D1B8 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		CCA1BB8F2034DC0B00A1D1B8 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		CCA1BB912034E1F500A1D1B8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../Downloads/User.swift; sourceTree = "<group>"; };
 		CCC25857202C744700641CB5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataTableViewCell.swift; sourceTree = "<group>"; };
 		CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNTableViewCell.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				0456A3D0203053EA00323026 /* ListIssuesViewController.swift */,
 				0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */,
 				CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
+				CCA1BB912034E1F500A1D1B8 /* User.swift */,
 				040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
 				CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */,
 				CCA1BB8520335D1300A1D1B8 /* ListDomainsViewController.swift */,
@@ -165,7 +168,7 @@
 				CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */,
 				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
 				CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */,
-				CCA1BB8D2033610E00A1D1B8 /* ResetPasswordViewController.swift */,
+				CCA1BB8F2034DC0B00A1D1B8 /* ResetPasswordViewController.swift */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA1BB922034E1F500A1D1B8 /* User.swift in Sources */,
 				CC86E191202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift in Sources */,
 				CCC2585A202C7AA000641CB5 /* ProfileDataTableViewCell.swift in Sources */,
 				CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
@@ -313,7 +317,7 @@
 				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
 				CCA1BB8620335D1300A1D1B8 /* ListDomainsViewController.swift in Sources */,
 				CC48925B2033305000F8A2F2 /* RegisterClientViewController.swift in Sources */,
-				CCA1BB8E2033610E00A1D1B8 /* ResetPasswordViewController.swift in Sources */,
+				CCA1BB902034DC0B00A1D1B8 /* ResetPasswordViewController.swift in Sources */,
 				CCA1BB8A20335DED00A1D1B8 /* ChooseIssueViewController.swift in Sources */,
 				CCC2585C202E1C8D00641CB5 /* CellNTableViewCell.swift in Sources */,
 				CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */,
