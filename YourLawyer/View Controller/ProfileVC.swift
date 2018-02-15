@@ -121,7 +121,7 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
             print(logoutError)
         }
         let storyborad = UIStoryboard(name:"Main",bundle:nil)
-      let signInVC = storyborad.instantiateViewController(withIdentifier: "ViewController")
+      let signInVC = storyborad.instantiateViewController(withIdentifier: "Main")
         self.present(signInVC, animated: true, completion: nil)
         
     }

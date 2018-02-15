@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
         <array key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
         </array>
@@ -19,7 +22,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7XD-l2-7ae"/>
                         <viewControllerLayoutGuide type="bottom" id="wde-yt-69d"/>
@@ -28,6 +31,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-yY-pr1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muc-B9-beC">
                                 <rect key="frame" x="40" y="385" width="240" height="30"/>
                                 <color key="backgroundColor" red="0.17050674557685852" green="0.48948913812637329" blue="0.5693402886390686" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,6 +66,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kcx-8U-SEa"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" red="0.0057498370297253132" green="0.39491754770278931" blue="0.49113589525222778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="تسجيل الدخول">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -97,9 +104,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="aws-rf-Ykx"/>
                                 </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-yY-pr1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -217,10 +221,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kAn-xy-1wl">
-                                <rect key="frame" x="0.0" y="110" width="320" height="409"/>
+                                <rect key="frame" x="0.0" y="120" width="320" height="399"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="409" id="jrh-GZ-kRA"/>
+                                    <constraint firstAttribute="height" constant="399" id="o4f-Ox-8Bs"/>
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -281,38 +285,28 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ابحث عن محامي" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9i-fx-Ags">
-                                <rect key="frame" x="75" y="72" width="220" height="30"/>
+                            <searchBar contentMode="redraw" text="" placeholder="إبحث عن محامي" translatesAutoresizingMaskIntoConstraints="NO" id="wxl-iW-J8C">
+                                <rect key="frame" x="0.0" y="64" width="320" height="56"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="uHa-Go-MqR"/>
+                                    <constraint firstAttribute="height" constant="56" id="Yul-y9-V0e"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLq-wf-MUr" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="36" y="72" width="32" height="32"/>
-                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="ftS-Eo-t4R"/>
-                                </constraints>
-                                <state key="normal" image="magnifier-2"/>
-                            </button>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kAn-xy-1wl" firstAttribute="leading" secondItem="Hug-mD-yb3" secondAttribute="leadingMargin" constant="-16" id="3tT-nC-k4S"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="O9i-fx-Ags" secondAttribute="trailing" constant="9" id="6C2-Yq-x5K"/>
-                            <constraint firstItem="kAn-xy-1wl" firstAttribute="top" secondItem="O9i-fx-Ags" secondAttribute="bottom" constant="8" id="6CS-Pd-m5z"/>
-                            <constraint firstItem="YLq-wf-MUr" firstAttribute="leading" secondItem="Hug-mD-yb3" secondAttribute="leadingMargin" constant="20" id="C11-MI-ohv"/>
-                            <constraint firstItem="O9i-fx-Ags" firstAttribute="top" secondItem="e5u-hQ-su1" secondAttribute="bottom" constant="8" id="IoS-8u-v6t"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kAn-xy-1wl" secondAttribute="trailing" constant="-16" id="Lze-o4-uZX"/>
-                            <constraint firstItem="YLq-wf-MUr" firstAttribute="top" secondItem="e5u-hQ-su1" secondAttribute="bottom" constant="8" id="ZvX-c6-QQy"/>
-                            <constraint firstItem="kAn-xy-1wl" firstAttribute="top" secondItem="YLq-wf-MUr" secondAttribute="bottom" constant="6" id="e0S-nM-dAG"/>
+                            <constraint firstAttribute="trailing" secondItem="wxl-iW-J8C" secondAttribute="trailing" id="00n-17-MCT"/>
+                            <constraint firstItem="UUh-dd-nyd" firstAttribute="top" secondItem="kAn-xy-1wl" secondAttribute="bottom" id="0Qd-G3-oQQ"/>
+                            <constraint firstItem="wxl-iW-J8C" firstAttribute="leading" secondItem="Hug-mD-yb3" secondAttribute="leading" id="4M9-tc-i2O"/>
+                            <constraint firstItem="kAn-xy-1wl" firstAttribute="top" secondItem="wxl-iW-J8C" secondAttribute="bottom" id="NkI-eE-Lkd"/>
+                            <constraint firstAttribute="trailing" secondItem="kAn-xy-1wl" secondAttribute="trailing" id="jD1-Mz-jlg"/>
+                            <constraint firstItem="wxl-iW-J8C" firstAttribute="top" secondItem="e5u-hQ-su1" secondAttribute="bottom" id="suO-Vy-9m4"/>
+                            <constraint firstItem="kAn-xy-1wl" firstAttribute="leading" secondItem="Hug-mD-yb3" secondAttribute="leading" id="v2l-Vl-L6U"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="قائمة المحامين " id="Wl2-k2-fFa"/>
                     <connections>
+                        <outlet property="searchLawyer" destination="wxl-iW-J8C" id="Dq8-yp-oz6"/>
                         <outlet property="tableview" destination="kAn-xy-1wl" id="3wb-o6-RLR"/>
                     </connections>
                 </viewController>
@@ -600,13 +594,6 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk4-CO-mrM">
-                                                            <rect key="frame" x="19" y="57" width="120" height="25"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ القضية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87X-u7-19j">
                                                             <rect key="frame" x="164" y="57" width="78" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -618,6 +605,13 @@
                                                             <rect key="frame" x="40" y="24" width="78" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12/12/2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk4-CO-mrM">
+                                                            <rect key="frame" x="19" y="53" width="120" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -802,7 +796,7 @@
         <!--إضافة مجال قانوني -->
         <scene sceneID="Q3n-eC-fe8">
             <objects>
-                <viewController id="QcJ-Vd-usv" sceneMemberID="viewController">
+                <viewController id="QcJ-Vd-usv" customClass="AddDomainViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qmB-Al-nNd"/>
                         <viewControllerLayoutGuide type="bottom" id="su1-DG-IyT"/>
@@ -812,7 +806,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="المجال القانوني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LS0-u4-CRm">
-                                <rect key="frame" x="33" y="66" width="254" height="30"/>
+                                <rect key="frame" x="33" y="110" width="254" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ReB-fZ-AY8"/>
                                 </constraints>
@@ -821,7 +815,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الكلمات ذات العلاقة به" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="791-ap-yMh">
-                                <rect key="frame" x="65" y="115" width="222" height="30"/>
+                                <rect key="frame" x="65" y="159" width="222" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vUl-Sg-CUq"/>
                                 </constraints>
@@ -830,15 +824,18 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFD-Rt-dns" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="33" y="118" width="24" height="24"/>
+                                <rect key="frame" x="33" y="162" width="24" height="24"/>
                                 <color key="backgroundColor" red="0.71735810440927639" green="0.72446065989847708" blue="0.72446065989847708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="WTW-fk-mcW"/>
                                 </constraints>
                                 <state key="normal" image="add-2"/>
+                                <connections>
+                                    <action selector="AddKeyword:" destination="QcJ-Vd-usv" eventType="touchUpInside" id="dRs-an-CcS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYe-QP-Txp">
-                                <rect key="frame" x="33" y="177" width="254" height="30"/>
+                                <rect key="frame" x="33" y="221" width="254" height="30"/>
                                 <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="E9d-Rf-xjY"/>
@@ -847,15 +844,9 @@
                                 <state key="normal" title="إضافة مجال قانوني">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHT-yM-uB6">
-                                <rect key="frame" x="33" y="269" width="254" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إلغاء الأمر">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
+                                <connections>
+                                    <action selector="AddDomain:" destination="QcJ-Vd-usv" eventType="touchUpInside" id="wIe-65-yUw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -874,10 +865,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="إضافة مجال قانوني " id="vKL-I0-YQy"/>
+                    <connections>
+                        <outlet property="LegalDomainName" destination="LS0-u4-CRm" id="YHo-dv-xw0"/>
+                        <outlet property="keyword" destination="791-ap-yMh" id="PBk-yj-Egr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaL-yw-PDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3994" y="-308"/>
+            <point key="canvasLocation" x="4206" y="-308"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ch7-nD-ehL">
@@ -923,12 +918,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clI-Ph-uEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4466" y="348"/>
+            <point key="canvasLocation" x="4678" y="348"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xec-8q-yBB">
             <objects>
-                <viewController storyboardIdentifier="AdminVC" id="y3c-r4-rPt" sceneMemberID="viewController">
+                <viewController id="y3c-r4-rPt" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ea7-aM-xeR"/>
                         <viewControllerLayoutGuide type="bottom" id="cWK-X8-4AM"/>
@@ -938,7 +933,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqo-Kj-Fi6" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="90" y="93" width="140" height="70"/>
+                                <rect key="frame" x="90" y="137" width="140" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="bha-ks-tDR"/>
@@ -949,7 +944,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-pw-tmf" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="90" y="222" width="140" height="70"/>
+                                <rect key="frame" x="90" y="266" width="140" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="bC1-uj-1KQ"/>
@@ -960,7 +955,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCh-66-LAh" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="90" y="352" width="140" height="70"/>
+                                <rect key="frame" x="90" y="396" width="140" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="b6C-dR-xH6"/>
@@ -972,7 +967,6 @@
                         <constraints>
                             <constraint firstItem="1iN-pw-tmf" firstAttribute="top" secondItem="fqo-Kj-Fi6" secondAttribute="bottom" constant="59" id="Anj-6K-Jhy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1iN-pw-tmf" secondAttribute="trailing" constant="74" id="EGW-Wg-RGZ"/>
-                            <constraint firstItem="cWK-X8-4AM" firstAttribute="top" secondItem="sCh-66-LAh" secondAttribute="bottom" constant="146" id="F18-ZP-PSB"/>
                             <constraint firstItem="sCh-66-LAh" firstAttribute="top" secondItem="1iN-pw-tmf" secondAttribute="bottom" constant="60" id="OmK-ve-16t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sCh-66-LAh" secondAttribute="trailing" constant="74" id="Qqc-2v-6UT"/>
                             <constraint firstItem="sCh-66-LAh" firstAttribute="leading" secondItem="Oxf-mm-qxQ" secondAttribute="leadingMargin" constant="74" id="T4v-D3-4do"/>
@@ -982,10 +976,13 @@
                             <constraint firstItem="fqo-Kj-Fi6" firstAttribute="leading" secondItem="Oxf-mm-qxQ" secondAttribute="leadingMargin" constant="74" id="zkx-rQ-avQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8BQ-D1-rPh">
+                        <barButtonItem key="backBarButtonItem" title=" " id="pf7-Bp-Yax"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xou-hr-qxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3374" y="-88"/>
+            <point key="canvasLocation" x="3748" y="-88"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rvH-dK-0K9">
@@ -1022,7 +1019,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uri-5b-Abt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3994" y="348"/>
+            <point key="canvasLocation" x="4206" y="348"/>
         </scene>
         <!--ملفي الشخصي-->
         <scene sceneID="i9z-ca-21H">
@@ -1583,14 +1580,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسم مقدم القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hF-Jb-pgf">
-                                <rect key="frame" x="194" y="117" width="110" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="حالة القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-Xs-M08">
-                                <rect key="frame" x="222" y="167" width="82" height="32"/>
+                                <rect key="frame" x="197" y="79" width="110" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -1610,22 +1600,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8R-6S-U9b">
-                                <rect key="frame" x="16" y="79" width="199" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ctb-E2-Xuo">
-                                <rect key="frame" x="0.0" y="126" width="199" height="30"/>
+                                <rect key="frame" x="16" y="79" width="185" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ID8-br-YIZ">
-                                <rect key="frame" x="36" y="176" width="199" height="30"/>
+                                <rect key="frame" x="16" y="126" width="199" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1653,7 +1636,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tde-d2-Zkr">
                                 <rect key="frame" x="41" y="430" width="254" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0057498370297253132" green="0.39491754770278931" blue="0.49113589525222778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="تقديم استشارة قانونية">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -1662,13 +1645,6 @@
                                     <segue destination="HgX-hB-YFl" kind="push" id="hTi-1d-yCi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="مجال القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ec-t1-XhI">
-                                <rect key="frame" x="216" y="77" width="88" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GB-t4-CRA">
                                 <rect key="frame" x="41" y="468" width="254" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1678,6 +1654,13 @@
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="حالة القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-Xs-M08">
+                                <rect key="frame" x="225" y="126" width="82" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -2158,7 +2141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YXe-Nr-j6j">
-                                <rect key="frame" x="0.0" y="256" width="320" height="312"/>
+                                <rect key="frame" x="0.0" y="207" width="320" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="312" id="A3e-DO-yTg"/>
@@ -2189,7 +2172,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إختر نوع القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g73-Is-IeN">
-                                <rect key="frame" x="106" y="208" width="108.5" height="21"/>
+                                <rect key="frame" x="106" y="159" width="108.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2226,7 +2209,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DMl-fU-jTv">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="455" id="ocv-Si-obb"/>
@@ -2288,7 +2271,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-Sf-Job">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="issue" rowHeight="115" id="ZDE-Oc-vDR" customClass="ChooseIssueTableViewCell" customModule="YourLawyer" customModuleProvider="target">
@@ -2765,6 +2748,24 @@
             </objects>
             <point key="canvasLocation" x="684" y="-308"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7qR-po-PSW">
+            <objects>
+                <navigationController storyboardIdentifier="AdminVC" automaticallyAdjustsScrollViewInsets="NO" id="b1e-dA-6pL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d5D-uD-Rzg">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y3c-r4-rPt" kind="relationship" relationship="rootViewController" id="U2d-PP-Thm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcI-bP-4Nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3374" y="-88"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Email-Icon" width="512" height="512"/>
@@ -2782,7 +2783,6 @@
         <image name="images" width="225" height="225"/>
         <image name="line-black-1px" width="16" height="16"/>
         <image name="list-square-rounded-interface-symbol-2" width="24" height="24"/>
-        <image name="magnifier-2" width="32" height="32"/>
         <image name="password" width="256" height="256"/>
         <image name="prof" width="1500" height="611"/>
         <image name="profile-2" width="24" height="24"/>
@@ -2791,7 +2791,7 @@
         <image name="twitter-xxl" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nkK-bw-TYg"/>
+        <segue reference="Spd-qS-zgg"/>
         <segue reference="omN-iN-nFL"/>
         <segue reference="qeJ-gL-LRU"/>
     </inferredMetricsTieBreakers>

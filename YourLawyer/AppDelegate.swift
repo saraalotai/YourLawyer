@@ -29,9 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
             }else {
                 UNUserNotificationCenter.current().delegate = self
                 Messaging.messaging().delegate = self
-                application.registerForRemoteNotifications()
+               
                 
-                FirebaseApp.configure()
+             //   UIApplication.shared.registerForRemoteNotifications()
+               
+               
             }
         }
 

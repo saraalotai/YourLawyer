@@ -22,6 +22,7 @@
 		CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CED9201E581000CBFA83 /* Main.storyboard */; };
 		CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDC201E581000CBFA83 /* Assets.xcassets */; };
 		CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
+		CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */; };
 		CC48925B2033305000F8A2F2 /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */; };
 		CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC592E0E2020F74D007B9082 /* DesignableTextField.swift */; };
 		CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18C2028DEC600B20910 /* IssueViewController.swift */; };
@@ -61,6 +62,8 @@
 		CC13CEDC201E581000CBFA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC13CEDF201E581000CBFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC13CEE1201E581000CBFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDomainViewController.swift; sourceTree = "<group>"; };
+		CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArabicFont-HelpMac-Net-07.ttf"; sourceTree = "<group>"; };
 		CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CC592E0E2020F74D007B9082 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		CC86E18C2028DEC600B20910 /* IssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
@@ -139,38 +142,64 @@
 			isa = PBXGroup;
 			children = (
 				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
-				CC13CED7201E581000CBFA83 /* ViewController.swift */,
-				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
-				040BA70F202DA65A00C4B69E /* NotificationViewController.swift */,
-				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
-				0456A3D0203053EA00323026 /* ListIssuesViewController.swift */,
-				0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */,
 				CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
 				CCA1BB912034E1F500A1D1B8 /* User.swift */,
-				040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
+				CC19D35A2035E20100C879A5 /* View Controller */,
+				CC19D35B2035E35300C879A5 /* Table cell */,
 				CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */,
-				CCA1BB8520335D1300A1D1B8 /* ListDomainsViewController.swift */,
-				CCA1BB8720335D8100A1D1B8 /* ChooseIssueTableViewCell.swift */,
 				CC13CEE1201E581000CBFA83 /* Info.plist */,
-				CCA1BB8B20335E6400A1D1B8 /* DomainsTableViewCell.swift */,
 				CC592E0E2020F74D007B9082 /* DesignableTextField.swift */,
-				CCA1BB8920335DED00A1D1B8 /* ChooseIssueViewController.swift */,
+				CC19D35D2036078700C879A5 /* font */,
 				0419F6242023B15000637FE9 /* RoundedButton.swift */,
-				0440884F2027369900A33AC8 /* CustomTableView.swift */,
-				045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */,
-				CC86E18E202B393600B20910 /* LawyersVC.swift */,
-				CC86E190202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift */,
-				CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */,
-				CCC25857202C744700641CB5 /* ProfileVC.swift */,
-				CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */,
 				999B2C80203383660086181E /* GoogleService-Info.plist */,
-				CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */,
-				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
-				CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */,
-				CCA1BB8F2034DC0B00A1D1B8 /* ResetPasswordViewController.swift */,
 			);
 			path = YourLawyer;
+			sourceTree = "<group>";
+		};
+		CC19D35A2035E20100C879A5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC13CED7201E581000CBFA83 /* ViewController.swift */,
+				0456A3D0203053EA00323026 /* ListIssuesViewController.swift */,
+				040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
+				040BA70F202DA65A00C4B69E /* NotificationViewController.swift */,
+				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
+				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
+				CCA1BB8920335DED00A1D1B8 /* ChooseIssueViewController.swift */,
+				CCC25857202C744700641CB5 /* ProfileVC.swift */,
+				CCA1BB8520335D1300A1D1B8 /* ListDomainsViewController.swift */,
+				CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */,
+				CCA1BB8F2034DC0B00A1D1B8 /* ResetPasswordViewController.swift */,
+				CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */,
+				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
+				CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */,
+				CC86E18E202B393600B20910 /* LawyersVC.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		CC19D35B2035E35300C879A5 /* Table cell */ = {
+			isa = PBXGroup;
+			children = (
+				CCA1BB8720335D8100A1D1B8 /* ChooseIssueTableViewCell.swift */,
+				CCC2585B202E1C8D00641CB5 /* CellNTableViewCell.swift */,
+				CCC25859202C7AA000641CB5 /* ProfileDataTableViewCell.swift */,
+				CC86E190202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift */,
+				045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */,
+				CCA1BB8B20335E6400A1D1B8 /* DomainsTableViewCell.swift */,
+				0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */,
+				0440884F2027369900A33AC8 /* CustomTableView.swift */,
+			);
+			path = "Table cell";
+			sourceTree = "<group>";
+		};
+		CC19D35D2036078700C879A5 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +360,7 @@
 				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
 				CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
+				CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */,
 				CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
@@ -475,7 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5ERXCPLE7G;
+				DEVELOPMENT_TEAM = K8ATRJ3648;
 				INFOPLIST_FILE = YourLawyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksu.YourLawyer;
@@ -491,7 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5ERXCPLE7G;
+				DEVELOPMENT_TEAM = K8ATRJ3648;
 				INFOPLIST_FILE = YourLawyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksu.YourLawyer;
