@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 import FirebaseAuth
 
@@ -46,5 +48,21 @@ class ResetPasswordViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func restpassword(email:String)
+    {
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            if error == nil{
+                print("we will send the email ")
+                
+            }
+            else {
+                print(error!.localizedDescription)
+            }
+            
+        }
+        
+    }
+    @IBAction func recoverButtonTapped(_ sender: AnyObject) {
+        
 
 }//end class

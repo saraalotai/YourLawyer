@@ -60,6 +60,70 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
         }//for
         
         // Do any additional setup after loading the view.
+        
+        /*
+        let userRef = Database.database().reference().child("users")
+        userRef.observeSingleEvent(of: .value) { (snapshot) in
+            
+            for userInfo in snapshot.children {
+        self.user = User(snapshot: userInfo as! DataSnapshot)
+            }//for
+            
+                let userinformation = self.tableview.dequeueReusableCell(withIdentifier: "cell") as! ProfileDataTableViewCell
+            userinformation.subtitle.text = self.user.fullName
+                
+                
+            Storage.storage().reference(forURL: self.user.userImage).getData(maxSize: 1024, completion: { (UserImage,error ) in
+                    
+                    if let error = error {
+                        print(error)
+                    
+                    }
+                    else{
+                        
+                        if let data = UserImage {
+                            
+                            self.image.image = UIImage( data: data)
+                            
+                        }
+                        
+                    }
+                 })
+                
+            
+                
+        }//for
+        
+          */
+            
+    } //end function
+    
+                //self.user = User(snapshot: userInfo as! DataSnapshot)
+        
+           // let userinformation = self.tableview.dequeueReusableCell(withIdentifier: "cell") as! ProfileDataTableViewCell
+           // userinformation.subtitle.text = self.user.Username
+  /*  let fullName=valueDictionary["fullName"]
+    let email=valueDictionary["email"]
+    let PhonNo=valueDictionary["PhoneNo"]
+    let UserImage=valueDictionary["UserImage"]
+    self.user.insert(User(fullName: fullName, email: email, PhoneNo: PhonNo, UserImage: UserImage), at: 0)
+    
+    self.tableview.reloadData()
+            
+    
+        */
+    
+    @IBAction func logout(_ sender: Any) {
+        
+        do {
+           try Auth.auth().signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        let storyborad = UIStoryboard(name:"Main",bundle:nil)
+      let signInVC = storyborad.instantiateViewController(withIdentifier: "ViewController")
+        self.present(signInVC, animated: true, completion: nil)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,14 +148,5 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
