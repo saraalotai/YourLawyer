@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040B7B56203474870015BC74 /* User .swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B7B55203474860015BC74 /* User .swift */; };
 		040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
 		040BA710202DA65A00C4B69E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA70F202DA65A00C4B69E /* NotificationViewController.swift */; };
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
@@ -37,7 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		040B7B55203474860015BC74 /* User .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User .swift"; sourceTree = "<group>"; };
 		040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		040BA70F202DA65A00C4B69E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 		CC13CED4201E581000CBFA83 /* YourLawyer */ = {
 			isa = PBXGroup;
 			children = (
-				040B7B55203474860015BC74 /* User .swift */,
 				CC48925620321A5B00F8A2F2 /* GoogleService-Info.plist */,
 				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
 				CC13CED7201E581000CBFA83 /* ViewController.swift */,
@@ -316,7 +313,6 @@
 				CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
-				040B7B56203474870015BC74 /* User .swift in Sources */,
 				0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */,
 				040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */,
 			);
