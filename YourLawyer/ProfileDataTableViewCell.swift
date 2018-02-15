@@ -7,16 +7,33 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 
 class ProfileDataTableViewCell: UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var subtitle: UILabel!
+    
+    var user: User!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    
+  //  let userRef = Database.database().reference().child("users").observe(.value, with: (snapshot)
+  //  for userInfo in snapshot.children {
+    
+   // self.user = User(snapshot: userInfo as! DataSnapshot)
+    
+    
+    
+    
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
