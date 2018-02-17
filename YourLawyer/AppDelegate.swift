@@ -42,7 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
         //change the backgriund of nav bar
         let  navimage = UIImage(named: "back.png")
         UINavigationBar.appearance().setBackgroundImage(navimage, for: .default)
-    
         
         return true
     }

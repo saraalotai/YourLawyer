@@ -19,20 +19,21 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     //varoables
     let str = ["معلومات الحساب","اسم المحامي الكامل" , "البريد الإلكتروني" , "رقم الجوال"]
     
-    var user = User()
+   
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
         tableview.tableFooterView = UIView(frame:.zero)
         self.image.layer.cornerRadius = self.image.frame.size.height / 2
         self.image.clipsToBounds = true
+
         super.viewDidLoad()
         
-        let userRef = Database.database().reference().child("users").child("client")
+        let userRef = Database.database().reference().child("users")
         userRef.observeSingleEvent(of: .value) { (snapshot) in
             
             for userInfo in snapshot.children {
-                self.user = User(snapshot: userInfo as! DataSnapshot)
+              //  self.user = User(snapshot: userInfo as! DataSnapshot)
             }//for
             
            

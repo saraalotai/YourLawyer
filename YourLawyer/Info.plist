@@ -48,6 +48,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>ArabicFont-HelpMac-Net-07.ttf</string>
+		<string>Cocon-Next-Arabic-Light.otf</string>
 	</array>
 </dict>
 </plist>
