@@ -19,7 +19,6 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     //varoables
     let str = ["معلومات الحساب","اسم المحامي الكامل" , "البريد الإلكتروني" , "رقم الجوال"]
     
-   
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
@@ -31,10 +30,9 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
         
         let userRef = Database.database().reference().child("users")
         userRef.observeSingleEvent(of: .value) { (snapshot) in
-            
-            for userInfo in snapshot.children {
-              //  self.user = User(snapshot: userInfo as! DataSnapshot)
-            }//for
+            //for in snapshot.children {
+              //self.user = User(snapshot: userInfo as! DataSnapshot)
+           // }//for
             
            
             

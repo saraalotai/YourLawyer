@@ -15,6 +15,7 @@
 		0456A3CF203052FF00323026 /* ListIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */; };
 		0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3D0203053EA00323026 /* ListIssuesViewController.swift */; };
 		045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */; };
+		990F32E92038835F001FA35F /* Cocon-Next-Arabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 990F32E82038835F001FA35F /* Cocon-Next-Arabic-Light.otf */; };
 		999B2C81203383670086181E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 999B2C80203383660086181E /* GoogleService-Info.plist */; };
 		A251A0057CFBDE3130502092 /* Pods_YourLawyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8911963875F60E30F3265A4 /* Pods_YourLawyer.framework */; };
 		CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED5201E581000CBFA83 /* AppDelegate.swift */; };
@@ -23,7 +24,6 @@
 		CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDC201E581000CBFA83 /* Assets.xcassets */; };
 		CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
 		CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */; };
-		CC19D3622037271200C879A5 /* Cocon-Next-Arabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC19D3612037268500C879A5 /* Cocon-Next-Arabic-Light.otf */; };
 		CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */; };
 		CC48925B2033305000F8A2F2 /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */; };
 		CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC592E0E2020F74D007B9082 /* DesignableTextField.swift */; };
@@ -53,6 +53,7 @@
 		045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		4429F85A8E80132FBC4E13AC /* Pods-YourLawyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.debug.xcconfig"; sourceTree = "<group>"; };
 		5A90D45D355DA3FBAAC436FF /* Pods-YourLawyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.release.xcconfig"; sourceTree = "<group>"; };
+		990F32E82038835F001FA35F /* Cocon-Next-Arabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cocon-Next-Arabic-Light.otf"; path = "../../../Cocon-Next-Arabic-Light.otf"; sourceTree = "<group>"; };
 		999B2C80203383660086181E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		999B2C82203383860086181E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8911963875F60E30F3265A4 /* Pods_YourLawyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLawyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +66,6 @@
 		CC13CEE1201E581000CBFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDomainViewController.swift; sourceTree = "<group>"; };
 		CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArabicFont-HelpMac-Net-07.ttf"; sourceTree = "<group>"; };
-		CC19D3612037268500C879A5 /* Cocon-Next-Arabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cocon-Next-Arabic-Light.otf"; path = "../../../../Downloads/Cocon-Next-Arabic-Light.otf"; sourceTree = "<group>"; };
 		CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CC592E0E2020F74D007B9082 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		CC86E18C2028DEC600B20910 /* IssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		CC19D35D2036078700C879A5 /* font */ = {
 			isa = PBXGroup;
 			children = (
-				CC19D3612037268500C879A5 /* Cocon-Next-Arabic-Light.otf */,
+				990F32E82038835F001FA35F /* Cocon-Next-Arabic-Light.otf */,
 				CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */,
 			);
 			path = font;
@@ -265,8 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990F32E92038835F001FA35F /* Cocon-Next-Arabic-Light.otf in Resources */,
 				CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */,
-				CC19D3622037271200C879A5 /* Cocon-Next-Arabic-Light.otf in Resources */,
 				CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */,
 				999B2C81203383670086181E /* GoogleService-Info.plist in Resources */,
 				CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */,
