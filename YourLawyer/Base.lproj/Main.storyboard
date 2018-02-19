@@ -9,6 +9,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -756,8 +757,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbO-i3-Iw7">
+                                <rect key="frame" x="33" y="360" width="254" height="30"/>
+                                <color key="backgroundColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="t3V-V2-Efc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
+                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="العقد">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucs-Uz-fGr">
+                                <rect key="frame" x="33" y="405" width="254" height="30"/>
+                                <color key="backgroundColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uzG-xX-wF7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
+                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="الاستشارات و الاستفسارات">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK8-8T-MPb">
+                                <rect key="frame" x="33" y="451" width="254" height="30"/>
+                                <color key="backgroundColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eiD-oo-tlU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
+                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="خدمة المرافعة عن العميل">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرفقات القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3O-yd-QJY">
+                                <rect key="frame" x="200" y="270" width="94.5" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="5qs-Z3-RGM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRo-T7-Xme" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
+                                <rect key="frame" x="45" y="259" width="55" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="6y8-Nh-GFQ"/>
+                                    <constraint firstAttribute="width" constant="55" id="be4-E8-oOS"/>
+                                </constraints>
+                                <state key="normal" image="downloading-action"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6S-F6-6RW" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
+                                <rect key="frame" x="117" y="259" width="55" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="AFs-qh-7HZ"/>
+                                    <constraint firstAttribute="height" constant="55" id="Ssg-CO-EIZ"/>
+                                </constraints>
+                                <state key="normal" image="condenser-microphone-recording-2"/>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SQ5-eu-7nT">
-                                <rect key="frame" x="16" y="104" width="288" height="147"/>
+                                <rect key="frame" x="16" y="86" width="288" height="167"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YmW-84-Gf4">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
@@ -795,7 +859,7 @@
                                         </constraints>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ملخص القضية  .................................................................................................................." textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-9f-u7s" customClass="DCBorderedTextView" customModule="DCKit">
-                                        <rect key="frame" x="0.0" y="17" width="288" height="130"/>
+                                        <rect key="frame" x="0.0" y="17" width="288" height="150"/>
                                         <color key="backgroundColor" red="0.82061493396759033" green="0.9219929575920105" blue="0.92253291606903076" alpha="0.63706656678082196" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -810,44 +874,40 @@
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="YmW-84-Gf4" secondAttribute="trailing" id="2ie-2v-lQ9"/>
-                                    <constraint firstItem="YmW-84-Gf4" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="top" id="6Us-tv-7Wf"/>
-                                    <constraint firstItem="ek7-9f-u7s" firstAttribute="leading" secondItem="SQ5-eu-7nT" secondAttribute="leading" id="9jD-dE-Exe"/>
-                                    <constraint firstItem="YmW-84-Gf4" firstAttribute="leading" secondItem="SQ5-eu-7nT" secondAttribute="leading" id="Eac-A8-vmG"/>
-                                    <constraint firstAttribute="trailing" secondItem="ek7-9f-u7s" secondAttribute="trailing" id="KDe-5G-May"/>
                                     <constraint firstItem="ek7-9f-u7s" firstAttribute="top" secondItem="YmW-84-Gf4" secondAttribute="bottom" id="NDD-bq-uKm"/>
-                                    <constraint firstAttribute="bottom" secondItem="ek7-9f-u7s" secondAttribute="bottom" id="khY-PM-X9t"/>
+                                    <constraint firstAttribute="height" constant="167" id="QDg-JK-eLX"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SQ5-eu-7nT" firstAttribute="trailing" secondItem="GLM-pe-8dt" secondAttribute="trailingMargin" id="6WI-Ej-mZP"/>
-                            <constraint firstItem="VHz-Wk-qg8" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="268" id="8cM-fS-eJX"/>
-                            <constraint firstItem="k1e-hF-cmQ" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="22" id="9dz-Ja-sLG"/>
-                            <constraint firstItem="C60-hq-9Tm" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="10" id="CF7-ql-WgC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="k1e-hF-cmQ" secondAttribute="trailing" constant="0.5" id="Exp-Ig-hm8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ix7-HM-hlF" secondAttribute="trailing" constant="17" id="HZX-8k-R1h"/>
-                            <constraint firstItem="a4l-5U-CPU" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="10" id="KQs-jg-e30"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SQ5-eu-7nT" secondAttribute="trailing" id="Mhn-hI-XDI"/>
-                            <constraint firstItem="a4l-5U-CPU" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="QcH-Pl-2A0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FJa-j7-EQN" secondAttribute="trailing" constant="17" id="SVb-Yv-Eam"/>
-                            <constraint firstItem="Ix7-HM-hlF" firstAttribute="top" secondItem="a4l-5U-CPU" secondAttribute="bottom" constant="20" id="WiS-z9-Cvd"/>
-                            <constraint firstItem="SQ5-eu-7nT" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" id="Yt7-U4-q5P"/>
-                            <constraint firstItem="k1e-hF-cmQ" firstAttribute="leading" secondItem="C60-hq-9Tm" secondAttribute="trailing" constant="34" id="chx-BQ-Pgm"/>
-                            <constraint firstItem="B0P-WE-hpW" firstAttribute="top" secondItem="FJa-j7-EQN" secondAttribute="bottom" constant="19" id="gB5-Kl-r3o"/>
-                            <constraint firstItem="FJa-j7-EQN" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="hiT-2B-Q9D"/>
-                            <constraint firstItem="B0P-WE-hpW" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="lqx-l2-v0C"/>
-                            <constraint firstItem="SQ5-eu-7nT" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" id="nn2-vB-D5L"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="B0P-WE-hpW" secondAttribute="trailing" constant="17" id="qyr-2F-DfA"/>
-                            <constraint firstItem="C60-hq-9Tm" firstAttribute="leading" secondItem="a4l-5U-CPU" secondAttribute="trailing" constant="32" id="r7t-YI-JfO"/>
-                            <constraint firstItem="SQ5-eu-7nT" firstAttribute="top" secondItem="bnm-Cf-spe" secondAttribute="bottom" constant="40" id="wYH-b6-bm6"/>
-                            <constraint firstItem="FJa-j7-EQN" firstAttribute="top" secondItem="Ix7-HM-hlF" secondAttribute="bottom" constant="20" id="yT0-5I-gjL"/>
-                            <constraint firstItem="Ix7-HM-hlF" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="zDy-6a-h6p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y3O-yd-QJY" secondAttribute="trailing" constant="9.5" id="0mV-pU-pIu"/>
+                            <constraint firstItem="rK8-8T-MPb" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="5p1-Zt-oSH"/>
+                            <constraint firstItem="Ucs-Uz-fGr" firstAttribute="top" secondItem="vbO-i3-Iw7" secondAttribute="bottom" constant="15" id="6mb-WM-hrn"/>
+                            <constraint firstItem="SQ5-eu-7nT" firstAttribute="trailing" secondItem="GLM-pe-8dt" secondAttribute="trailingMargin" id="B5d-gz-fpn"/>
+                            <constraint firstItem="rK8-8T-MPb" firstAttribute="top" secondItem="Ucs-Uz-fGr" secondAttribute="bottom" constant="16" id="DT5-hd-FuW"/>
+                            <constraint firstItem="U6S-F6-6RW" firstAttribute="leading" secondItem="oRo-T7-Xme" secondAttribute="trailing" constant="17" id="H4J-7y-h6O"/>
+                            <constraint firstItem="SQ5-eu-7nT" firstAttribute="top" secondItem="bnm-Cf-spe" secondAttribute="bottom" constant="22" id="IYA-TD-Hne"/>
+                            <constraint firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="QcH-Pl-2A0"/>
+                            <constraint firstItem="U6S-F6-6RW" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="6" id="QwT-f4-qJn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ucs-Uz-fGr" secondAttribute="trailing" constant="17" id="U4q-UU-WBw"/>
+                            <constraint firstItem="oRo-T7-Xme" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="6" id="V5G-Z2-IKI"/>
+                            <constraint firstItem="vbO-i3-Iw7" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="WAt-Xj-Sq9"/>
+                            <constraint firstItem="SQ5-eu-7nT" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" id="X9e-Gp-IyH"/>
+                            <constraint firstItem="y3O-yd-QJY" firstAttribute="leading" secondItem="U6S-F6-6RW" secondAttribute="trailing" constant="28" id="Z6w-RK-pCU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vbO-i3-Iw7" secondAttribute="trailing" constant="17" id="giT-ny-9q4"/>
+                            <constraint firstItem="vbO-i3-Iw7" firstAttribute="top" secondItem="oRo-T7-Xme" secondAttribute="bottom" constant="46" id="h5k-Gk-qxO"/>
+                            <constraint firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="hiT-2B-Q9D"/>
+                            <constraint firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="lqx-l2-v0C"/>
+                            <constraint firstItem="y3O-yd-QJY" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="17" id="tVD-u5-6zf"/>
+                            <constraint firstItem="oRo-T7-Xme" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="29" id="uHV-dQ-gHB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rK8-8T-MPb" secondAttribute="trailing" constant="17" id="uj9-kc-pes"/>
+                            <constraint firstItem="Ucs-Uz-fGr" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="yF7-dY-TSd"/>
+                            <constraint firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="zDy-6a-h6p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="no8-P5-Kay">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="pSC-mr-b5k"/>
+                        <barButtonItem key="rightBarButtonItem" title="حذف" id="pSC-mr-b5k"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAp-Lc-m8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -896,7 +956,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNc-jA-Jq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3208" y="1076"/>
+            <point key="canvasLocation" x="3172" y="1240"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1jh-9a-nWw">
