@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     var ref = DatabaseReference.init()
     override func viewDidLoad() {
         self.ref = Database.database().reference()
+        
         super.viewDidLoad()
+    
         // Do any additional setup after loading the view, typically from a nib.
     }
   
@@ -55,11 +57,15 @@ class ViewController: UIViewController {
                             // ...redirect to the admin page
                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AdminVC")
                             self.present(vc!, animated: true, completion: nil)
+                                
                         // If out user is a regular user...
                         case "client":
                             // ...redirect to the user page
                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
                             self.present(vc!, animated: true, completion: nil)
+                            func viewDidAppear(_ animated: Bool) {
+
+                            }
                         case "lawyer":
                             // ...redirect to the user page
                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
@@ -77,5 +83,6 @@ class ViewController: UIViewController {
 }
 
     }
+    
 }// end class
 

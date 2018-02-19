@@ -7,28 +7,43 @@
 //
 
 import UIKit
-
+import Firebase
+import FirebaseDatabase
 class ListDomainsViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
+    
+  var ref = DatabaseReference.init()
+    var legaldomain = [String]()
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return legaldomain.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "domain") as! DomainsTableViewCell
-        cell.title.text = legaldomain[indexPath.row]
+        cell.title.text = "قضايا "+legaldomain[indexPath.row]
     return cell
         
     }
     
     
-    let legaldomain = ["first","second","third","fourth"]
     @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
+        self.ref = Database.database().reference()
         tableview.delegate = self
         tableview.dataSource = self
         tableview.tableFooterView = UIView(frame:.zero)
         super.viewDidLoad()
         
+      ref.child("domain").observe(.childAdded, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let  domain = value?["domainName"]as? String
+            if let d = domain{
+            
+                self.legaldomain.append(d)
+            }
+                self.tableview.reloadData()
+            
+        })
         // Do any additional setup after loading the view.
     }
 
