@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
 		040BA710202DA65A00C4B69E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA70F202DA65A00C4B69E /* NotificationViewController.swift */; };
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
 		0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419F6242023B15000637FE9 /* RoundedButton.swift */; };
@@ -26,6 +25,7 @@
 		CC19D3622037271200C879A5 /* Cocon-Next-Arabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC19D3612037268500C879A5 /* Cocon-Next-Arabic-Light.otf */; };
 		CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */; };
 		CC1AC4A8203A1874003A084E /* IssueDetailesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1AC4A7203A1874003A084E /* IssueDetailesViewController.swift */; };
+		CC1AC4AA203B5166003A084E /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1AC4A9203B5166003A084E /* ServicesViewController.swift */; };
 		CC48925B2033305000F8A2F2 /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */; };
 		CC592E0F2020F74D007B9082 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC592E0E2020F74D007B9082 /* DesignableTextField.swift */; };
 		CC78A4C02038DBD5005DD02F /* profileDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC78A4BF2038DBD5005DD02F /* profileDetails.swift */; };
@@ -45,7 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		040BA70F202DA65A00C4B69E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
 		0419F6242023B15000637FE9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArabicFont-HelpMac-Net-07.ttf"; sourceTree = "<group>"; };
 		CC19D3612037268500C879A5 /* Cocon-Next-Arabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cocon-Next-Arabic-Light.otf"; path = "../../../../Downloads/Cocon-Next-Arabic-Light.otf"; sourceTree = "<group>"; };
 		CC1AC4A7203A1874003A084E /* IssueDetailesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailesViewController.swift; sourceTree = "<group>"; };
+		CC1AC4A9203B5166003A084E /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CC592E0E2020F74D007B9082 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		CC78A4BF2038DBD5005DD02F /* profileDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileDetails.swift; sourceTree = "<group>"; };
@@ -165,10 +165,9 @@
 		CC19D35A2035E20100C879A5 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CC1AC4A7203A1874003A084E /* IssueDetailesViewController.swift */,
 				CC13CED7201E581000CBFA83 /* ViewController.swift */,
+				CC1AC4A7203A1874003A084E /* IssueDetailesViewController.swift */,
 				0456A3D0203053EA00323026 /* ListIssuesViewController.swift */,
-				040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
 				040BA70F202DA65A00C4B69E /* NotificationViewController.swift */,
 				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
 				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
@@ -181,6 +180,7 @@
 				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
 				CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */,
 				CC86E18E202B393600B20910 /* LawyersVC.swift */,
+				CC1AC4A9203B5166003A084E /* ServicesViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -372,13 +372,13 @@
 				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
 				CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
+				CC1AC4AA203B5166003A084E /* ServicesViewController.swift in Sources */,
 				CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */,
 				CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
 				0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */,
 				CCA1BB8820335D8200A1D1B8 /* ChooseIssueTableViewCell.swift in Sources */,
-				040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

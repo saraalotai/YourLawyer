@@ -315,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HX4-eb-bln" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2352" y="2044"/>
+            <point key="canvasLocation" x="1808" y="1978"/>
         </scene>
         <!--LawyersVC-->
         <scene sceneID="3aP-25-3an">
@@ -438,12 +438,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTc-kY-9Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293" y="2861"/>
+            <point key="canvasLocation" x="1808" y="2741"/>
         </scene>
         <!--خدماتنا-->
         <scene sceneID="cl8-rm-esx">
             <objects>
-                <viewController id="V2a-Y9-gQb" sceneMemberID="viewController">
+                <viewController id="V2a-Y9-gQb" customClass="ServicesViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vw0-nJ-onF"/>
                         <viewControllerLayoutGuide type="bottom" id="Kwe-99-BWq"/>
@@ -454,7 +454,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mye-ua-9P7" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
                                 <rect key="frame" x="90" y="370" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.72156862745098038" blue="0.77647058823529413" alpha="0.95117187495342459" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="R9N-wg-OyV"/>
                                 </constraints>
@@ -477,16 +477,16 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="iQi-pV-gfj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تقديم استشارة قانونية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6e-8v-nIh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلب استشارة قانونية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6e-8v-nIh">
                                 <rect key="frame" x="90" y="204" width="140" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="b6W-8S-wuA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -495,13 +495,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="bcy-Wn-Xgs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktp-VB-5En" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
                                 <rect key="frame" x="90" y="249" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.72156862745098038" blue="0.77647058823529413" alpha="0.94667701193972598" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Iqb-tI-gKc"/>
                                 </constraints>
@@ -512,7 +512,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYM-NW-XNJ" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
                                 <rect key="frame" x="90" y="126" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.0" green="0.56862745098039214" blue="0.57647058823529407" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.72156862745098038" blue="0.77647058823529413" alpha="0.95111836467945199" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="eeJ-8N-lNh"/>
                                 </constraints>
@@ -550,6 +550,9 @@
                     <navigationItem key="navigationItem" title="خدماتنا" id="lrG-Ol-Zrx">
                         <barButtonItem key="backBarButtonItem" title="  " id="73u-eS-9OA"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="serviceLabel" destination="w6e-8v-nIh" id="TIJ-hg-X30"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWY-1V-91X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -591,7 +594,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEM-LP-OB1">
-                                                    <rect key="frame" x="10" y="5" width="267" height="86.5"/>
+                                                    <rect key="frame" x="20" y="5" width="257" height="86.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="حالة القضية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaB-o4-iue">
                                                             <rect key="frame" x="179" y="45" width="80" height="25"/>
@@ -639,7 +642,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="vEM-LP-OB1" secondAttribute="trailing" constant="10" id="UBF-V1-8Zo"/>
                                                 <constraint firstAttribute="bottom" secondItem="vEM-LP-OB1" secondAttribute="bottom" constant="5" id="Wkn-ZW-DpP"/>
                                                 <constraint firstItem="vEM-LP-OB1" firstAttribute="top" secondItem="qj5-fV-fri" secondAttribute="top" constant="5" id="cjx-be-PcN"/>
-                                                <constraint firstItem="vEM-LP-OB1" firstAttribute="leading" secondItem="qj5-fV-fri" secondAttribute="leading" constant="10" id="dEo-Gt-p6Q"/>
+                                                <constraint firstItem="vEM-LP-OB1" firstAttribute="leading" secondItem="qj5-fV-fri" secondAttribute="leading" constant="20" id="dEo-Gt-p6Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -999,7 +1002,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dg-hL-rah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2795" y="1600"/>
+            <point key="canvasLocation" x="2641" y="1841"/>
         </scene>
         <!--إضافة مجال قانوني -->
         <scene sceneID="Q3n-eC-fe8">
@@ -1383,61 +1386,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الإلكتروني" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LYB-S0-Grt">
-                                <rect key="frame" x="16" y="223" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الإلكتروني" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LYB-S0-Grt">
+                                <rect key="frame" x="16" y="184" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wFC-Ao-SxU"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم المحامي الكامل" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8GT-Df-oa4">
-                                <rect key="frame" x="16" y="109" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم المحامي الكامل" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8GT-Df-oa4">
+                                <rect key="frame" x="16" y="90" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qhl-qI-Z37"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFW-UP-G5O">
-                                <rect key="frame" x="40" y="408" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الهاتف المحمول" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZ5-WZ-w8X">
+                                <rect key="frame" x="16" y="137" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mk7-9J-VEZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم مكتب المحاماة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2M4-w3-R7F">
+                                <rect key="frame" x="16" y="231" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3S5-nb-FWq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم رخصة المحاماة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVM-11-Dur">
+                                <rect key="frame" x="16" y="281" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aGM-bw-6Lt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFW-UP-G5O">
+                                <rect key="frame" x="33" y="335" width="254" height="30"/>
                                 <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b6D-n2-3AL"/>
+                                </constraints>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="تحديث البيانات">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="py4-SW-Yrm">
-                                <rect key="frame" x="40" y="456" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إلغاء الأمر">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الهاتف المحمول" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZ5-WZ-w8X">
-                                <rect key="frame" x="16" y="167" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم مكتب المحاماة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2M4-w3-R7F">
-                                <rect key="frame" x="16" y="282" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم رخصة المحاماة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVM-11-Dur">
-                                <rect key="frame" x="16" y="344" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dVM-11-Dur" firstAttribute="leading" secondItem="VEw-3f-A9b" secondAttribute="leadingMargin" id="2Mu-Sr-3f4"/>
+                            <constraint firstItem="BZ5-WZ-w8X" firstAttribute="top" secondItem="8GT-Df-oa4" secondAttribute="bottom" constant="17" id="2gX-r1-euY"/>
+                            <constraint firstItem="8GT-Df-oa4" firstAttribute="top" secondItem="cy6-K3-MK3" secondAttribute="bottom" constant="26" id="56C-Gm-IWP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CFW-UP-G5O" secondAttribute="trailing" constant="17" id="6fm-3j-N0g"/>
+                            <constraint firstItem="2M4-w3-R7F" firstAttribute="top" secondItem="LYB-S0-Grt" secondAttribute="bottom" constant="17" id="BHg-MC-tDE"/>
+                            <constraint firstItem="8GT-Df-oa4" firstAttribute="trailing" secondItem="VEw-3f-A9b" secondAttribute="trailingMargin" id="DVs-mH-Bub"/>
+                            <constraint firstItem="dVM-11-Dur" firstAttribute="trailing" secondItem="VEw-3f-A9b" secondAttribute="trailingMargin" id="E94-IV-GCd"/>
+                            <constraint firstItem="2M4-w3-R7F" firstAttribute="leading" secondItem="VEw-3f-A9b" secondAttribute="leadingMargin" id="K7j-vK-W3W"/>
+                            <constraint firstItem="LYB-S0-Grt" firstAttribute="trailing" secondItem="VEw-3f-A9b" secondAttribute="trailingMargin" id="Qjc-6v-UDh"/>
+                            <constraint firstItem="BZ5-WZ-w8X" firstAttribute="leading" secondItem="VEw-3f-A9b" secondAttribute="leadingMargin" id="SLT-MW-HNk"/>
+                            <constraint firstItem="LYB-S0-Grt" firstAttribute="leading" secondItem="VEw-3f-A9b" secondAttribute="leadingMargin" id="UxS-vL-Bfy"/>
+                            <constraint firstItem="CFW-UP-G5O" firstAttribute="leading" secondItem="VEw-3f-A9b" secondAttribute="leadingMargin" constant="17" id="bd1-0M-r8s"/>
+                            <constraint firstItem="BZ5-WZ-w8X" firstAttribute="trailing" secondItem="VEw-3f-A9b" secondAttribute="trailingMargin" id="fTK-P9-BYB"/>
+                            <constraint firstItem="CFW-UP-G5O" firstAttribute="top" secondItem="dVM-11-Dur" secondAttribute="bottom" constant="24" id="gex-5y-e2U"/>
+                            <constraint firstItem="2M4-w3-R7F" firstAttribute="trailing" secondItem="VEw-3f-A9b" secondAttribute="trailingMargin" id="ioS-zF-JRX"/>
+                            <constraint firstItem="dVM-11-Dur" firstAttribute="top" secondItem="2M4-w3-R7F" secondAttribute="bottom" constant="20" id="jDl-OB-oiW"/>
+                            <constraint firstItem="LYB-S0-Grt" firstAttribute="top" secondItem="BZ5-WZ-w8X" secondAttribute="bottom" constant="17" id="pl8-e5-ewI"/>
+                            <constraint firstItem="8GT-Df-oa4" firstAttribute="leading" secondItem="VEw-3f-A9b" secondAttribute="leadingMargin" id="uUi-gy-PR4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="تعديل معلومات الحساب" id="7wq-Ph-quJ"/>
                 </viewController>
@@ -1676,124 +1702,6 @@
             </objects>
             <point key="canvasLocation" x="-356.26666666666665" y="3126.8400000000001"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="aI6-Os-8dE">
-            <objects>
-                <viewController id="8X0-HY-S7v" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8C1-tF-aRo"/>
-                        <viewControllerLayoutGuide type="bottom" id="MQu-QV-l6C"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IV5-6D-b5m">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="X79-VC-RfD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NqR-F4-1t5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1086" y="4781"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="yMl-96-e2q">
-            <objects>
-                <viewController id="4re-st-HBZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="J7M-mP-3m9"/>
-                        <viewControllerLayoutGuide type="bottom" id="mx0-k3-5iF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hVz-tg-msK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3h-CI-kyF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="7kS-Ma-zIY"/>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-p3-Ia2" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="62" y="256" width="196" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إضافة ملاحظات"/>
-                                <connections>
-                                    <segue destination="lCL-5W-uNN" kind="push" id="60M-Oc-2jq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLX-Zp-QHl" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="62" y="389" width="196" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إضافة سؤال"/>
-                                <connections>
-                                    <segue destination="D7n-YO-A6I" kind="push" id="XuD-bJ-L02"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4p-ky-FAc" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="62" y="123" width="196" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="تآكيد المرافعة"/>
-                                <connections>
-                                    <segue destination="8X0-HY-S7v" kind="push" id="okl-YZ-mno"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IlF-OA-CDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-754" y="4050"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="zQD-tD-Ls3">
-            <objects>
-                <viewController id="D7n-YO-A6I" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZcP-Fe-en2"/>
-                        <viewControllerLayoutGuide type="bottom" id="zKV-9a-C7Z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v6H-LT-taY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpg-MO-bu6">
-                                <rect key="frame" x="33" y="159" width="254" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyK-ah-UGI">
-                                <rect key="frame" x="33" y="363" width="254" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إرسال">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="استفسار حول القضية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erh-iI-soa">
-                                <rect key="frame" x="54" y="79" width="212" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="eUR-hu-bb4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IYg-9H-fRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-426" y="4781"/>
-        </scene>
         <!--تفاصيل القضية-->
         <scene sceneID="Duf-iM-X1q">
             <objects>
@@ -1915,50 +1823,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZT-Hu-Zsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4875" y="1460"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pHa-1Y-GS7">
-            <objects>
-                <viewController id="ypm-jg-dsB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xD7-Gx-Dl4"/>
-                        <viewControllerLayoutGuide type="bottom" id="hLn-m9-sG4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fZc-48-YNA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fic-Qk-hl0">
-                                <rect key="frame" x="47" y="94" width="227" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nn4-Ps-FEp">
-                                <rect key="frame" x="47" y="341" width="227" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="تقديم استشارة قانونيية">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJm-pQ-hyM">
-                                <rect key="frame" x="47" y="415" width="227" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إلغاء الأمر">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CVb-2X-C9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1224" y="3728"/>
         </scene>
         <!--Register Lawyer View Controller-->
         <scene sceneID="RxK-Ls-ICc">
@@ -2112,6 +1976,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="HRs-of-aDe" secondAttribute="trailing" constant="17" id="0IT-l0-GWD"/>
                             <constraint firstItem="3oI-18-0H3" firstAttribute="top" secondItem="zul-Ij-el2" secondAttribute="bottom" constant="6" id="0NY-Mn-T9o"/>
@@ -2338,10 +2203,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gzP-p7-eem">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gzP-p7-eem">
                                                     <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2372,7 +2237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODT-jJ-mPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3748" y="1391"/>
+            <point key="canvasLocation" x="3678" y="1596"/>
         </scene>
         <!--القضايا-->
         <scene sceneID="u3r-iA-eFC">
@@ -2679,50 +2544,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcl-Md-C5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="760"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Mqg-aJ-Uzg">
-            <objects>
-                <viewController id="lCL-5W-uNN" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fGI-Y8-L8b"/>
-                        <viewControllerLayoutGuide type="bottom" id="TVL-ZK-YO4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1Y4-l9-keU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-o8-Ylc">
-                                <rect key="frame" x="38" y="161" width="254" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="إضافة ملاحظات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3M-Ao-ZRx">
-                                <rect key="frame" x="67" y="79" width="197" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNc-5h-6Xq">
-                                <rect key="frame" x="38" y="374" width="254" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إرسال">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="pxt-Kk-aEL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aqh-ic-TjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-189" y="4050"/>
         </scene>
         <!--تقديم قضية-->
         <scene sceneID="TMJ-4K-rKP">

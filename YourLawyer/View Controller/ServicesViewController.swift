@@ -1,35 +1,27 @@
 //
-//  ServiceViewController.swift
+//  ServicesViewController.swift
 //  YourLawyer
 //
-//  Created by MAC on 20/05/1439 AH.
-//  Copyright © 1439 mac pro retina. All rights reserved.
+//  Created by mac pro retina on 2/19/18.
+//  Copyright © 2018 mac pro retina. All rights reserved.
 //
 
 import UIKit
 
-class ServiceViewController: UIViewController {
-  @IBOutlet weak var sixButton: UIButton!
-   @IBOutlet weak var fifthButton: UIButton!
-    @IBOutlet weak var fourthButton: UIButton!
-   @IBOutlet weak var thirdButton: UIButton!
-    @IBOutlet weak var secondButton: UIButton!
-   @IBOutlet weak var mainButton: UIButton!
-    
+class ServicesViewController: UIViewController {
+
+    @IBOutlet weak var serviceLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        
-       // fifthButton.layer.cornerRadius = sixButton.frame.height / 2
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+  
 
     /*
     // MARK: - Navigation
