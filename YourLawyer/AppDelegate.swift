@@ -23,6 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
+        // navigationBar title color
+        var preferredStatusBarStyle: UIStatusBarStyle {
+            return .lightContent
+        }
+        UINavigationBar.appearance().barTintColor = UIColor.black
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
+        
+        
+        
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert , .sound , .badge] ) { (isGranted, err) in
             if err != nil {
                 //something bad happend
@@ -32,8 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
                
                 
              //   UIApplication.shared.registerForRemoteNotifications()
-               
-               
+ 
+                
             }
         }
 
@@ -42,7 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
         //change the backgriund of nav bar
         let  navimage = UIImage(named: "back.png")
         UINavigationBar.appearance().setBackgroundImage(navimage, for: .default)
-    
         
         return true
     }
@@ -50,6 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
     {
         Messaging.messaging().shouldEstablishDirectChannel = true
     }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

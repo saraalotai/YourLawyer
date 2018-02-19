@@ -28,6 +28,7 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
         tableview.tableFooterView = UIView(frame:.zero)
         self.image.layer.cornerRadius = self.image.frame.size.height / 2
         self.image.clipsToBounds = true
+
         super.viewDidLoad()
         
         ref = Database.database().reference().child("users");
@@ -76,7 +77,7 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return str.count
+    return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -89,7 +90,7 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
         cell.subtitle.text = lawyerInfo.email
         cell.subtitle.text = lawyerInfo.phoneNo
         
-          return cell
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
