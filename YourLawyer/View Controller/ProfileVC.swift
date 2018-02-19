@@ -16,10 +16,12 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var image: UIImageView!
     
+    
     //varoables
     let str = ["معلومات الحساب","اسم المحامي الكامل" , "البريد الإلكتروني" , "رقم الجوال"]
+    var ref : DatabaseReference!
+    var info=[profileDetails] ()
     
-    var user = User()
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
@@ -28,90 +30,37 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
         self.image.clipsToBounds = true
         super.viewDidLoad()
         
-        let userRef = Database.database().reference().child("users").child("client")
-        userRef.observeSingleEvent(of: .value) { (snapshot) in
+        ref = Database.database().reference().child("users");
+    ref.observe(DataEventType.value, with: { (snapshot) in
+        if snapshot.childrenCount>0 {
+           self.info.removeAll()
             
-            for userInfo in snapshot.children {
-                self.user = User(snapshot: userInfo as! DataSnapshot)
-            }//for
-            
-           
-            
-            
-          /*  Storage.storage().reference(forURL: self.user.userImage).getData(maxSize: 1024, completion: { (UserImage,error ) in
+            for users in snapshot.children.allObjects as! [DataSnapshot] {
                 
-                if let error = error {
-                    print(error)
-                    
-                }
-                else{
-                    
-                    if let data = UserImage {
-                        
-                        self.image.image = UIImage( data: data)
-                        
-                    }
-                    
-                }
-            })
+                let userObject = users.value as? [String: AnyObject]
+                let lawyerName = userObject?["fullName"]
+                let email = userObject?["email"]
+                let phone = userObject?["phoneNo"]
+                let lawyerId = userObject?["id"]
             
-            */
+                let details = profileDetails( fullName: lawyerName as! String? , email: email as! String? , phoneNo: phone as! String?)
+                
+                self.info.append(details)
             
-        }//for
+        }
+            self.tableview.reloadData()
+        }
         
-        // Do any additional setup after loading the view.
         
-        /*
-        let userRef = Database.database().reference().child("users")
-        userRef.observeSingleEvent(of: .value) { (snapshot) in
-            
-            for userInfo in snapshot.children {
-        self.user = User(snapshot: userInfo as! DataSnapshot)
-            }//for
-            
-                let userinformation = self.tableview.dequeueReusableCell(withIdentifier: "cell") as! ProfileDataTableViewCell
-            userinformation.subtitle.text = self.user.fullName
-                
-                
-            Storage.storage().reference(forURL: self.user.userImage).getData(maxSize: 1024, completion: { (UserImage,error ) in
-                    
-                    if let error = error {
-                        print(error)
-                    
-                    }
-                    else{
-                        
-                        if let data = UserImage {
-                            
-                            self.image.image = UIImage( data: data)
-                            
-                        }
-                        
-                    }
-                 })
-                
-            
-                
-        }//for
         
-          */
-            
-    } //end function
-    
-                //self.user = User(snapshot: userInfo as! DataSnapshot)
+         })
         
-           // let userinformation = self.tableview.dequeueReusableCell(withIdentifier: "cell") as! ProfileDataTableViewCell
-           // userinformation.subtitle.text = self.user.Username
-  /*  let fullName=valueDictionary["fullName"]
-    let email=valueDictionary["email"]
-    let PhonNo=valueDictionary["PhoneNo"]
-    let UserImage=valueDictionary["UserImage"]
-    self.user.insert(User(fullName: fullName, email: email, PhoneNo: PhonNo, UserImage: UserImage), at: 0)
-    
-    self.tableview.reloadData()
-            
-    
-        */
+        
+        
+    }//end function
+      
+   
+   
     
     @IBAction func logout(_ sender: Any) {
         
@@ -131,9 +80,14 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview.dequeueReusableCell(withIdentifier: "cell") as! ProfileDataTableViewCell
+        let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfileDataTableViewCell
+        let lawyerInfo : profileDetails
+        lawyerInfo = info[indexPath.row]
+        
         cell.title.text = str[indexPath.row]
-        cell.subtitle.text = Auth.auth().currentUser!.email
+        cell.subtitle.text = lawyerInfo.fullName
+        cell.subtitle.text = lawyerInfo.email
+        cell.subtitle.text = lawyerInfo.phoneNo
         
           return cell
     }
