@@ -57,6 +57,7 @@ class ViewController: UIViewController {
                             // ...redirect to the admin page
                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AdminVC")
                             self.present(vc!, animated: true, completion: nil)
+                                
                         // If out user is a regular user...
                         case "client":
                             // ...redirect to the user page

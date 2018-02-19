@@ -61,56 +61,34 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
         // Do any additional setup after loading the view.
         
         /*
-        let userRef = Database.database().reference().child("users")
-        userRef.observeSingleEvent(of: .value) { (snapshot) in
+   let userID = Auth.auth().currentUser?.uid
+        ref = Database.database().reference().child("users").child(userID!)
+            ref.observeSingleEvent(of: .value, with:{ (snapshot) in
             
-            for userInfo in snapshot.children {
-        self.user = User(snapshot: userInfo as! DataSnapshot)
-            }//for
-            
-                let userinformation = self.tableview.dequeueReusableCell(withIdentifier: "cell") as! ProfileDataTableViewCell
-            userinformation.subtitle.text = self.user.fullName
-                
-                
-            Storage.storage().reference(forURL: self.user.userImage).getData(maxSize: 1024, completion: { (UserImage,error ) in
-                    
-                    if let error = error {
-                        print(error)
-                    
-                    }
-                    else{
+                    for users in snapshot.children.allObjects as! [DataSnapshot] {
                         
-                        if let data = UserImage {
-                            
-                            self.image.image = UIImage( data: data)
-                            
-                        }
+                        let userObject = users.value as? [String: AnyObject]
+                        let lawyerName = userObject?["fullName"] as! String
+                        let email = userObject?["email"] as! String
+                        let phone = userObject?["phoneNo"] as! String
+                        let lawyerId = userObject?["ID"] as! String
                         
-                    }
-                 })
+                        let details = profileDetails( fullName: lawyerName , email: email  , phoneNo: phone)
+                        
+                        self.info.append(details)
+                        self.infor.append(lawyerName)
+                        self.infor.append(email)
+                        self.infor.append(phone)
+                        self.infor.append(lawyerId)
+                }
                 
-            
+ 
                 
-        }//for
-        
-          */
+            }) */
             
     } //end function
     
-                //self.user = User(snapshot: userInfo as! DataSnapshot)
-        
-           // let userinformation = self.tableview.dequeueReusableCell(withIdentifier: "cell") as! ProfileDataTableViewCell
-           // userinformation.subtitle.text = self.user.Username
-  /*  let fullName=valueDictionary["fullName"]
-    let email=valueDictionary["email"]
-    let PhonNo=valueDictionary["PhoneNo"]
-    let UserImage=valueDictionary["UserImage"]
-    self.user.insert(User(fullName: fullName, email: email, PhoneNo: PhonNo, UserImage: UserImage), at: 0)
-    
-    self.tableview.reloadData()
-            
-    
-        */
+
     
     @IBAction func logout(_ sender: Any) {
         
@@ -126,15 +104,18 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return str.count
+    return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview.dequeueReusableCell(withIdentifier: "cell") as! ProfileDataTableViewCell
-        cell.title.text = str[indexPath.row]
-        cell.subtitle.text = Auth.auth().currentUser!.email
+        let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfileDataTableViewCell
+//        let lawyerInfo : profileDetails
+       // lawyerInfo = info[indexPath.row]
         
-          return cell
+      //  cell.title.text = str[indexPath.row]
+       // cell.subtitle.text = infor[indexPath.row]
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
