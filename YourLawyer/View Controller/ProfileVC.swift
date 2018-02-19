@@ -17,13 +17,8 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     @IBOutlet weak var image: UIImageView!
     
     //varoables
-    let lawyerInfo = ["الاسم ","المجالات المختص بها" , "البريد الإلكتروني" , "رقم الجوال"]
-    let clientInfo = ["الاسم ","الجنس " , "البريد الإلكتروني" , "رقم الجوال"]
-
-    var infor = [String]()
-     var ref : DatabaseReference!
-    var info=[profileDetails]()
-
+    let str = ["معلومات الحساب","اسم المحامي الكامل" , "البريد الإلكتروني" , "رقم الجوال"]
+    
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
@@ -32,6 +27,39 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
         self.image.clipsToBounds = true
 
         super.viewDidLoad()
+        
+        let userRef = Database.database().reference().child("users")
+        userRef.observeSingleEvent(of: .value) { (snapshot) in
+            //for in snapshot.children {
+              //self.user = User(snapshot: userInfo as! DataSnapshot)
+           // }//for
+            
+           
+            
+            
+          /*  Storage.storage().reference(forURL: self.user.userImage).getData(maxSize: 1024, completion: { (UserImage,error ) in
+                
+                if let error = error {
+                    print(error)
+                    
+                }
+                else{
+                    
+                    if let data = UserImage {
+                        
+                        self.image.image = UIImage( data: data)
+                        
+                    }
+                    
+                }
+            })
+            
+            */
+            
+        }//for
+        
+        // Do any additional setup after loading the view.
+        
         /*
    let userID = Auth.auth().currentUser?.uid
         ref = Database.database().reference().child("users").child(userID!)
