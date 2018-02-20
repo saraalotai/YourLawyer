@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040A983A2038CCB400CBCCB2 /* profileDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A98392038CCB400CBCCB2 /* profileDetails.swift */; };
+		040A983C203B83F600CBCCB2 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A983B203B83F600CBCCB2 /* EditViewController.swift */; };
 		040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA7092029F7BD00C4B69E /* ServiceViewController.swift */; };
 		040BA710202DA65A00C4B69E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BA70F202DA65A00C4B69E /* NotificationViewController.swift */; };
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		040A98392038CCB400CBCCB2 /* profileDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileDetails.swift; sourceTree = "<group>"; };
+		040A983B203B83F600CBCCB2 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		040BA7092029F7BD00C4B69E /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		040BA70F202DA65A00C4B69E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +65,6 @@
 		CC13CEE1201E581000CBFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDomainViewController.swift; sourceTree = "<group>"; };
 		CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArabicFont-HelpMac-Net-07.ttf"; sourceTree = "<group>"; };
-		CC19D3612037268500C879A5 /* Cocon-Next-Arabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cocon-Next-Arabic-Light.otf"; path = "../../../../Downloads/Cocon-Next-Arabic-Light.otf"; sourceTree = "<group>"; };
-		CC1AC4A7203A1874003A084E /* IssueDetailesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailesViewController.swift; sourceTree = "<group>"; };
 		CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CC86E18C2028DEC600B20910 /* IssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
 		CC86E18E202B393600B20910 /* LawyersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersVC.swift; sourceTree = "<group>"; };
@@ -156,6 +156,7 @@
 		CC19D35A2035E20100C879A5 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				040A983B203B83F600CBCCB2 /* EditViewController.swift */,
 				040A98392038CCB400CBCCB2 /* profileDetails.swift */,
 				CC13CED7201E581000CBFA83 /* ViewController.swift */,
 				0456A3D0203053EA00323026 /* ListIssuesViewController.swift */,
@@ -194,7 +195,6 @@
 		CC19D35D2036078700C879A5 /* font */ = {
 			isa = PBXGroup;
 			children = (
-				990F32E82038835F001FA35F /* Cocon-Next-Arabic-Light.otf */,
 				CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */,
 			);
 			path = font;
@@ -262,7 +262,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990F32E92038835F001FA35F /* Cocon-Next-Arabic-Light.otf in Resources */,
 				CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */,
 				CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */,
 				CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */,
@@ -351,14 +350,12 @@
 				CCA1BB902034DC0B00A1D1B8 /* ResetPasswordViewController.swift in Sources */,
 				040A983A2038CCB400CBCCB2 /* profileDetails.swift in Sources */,
 				CCA1BB8A20335DED00A1D1B8 /* ChooseIssueViewController.swift in Sources */,
-				CC78A4C02038DBD5005DD02F /* profileDetails.swift in Sources */,
 				CCC2585C202E1C8D00641CB5 /* CellNTableViewCell.swift in Sources */,
 				040BA710202DA65A00C4B69E /* NotificationViewController.swift in Sources */,
 				044088502027369900A33AC8 /* CustomTableView.swift in Sources */,
 				04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */,
 				0456A3CF203052FF00323026 /* ListIssueTableViewCell.swift in Sources */,
 				CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */,
-				CC1AC4A8203A1874003A084E /* IssueDetailesViewController.swift in Sources */,
 				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
 				CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
@@ -369,6 +366,7 @@
 				0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */,
 				CCA1BB8820335D8200A1D1B8 /* ChooseIssueTableViewCell.swift in Sources */,
 				040BA70A2029F7BD00C4B69E /* ServiceViewController.swift in Sources */,
+				040A983C203B83F600CBCCB2 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
