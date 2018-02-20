@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import Firebase
 class DomainsVCViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
-    let legaldomain = ["first","second","third","fourth"]
+    var legaldomain = [String]()
+    var ref = DatabaseReference.init()
      @IBOutlet weak var domains: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return legaldomain.count
@@ -28,8 +29,17 @@ class DomainsVCViewController: UIViewController ,UITableViewDelegate, UITableVie
         domains.delegate = self
         domains.dataSource = self
         super.viewDidLoad()
-
+        ref.child("domain").observe(.childAdded, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let  domain = value?["domainName"]as? String
+            if let d = domain{
+                
+                self.legaldomain.append(d)
+            }
+            self.domains.reloadData()
+            
         // Do any additional setup after loading the view.
+    })
     }
 
     override func didReceiveMemoryWarning() {

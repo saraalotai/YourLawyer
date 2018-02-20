@@ -25,6 +25,8 @@
 		CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
 		CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */; };
 		CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */; };
+		CC1AC4A8203A1874003A084E /* IssueDetailesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1AC4A7203A1874003A084E /* IssueDetailesViewController.swift */; };
+		CC1AC4AA203B5166003A084E /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1AC4A9203B5166003A084E /* ServicesViewController.swift */; };
 		CC48925B2033305000F8A2F2 /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */; };
 		CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18C2028DEC600B20910 /* IssueViewController.swift */; };
 		CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18E202B393600B20910 /* LawyersVC.swift */; };
@@ -140,6 +142,7 @@
 		CC13CED4201E581000CBFA83 /* YourLawyer */ = {
 			isa = PBXGroup;
 			children = (
+				CC5B0059203B73AB000534C9 /* Cocon-Next-Arabic-Light.otf */,
 				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
 				CC13CEDC201E581000CBFA83 /* Assets.xcassets */,
@@ -159,8 +162,8 @@
 				040A983B203B83F600CBCCB2 /* EditViewController.swift */,
 				040A98392038CCB400CBCCB2 /* profileDetails.swift */,
 				CC13CED7201E581000CBFA83 /* ViewController.swift */,
+				CC1AC4A7203A1874003A084E /* IssueDetailesViewController.swift */,
 				0456A3D0203053EA00323026 /* ListIssuesViewController.swift */,
-				040BA7092029F7BD00C4B69E /* ServiceViewController.swift */,
 				040BA70F202DA65A00C4B69E /* NotificationViewController.swift */,
 				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
 				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
@@ -173,6 +176,7 @@
 				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
 				CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */,
 				CC86E18E202B393600B20910 /* LawyersVC.swift */,
+				CC1AC4A9203B5166003A084E /* ServicesViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -359,6 +363,7 @@
 				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
 				CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
+				CC1AC4AA203B5166003A084E /* ServicesViewController.swift in Sources */,
 				CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */,
 				CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,

@@ -99,7 +99,11 @@ class RegisterClientViewController: UIViewController, UIPickerViewDataSource ,UI
                        "type":"client"]
             self.ref.child("users").child(user!.uid).setValue(msg)
                 print("User ID: \(user?.uid)")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main")
+            self.present(vc!, animated: true, completion: nil)
+            func viewDidAppear(_ animated: Bool) {
                 
+            }
             }
         
     }
