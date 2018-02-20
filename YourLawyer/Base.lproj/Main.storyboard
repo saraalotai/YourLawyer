@@ -9,6 +9,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -486,7 +487,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T1Y-Hc-VYz">
-                                <rect key="frame" x="0.0" y="308" width="320" height="252"/>
+                                <rect key="frame" x="36" y="308" width="250" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -821,26 +822,17 @@
                         <constraints>
                             <constraint firstItem="SQ5-eu-7nT" firstAttribute="trailing" secondItem="GLM-pe-8dt" secondAttribute="trailingMargin" id="6WI-Ej-mZP"/>
                             <constraint firstItem="VHz-Wk-qg8" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="268" id="8cM-fS-eJX"/>
-                            <constraint firstItem="k1e-hF-cmQ" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="22" id="9dz-Ja-sLG"/>
-                            <constraint firstItem="C60-hq-9Tm" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="10" id="CF7-ql-WgC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="k1e-hF-cmQ" secondAttribute="trailing" constant="0.5" id="Exp-Ig-hm8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ix7-HM-hlF" secondAttribute="trailing" constant="17" id="HZX-8k-R1h"/>
-                            <constraint firstItem="a4l-5U-CPU" firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="10" id="KQs-jg-e30"/>
+                            <constraint firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="22" id="9dz-Ja-sLG"/>
+                            <constraint firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="10" id="CF7-ql-WgC"/>
+                            <constraint firstAttribute="top" secondItem="SQ5-eu-7nT" secondAttribute="bottom" constant="10" id="KQs-jg-e30"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SQ5-eu-7nT" secondAttribute="trailing" id="Mhn-hI-XDI"/>
-                            <constraint firstItem="a4l-5U-CPU" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="QcH-Pl-2A0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FJa-j7-EQN" secondAttribute="trailing" constant="17" id="SVb-Yv-Eam"/>
-                            <constraint firstItem="Ix7-HM-hlF" firstAttribute="top" secondItem="a4l-5U-CPU" secondAttribute="bottom" constant="20" id="WiS-z9-Cvd"/>
+                            <constraint firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="QcH-Pl-2A0"/>
                             <constraint firstItem="SQ5-eu-7nT" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" id="Yt7-U4-q5P"/>
-                            <constraint firstItem="k1e-hF-cmQ" firstAttribute="leading" secondItem="C60-hq-9Tm" secondAttribute="trailing" constant="34" id="chx-BQ-Pgm"/>
-                            <constraint firstItem="B0P-WE-hpW" firstAttribute="top" secondItem="FJa-j7-EQN" secondAttribute="bottom" constant="19" id="gB5-Kl-r3o"/>
-                            <constraint firstItem="FJa-j7-EQN" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="hiT-2B-Q9D"/>
-                            <constraint firstItem="B0P-WE-hpW" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="lqx-l2-v0C"/>
+                            <constraint firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="hiT-2B-Q9D"/>
+                            <constraint firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="lqx-l2-v0C"/>
                             <constraint firstItem="SQ5-eu-7nT" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" id="nn2-vB-D5L"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="B0P-WE-hpW" secondAttribute="trailing" constant="17" id="qyr-2F-DfA"/>
-                            <constraint firstItem="C60-hq-9Tm" firstAttribute="leading" secondItem="a4l-5U-CPU" secondAttribute="trailing" constant="32" id="r7t-YI-JfO"/>
                             <constraint firstItem="SQ5-eu-7nT" firstAttribute="top" secondItem="bnm-Cf-spe" secondAttribute="bottom" constant="40" id="wYH-b6-bm6"/>
-                            <constraint firstItem="FJa-j7-EQN" firstAttribute="top" secondItem="Ix7-HM-hlF" secondAttribute="bottom" constant="20" id="yT0-5I-gjL"/>
-                            <constraint firstItem="Ix7-HM-hlF" firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="zDy-6a-h6p"/>
+                            <constraint firstAttribute="leading" secondItem="GLM-pe-8dt" secondAttribute="leadingMargin" constant="17" id="zDy-6a-h6p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="no8-P5-Kay">
