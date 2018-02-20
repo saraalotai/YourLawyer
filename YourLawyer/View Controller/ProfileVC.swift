@@ -16,8 +16,11 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var image: UIImageView!
     
+    
     //varoables
     let str = ["معلومات الحساب","اسم المحامي الكامل" , "البريد الإلكتروني" , "رقم الجوال"]
+    var ref : DatabaseReference!
+    var info=[profileDetails] ()
     
     override func viewDidLoad() {
         tableview.delegate = self
@@ -28,67 +31,37 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
 
         super.viewDidLoad()
         
-        let userRef = Database.database().reference().child("users")
-        userRef.observeSingleEvent(of: .value) { (snapshot) in
-            //for in snapshot.children {
-              //self.user = User(snapshot: userInfo as! DataSnapshot)
-           // }//for
+        ref = Database.database().reference().child("users");
+    ref.observe(DataEventType.value, with: { (snapshot) in
+        if snapshot.childrenCount>0 {
+           self.info.removeAll()
             
-           
-            
-            
-          /*  Storage.storage().reference(forURL: self.user.userImage).getData(maxSize: 1024, completion: { (UserImage,error ) in
+            for users in snapshot.children.allObjects as! [DataSnapshot] {
                 
-                if let error = error {
-                    print(error)
-                    
-                }
-                else{
-                    
-                    if let data = UserImage {
-                        
-                        self.image.image = UIImage( data: data)
-                        
-                    }
-                    
-                }
-            })
+                let userObject = users.value as? [String: AnyObject]
+                let lawyerName = userObject?["fullName"]
+                let email = userObject?["email"]
+                let phone = userObject?["phoneNo"]
+                let lawyerId = userObject?["id"]
             
-            */
+                let details = profileDetails( fullName: lawyerName as! String? , email: email as! String? , phoneNo: phone as! String?)
+                
+                self.info.append(details)
             
-        }//for
+        }
+            self.tableview.reloadData()
+        }
         
-        // Do any additional setup after loading the view.
         
-        /*
-   let userID = Auth.auth().currentUser?.uid
-        ref = Database.database().reference().child("users").child(userID!)
-            ref.observeSingleEvent(of: .value, with:{ (snapshot) in
-            
-                    for users in snapshot.children.allObjects as! [DataSnapshot] {
-                        
-                        let userObject = users.value as? [String: AnyObject]
-                        let lawyerName = userObject?["fullName"] as! String
-                        let email = userObject?["email"] as! String
-                        let phone = userObject?["phoneNo"] as! String
-                        let lawyerId = userObject?["ID"] as! String
-                        
-                        let details = profileDetails( fullName: lawyerName , email: email  , phoneNo: phone)
-                        
-                        self.info.append(details)
-                        self.infor.append(lawyerName)
-                        self.infor.append(email)
-                        self.infor.append(phone)
-                        self.infor.append(lawyerId)
-                }
-                
- 
-                
-            }) */
-            
-    } //end function
-    
-
+        
+         })
+        
+        
+        
+    }//end function
+      
+   
+   
     
     @IBAction func logout(_ sender: Any) {
         
@@ -109,17 +82,19 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfileDataTableViewCell
-//        let lawyerInfo : profileDetails
-       // lawyerInfo = info[indexPath.row]
+        let lawyerInfo : profileDetails
+        lawyerInfo = info[indexPath.row]
         
-      //  cell.title.text = str[indexPath.row]
-       // cell.subtitle.text = infor[indexPath.row]
+        cell.title.text = str[indexPath.row]
+        cell.subtitle.text = lawyerInfo.fullName
+        cell.subtitle.text = lawyerInfo.email
+        cell.subtitle.text = lawyerInfo.phoneNo
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 45
     }
 
     override func didReceiveMemoryWarning() {

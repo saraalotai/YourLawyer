@@ -144,6 +144,12 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
                            "UserImage":"",
                            "type":"lawyer"]
               self.ref.child("users").child(user!.uid).setValue(msg)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main")
+            self.present(vc!, animated: true, completion: nil)
+            func viewDidAppear(_ animated: Bool) {
+                
+            }
+
             }
         }
 

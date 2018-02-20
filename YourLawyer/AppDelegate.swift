@@ -24,15 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
         FirebaseApp.configure()
         
         // navigationBar title color
-        var preferredStatusBarStyle: UIStatusBarStyle {
-            return .lightContent
-        }
         UINavigationBar.appearance().barTintColor = UIColor.black
-        UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        //UINavigationBar.appearance().tintColor = .white
+       // UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         UINavigationBar.appearance().isTranslucent = false
         
-        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedStringKey.font: UIFont(name: "CoconNextArabic-Light", size: 20)!]
+      
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert , .sound , .badge] ) { (isGranted, err) in
             if err != nil {
@@ -90,6 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
         
         
     }
+ 
 
     func application(_ application: UIApplication, willChangeStatusBarFrame newStatusBarFrame: CGRect) {
         let windows = UIApplication.shared.windows
