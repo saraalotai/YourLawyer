@@ -63,9 +63,7 @@ class ViewController: UIViewController {
                             // ...redirect to the user page
                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
                             self.present(vc!, animated: true, completion: nil)
-                            func viewDidAppear(_ animated: Bool) {
-
-                            }
+                           
                         case "lawyer":
                             // ...redirect to the user page
                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")

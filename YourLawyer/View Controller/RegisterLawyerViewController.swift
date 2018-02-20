@@ -152,6 +152,7 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
 
             }
         }
+    
 
         
    

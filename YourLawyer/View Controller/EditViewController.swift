@@ -22,42 +22,40 @@ class EditViewController: UIViewController {
     
     @IBOutlet weak var officeName: UITextField!
     
-    var user : profileDetails!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        let userRef = Database.database().reference().child("users")
-        
-        userRef.observe(.value, with: { (snapshot) in
-            
-            for UserInfo in snapshot.children {
-                
-                self.user = profileDetails(snapshot: UserInfo as! DataSnapshot)
-                
-            } //for
-            
-            
-            
-            self.fullName.text = self.user.fullName
-            self.email.text = self.user.email
-            self.cardNo.text = self.user.cardNo
-            self.phoneNo.text = self.user.phoneNo
-            self.officeName.text = self.user.officeName
-            
-            
-            
-        })
+
       
         
         
         
     }
-
             
-            
+            override func viewWillAppear(_ animated: Bool)
+            {
+                let userID = Auth.auth().currentUser!.uid
+                let userRef = Database.database().reference().child("users/\(userID)")
+                
+                userRef.observe(.value, with: { (snapshot) in
+                    print ("no print")
+                    
+                    let user = profileDetails(snapshot: snapshot)
+                    
+                    self.fullName.text = user.fullName
+                    self.email.text = user.email
+                    self.cardNo.text = user.cardNo
+                    self.phoneNo.text = user.phoneNo
+                    self.officeName.text = user.officeName
+                    
+                    
+                    
+                    
+                })
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
