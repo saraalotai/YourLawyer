@@ -7,22 +7,44 @@
 //
 
 import UIKit
-
+import Firebase
+import FirebaseDatabase
 class LawyerListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     //varibles
-    let names = ["احمد","عبدالله","ياسر"]
+    var names = [String]()
+    var office = [String]()
     var filterData = [String]()
     var isSearch = false
+     var ref = DatabaseReference.init()
     //outlets
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var searchLawyer: UISearchBar!
     
     override func viewDidLoad() {
+         self.ref = Database.database().reference()
         tableview.delegate = self
         tableview.dataSource = self
         searchLawyer.delegate = self
         super.viewDidLoad()
-       
+        ref.child("users").observe(.childAdded, with: { (snapshot) in
+           
+            let value = snapshot.value as? NSDictionary
+            let  LawyerName = value?["fullName"]as? String
+            let  officeName = value?["officeName"]as? String
+            let  isLawyer = value?["type"]as? String
+            if isLawyer == "lawyer"{
+              
+                self.names.append(LawyerName!)
+                self.office.append(officeName ?? "لا يوجد")
+               
+            }
+            else
+            {
+                print("Error")
+            }
+            self.tableview.reloadData()
+            
+        })
         // Do any additional setup after loading the view.
     }
 
@@ -43,6 +65,7 @@ class LawyerListViewController: UIViewController, UITableViewDelegate, UITableVi
             
             cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
             cell.lawerName.text = filterData[indexPath.row]
+            cell.officeName.text = office[indexPath.row]
             cell.lawerImage.image = UIImage(named: "avatar.png")
             cell.lawerImage.layer.cornerRadius = cell.lawerImage.frame.height / 2
             cell.lawerImage.clipsToBounds = true
@@ -52,6 +75,7 @@ class LawyerListViewController: UIViewController, UITableViewDelegate, UITableVi
 
         cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
         cell.lawerName.text = names[indexPath.row]
+        cell.officeName.text = office[indexPath.row]
         cell.lawerImage.image = UIImage(named: "avatar.png")
         cell.lawerImage.layer.cornerRadius = cell.lawerImage.frame.height / 2
         cell.lawerImage.clipsToBounds = true
@@ -74,7 +98,6 @@ class LawyerListViewController: UIViewController, UITableViewDelegate, UITableVi
             isSearch = true
             
             filterData = names.filter({$0 == searchBar.text})
-            
             tableview.reloadData()
         }
     }

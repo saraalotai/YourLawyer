@@ -16,12 +16,18 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var image: UIImageView!
     
+   
     
     //varoables
-    let str = ["معلومات الحساب","اسم المحامي الكامل" , "البريد الإلكتروني" , "رقم الجوال"]
-    var ref : DatabaseReference!
-    var info=[profileDetails] ()
+    let lawyerInfo = ["الاسم ","اسم مكتب المحاماة" , "البريد الإلكتروني" , "رقم الجوال"]
+    let clientInfo = ["الاسم" , "البريد الإلكتروني" , "رقم الجوال"]
+    var information = [String]()
+
+var info=[profileDetails] ()
     
+    var ref: DatabaseReference! 
+    
+ 
     override func viewDidLoad() {
         tableview.delegate = self
         tableview.dataSource = self
@@ -31,22 +37,53 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
 
         super.viewDidLoad()
         
-        ref = Database.database().reference().child("users");
-    ref.observe(DataEventType.value, with: { (snapshot) in
-        if snapshot.childrenCount>0 {
-           self.info.removeAll()
+        let userID = Auth.auth().currentUser!.uid
+        let userRef = Database.database().reference().child("users/\(userID)")
+        
+        userRef.observe(.value, with: { (snapshot) in
+            print ("no print")
+            let user = profileDetails(snapshot: snapshot)
+            self.information.append(user.fullName!)
+            self.information.append(user.email!)
+            self.information.append(user.phoneNo!)
+          //  self.information.append(user.officeName!)
             
-            for users in snapshot.children.allObjects as! [DataSnapshot] {
-                
-                let userObject = users.value as? [String: AnyObject]
-                let lawyerName = userObject?["fullName"]
-                let email = userObject?["email"]
-                let phone = userObject?["phoneNo"]
-                let lawyerId = userObject?["id"]
+        })
+     /*
+        ref = Database.database().reference()
+        let userID = Auth.auth().currentUser!.uid
+        
+      
+        ref = Database.database().reference().child("users/\(userID)")
+        
+        ref.observe(.value, with: { (snapshot) in
             
-                let details = profileDetails( fullName: lawyerName as! String? , email: email as! String? , phoneNo: phone as! String?)
+            if snapshot.childrenCount>0 {
                 
-                self.info.append(details)
+                
+                
+                for users in snapshot.children.allObjects as! [DataSnapshot] {
+                    
+                    
+                    
+                    let userObject = users.value as? [String: AnyObject]
+                    
+                    let lawyerName = userObject?["fullName"]
+                    
+                    let email = userObject?["email"]
+                    
+                    let phone = userObject?["phoneNo"]
+                    
+                    let cardNo = userObject?["cardNo"]
+                    
+                    let officeName = userObject?["officeName"]
+                    
+                    
+                    let details = profileDetails( fullName: lawyerName as! String?, email: email as! String?, cardNo: cardNo as! String? ,officeName: officeName as! String?, phonNo: phone as! String?)
+                    
+                
+                    
+               // self.info.append(details)
             
         }
             self.tableview.reloadData()
@@ -55,12 +92,12 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
         
         
          })
-        
+        */
         
         
     }//end function
       
-   
+  
    
     
     @IBAction func logout(_ sender: Any) {
@@ -77,18 +114,32 @@ class ProfileVC: UIViewController ,UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 3
+        var count = Int()
+        Database.database().reference().child("users/\(Auth.auth().currentUser!.uid)/type").observeSingleEvent(of: .value, with: {
+            (snapshot) in
+            switch snapshot.value as! String {
+                
+            case "client":
+                count = self.clientInfo.count
+            case "lawyer":
+                count = self.lawyerInfo.count
+                
+            default:
+                
+                print("Error: Couldn't find type for user \(Auth.auth().currentUser!)")
+            }
+        })
+        
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfileDataTableViewCell
-        let lawyerInfo : profileDetails
-        lawyerInfo = info[indexPath.row]
+      
         
-        cell.title.text = str[indexPath.row]
-        cell.subtitle.text = lawyerInfo.fullName
-        cell.subtitle.text = lawyerInfo.email
-        cell.subtitle.text = lawyerInfo.phoneNo
+        cell.title.text = lawyerInfo[indexPath.row]
+        cell.subtitle.text = information[indexPath.row]
+      
         
         return cell
     }
