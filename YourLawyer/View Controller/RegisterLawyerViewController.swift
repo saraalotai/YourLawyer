@@ -11,6 +11,7 @@ import Firebase
 class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate , UIPickerViewDataSource ,UIPickerViewDelegate ,UITextFieldDelegate{
     //varibles
     var genders = ["ذكر","أُنثى"]
+    var UserGender = String()
      var imagePacker:UIImagePickerController!
     var UserUID:String?
        var ref = DatabaseReference.init()
@@ -28,7 +29,7 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
             return genders[row]
         }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        genderTF.text = genders[row]
+        self.UserGender = genders[row]
     }
     //Outlest
     @IBOutlet weak var fullnameTF: UITextField!
@@ -88,7 +89,7 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
   
     
     @IBAction func regButton(_ sender: Any) {
-         saveUserInfo(UserImagePath: imagepath, UserName: fullnameTF.text!, email: emailTF.text!, PhoneNo: phoneNoTF.text!, gender: genderTF.text!, city: cityTF.text!, password: passwordTF.text!, ID: IDTF.text!, legalDomain: legalDoTF.text!, oficeName: oficenameTF.text!, cardNo: cardNOTF.text!)
+        saveUserInfo(UserImagePath: imagepath, UserName: fullnameTF.text!, email: emailTF.text!, PhoneNo: phoneNoTF.text!, gender: self.UserGender, city: cityTF.text!, password: passwordTF.text!, ID: IDTF.text!, legalDomain: legalDoTF.text!, oficeName: oficenameTF.text!, cardNo: cardNOTF.text!)
 
         
     }

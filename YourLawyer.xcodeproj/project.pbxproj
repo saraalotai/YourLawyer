@@ -27,6 +27,7 @@
 		CC1AC4AA203B5166003A084E /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CC4043DD203CAABD00AADBAC /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043DC203CAABD00AADBAC /* AdminViewController.swift */; };
 		CC4043E5203DB15600AADBAC /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043E4203DB15600AADBAC /* DesignableTextField.swift */; };
+		CC4043E9203DF9E400AADBAC /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043E8203DF9E400AADBAC /* RegisterClientViewController.swift */; };
 		CC5B005D203C3AD1000534C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */; };
 		CC5B005F203C3B0C000534C9 /* Cocon-Next-Arabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC5B005E203C3B0B000534C9 /* Cocon-Next-Arabic-Light.otf */; };
 		CC5B0061203C5DEB000534C9 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B0060203C5DEB000534C9 /* ServicesViewController.swift */; };
@@ -69,7 +70,7 @@
 		CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArabicFont-HelpMac-Net-07.ttf"; sourceTree = "<group>"; };
 		CC4043DC203CAABD00AADBAC /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		CC4043E4203DB15600AADBAC /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = ../../../Desktop/DesignableTextField.swift; sourceTree = "<group>"; };
-		CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
+		CC4043E8203DF9E400AADBAC /* RegisterClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC5B005E203C3B0B000534C9 /* Cocon-Next-Arabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocon-Next-Arabic-Light.otf"; sourceTree = "<group>"; };
 		CC5B0060203C5DEB000534C9 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 		CC19D35A2035E20100C879A5 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CC4043E8203DF9E400AADBAC /* RegisterClientViewController.swift */,
 				CC5B0060203C5DEB000534C9 /* ServicesViewController.swift */,
 				040A983B203B83F600CBCCB2 /* EditViewController.swift */,
 				040A98392038CCB400CBCCB2 /* profileDetails.swift */,
@@ -177,7 +179,6 @@
 				CCA1BB8520335D1300A1D1B8 /* ListDomainsViewController.swift */,
 				CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */,
 				CCA1BB8F2034DC0B00A1D1B8 /* ResetPasswordViewController.swift */,
-				CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */,
 				CCF35D2D203051E600FC2856 /* RegisterLawyerViewController.swift */,
 				CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */,
 				CC86E18E202B393600B20910 /* LawyersVC.swift */,
@@ -376,6 +377,7 @@
 				CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */,
 				CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */,
 				CC5B0061203C5DEB000534C9 /* ServicesViewController.swift in Sources */,
+				CC4043E9203DF9E400AADBAC /* RegisterClientViewController.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
 				0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */,
