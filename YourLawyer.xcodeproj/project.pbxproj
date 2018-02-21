@@ -26,6 +26,7 @@
 		CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */; };
 		CC1AC4AA203B5166003A084E /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CC4043DD203CAABD00AADBAC /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043DC203CAABD00AADBAC /* AdminViewController.swift */; };
+		CC4043E5203DB15600AADBAC /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043E4203DB15600AADBAC /* DesignableTextField.swift */; };
 		CC5B005D203C3AD1000534C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */; };
 		CC5B005F203C3B0C000534C9 /* Cocon-Next-Arabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC5B005E203C3B0B000534C9 /* Cocon-Next-Arabic-Light.otf */; };
 		CC5B0061203C5DEB000534C9 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B0060203C5DEB000534C9 /* ServicesViewController.swift */; };
@@ -56,7 +57,6 @@
 		045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		4429F85A8E80132FBC4E13AC /* Pods-YourLawyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.debug.xcconfig"; sourceTree = "<group>"; };
 		5A90D45D355DA3FBAAC436FF /* Pods-YourLawyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.release.xcconfig"; sourceTree = "<group>"; };
-		999B2C82203383860086181E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8911963875F60E30F3265A4 /* Pods_YourLawyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLawyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC13CED2201E581000CBFA83 /* YourLawyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLawyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC13CED5201E581000CBFA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +68,7 @@
 		CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDomainViewController.swift; sourceTree = "<group>"; };
 		CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArabicFont-HelpMac-Net-07.ttf"; sourceTree = "<group>"; };
 		CC4043DC203CAABD00AADBAC /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		CC4043E4203DB15600AADBAC /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = ../../../Desktop/DesignableTextField.swift; sourceTree = "<group>"; };
 		CC48925A2033305000F8A2F2 /* RegisterClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC5B005E203C3B0B000534C9 /* Cocon-Next-Arabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocon-Next-Arabic-Light.otf"; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		0473E73D20248335003C658A /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				999B2C82203383860086181E /* GoogleService-Info.plist */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -146,6 +146,7 @@
 		CC13CED4201E581000CBFA83 /* YourLawyer */ = {
 			isa = PBXGroup;
 			children = (
+				CC4043E4203DB15600AADBAC /* DesignableTextField.swift */,
 				CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */,
 				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
@@ -359,6 +360,7 @@
 				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
 				CCA1BB8620335D1300A1D1B8 /* ListDomainsViewController.swift in Sources */,
 				CCA1BB902034DC0B00A1D1B8 /* ResetPasswordViewController.swift in Sources */,
+				CC4043E5203DB15600AADBAC /* DesignableTextField.swift in Sources */,
 				040A983A2038CCB400CBCCB2 /* profileDetails.swift in Sources */,
 				CCA1BB8A20335DED00A1D1B8 /* ChooseIssueViewController.swift in Sources */,
 				CCC2585C202E1C8D00641CB5 /* CellNTableViewCell.swift in Sources */,

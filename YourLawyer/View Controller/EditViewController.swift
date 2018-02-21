@@ -41,7 +41,6 @@ class EditViewController: UIViewController {
                 let userRef = Database.database().reference().child("users/\(userID)")
                 
                 userRef.observe(.value, with: { (snapshot) in
-                    print ("no print")
                     
                     let user = profileDetails(snapshot: snapshot)
                     

@@ -8,24 +8,15 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 class DomainsVCViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
     var legaldomain = [String]()
     var ref = DatabaseReference.init()
      @IBOutlet weak var domains: UITableView!
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return legaldomain.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = domains.dequeueReusableCell(withIdentifier: "domaincell") as! DisplayDomainsTableViewCell
-        cell.title.text = legaldomain[indexPath.row]
-        return cell
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-     return 60
-    }
+
    
     override func viewDidLoad() {
+         self.ref = Database.database().reference()
         domains.delegate = self
         domains.dataSource = self
         super.viewDidLoad()
@@ -40,6 +31,18 @@ class DomainsVCViewController: UIViewController ,UITableViewDelegate, UITableVie
             
         // Do any additional setup after loading the view.
     })
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return legaldomain.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = domains.dequeueReusableCell(withIdentifier: "domaincell") as! DisplayDomainsTableViewCell
+        cell.title.text = legaldomain[indexPath.row]
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
 
     override func didReceiveMemoryWarning() {

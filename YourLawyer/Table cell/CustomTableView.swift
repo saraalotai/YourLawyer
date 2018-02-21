@@ -12,6 +12,7 @@ class CustomTableView : UITableViewCell
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var lawerImage: UIImageView!
     @IBOutlet weak var lawerName: UILabel!
+    @IBOutlet weak var officeName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
