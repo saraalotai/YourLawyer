@@ -8,15 +8,25 @@
 
 import UIKit
 import Firebase
+import AVFoundation
 
-class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerViewDelegate ,UITextFieldDelegate ,UIImagePickerControllerDelegate , UINavigationControllerDelegate{
+class IssueViewController: UIViewController ,AVAudioRecorderDelegate, AVAudioPlayerDelegate, UIPickerViewDataSource ,UIPickerViewDelegate ,UITextFieldDelegate ,UIImagePickerControllerDelegate , UINavigationControllerDelegate{
+    
+    var audioplayer = AVAudioPlayer()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
-  
-    
+    ////////
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
+    var recordingSession: AVAudioSession!
+    var audioRecorder: AVAudioRecorder!
+    var audioPlayer: AVAudioPlayer?
+    var path: URL!
+    ////////
+
+    ///////////
     @IBOutlet weak var issueType: UITextField!
     
     @IBOutlet weak var lawyer: UITextField!
@@ -110,10 +120,102 @@ class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerVi
         super.viewDidLoad()
         imagePacker=UIImagePickerController()
         imagePacker.delegate=self
-
+        //
+        ////////////////
+        playButton.isEnabled = false
+        recordingSession = AVAudioSession.sharedInstance()
+        
+        do {
+            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try recordingSession.setActive(true)
+            recordingSession.requestRecordPermission() { [unowned self] allowed in
+                DispatchQueue.main.async {
+                    if allowed {
+                        self.recordButton.setTitle("تسجيل", for: .normal)
+                    } else {
+                        // failed to record!
+                    }
+                }
+            }
+        } catch {
+            // failed to record!
+        }
+////////////////////////////////////////////////
         // Do any additional setup after loading the view.
     }
+    ///////////////////////////
+    func startRecording() {
+        let audioFilename = getDocumentsDirectory().appendingPathComponent("recording.m4a") //1
+        path = audioFilename
+        playButton.isEnabled = false
+        
+        let settings = [ //2
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
+        
+        do {
+            audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings) //3
+            audioRecorder.delegate = self
+            audioRecorder.record() //3
+            
+            recordButton.setTitle("ايقاف التسجيل", for: .normal)
+        } catch {
+            finishRecording(success: false)
+        }
+    }
+    ///////////////////////////////////////////////
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    /////////////////////////////////////////////////////
+    func finishRecording(success: Bool) {
+        audioRecorder.stop()
+        audioRecorder = nil
+        playButton.isEnabled = true
+        
+        if success {
+            recordButton.setTitle("اعادة التسجيل", for: .normal)
+        } else {
+            recordButton.setTitle("تسجيل", for: .normal)
+            // recording failed :(
+        }
+    }
+    ///////////////////////////////////////////////////
+    @IBAction func play(_ sender: Any) {
+        if audioRecorder == nil {
+            startRecording()
+        } else {
+            finishRecording(success: true)
+        }
+    }
+    ///////////////////////////////////////////////////
 
+    @IBAction func Restart(_ sender: Any) {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: path)
+                audioPlayer?.delegate = self
+                audioPlayer?.play()
+                recordButton.isEnabled = false
+            } catch {
+                // couldn't load file :(
+            }
+    }
+    /////////////////////////////////////////////////
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if !flag {
+            finishRecording(success: false)
+        }
+    }
+    /////////////////////////////////////////////////
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        recordButton.isEnabled = true
+    }
+    /////////////////////////////////////////////////////
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
