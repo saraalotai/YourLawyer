@@ -12,7 +12,20 @@ import FirebaseAuth
 import FirebaseStorage
 import FirebaseDatabase
 
-class staticProfileTableViewController: UITableViewController {
+class staticProfileTableViewController: UITableViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    
+    var imagePacker:UIImagePickerController!
+    var imagepath = ""
+    var UserUID:String?
+
+    
+    @IBAction func changeImage(_ sender: Any) {
+        print("اختر صورة")
+        present(imagePacker, animated: true, completion: nil)
+    }
+
+    
+    
     
     @IBOutlet weak var lawyerName: UILabel!
     @IBOutlet weak var phoneNo: UILabel!
@@ -22,7 +35,8 @@ class staticProfileTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imagePacker = UIImagePickerController()
+        imagePacker.delegate = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,6 +44,34 @@ class staticProfileTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            profileImage.image = image
+            //upload image
+            let storageRef = Storage.storage().reference(forURL:"gs://mylawyer-f867a.appspot.com")
+            var data = NSData()
+            data = UIImageJPEGRepresentation(image , 0.8)! as NSData
+            let dataFormat = DateFormatter()
+            dataFormat.dateFormat = "MM_DD_yy_hh_mm_a"
+            let imageName = "\(self.UserUID ?? "11")_\(dataFormat.string(from: NSDate() as Date))"
+            imagepath = "profileImages/\(imageName).jpg"
+            let childUserImages = storageRef.child(imagepath)
+            let metaData = StorageMetadata()
+            metaData.contentType = "image/jpeg"
+            childUserImages.putData(data as Data, metadata: metaData)
+            //save to database
+            
+        }
+        imagePacker.dismiss(animated: true, completion: nil)
+        
+
+    }
+    
+    
+    
+    
     override func viewWillAppear(_ animated: Bool)
     {
        let userID = Auth.auth().currentUser!.uid

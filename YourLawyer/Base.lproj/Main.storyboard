@@ -1328,7 +1328,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الاستشارات المطروحة" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y2s-Yc-KCE" customClass="DCBorderedTextView" customModule="DCKit">
-                                    <rect key="frame" x="186" y="84" width="126" height="63"/>
+                                    <rect key="frame" x="186" y="92" width="126" height="63"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.16160102740000001" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1340,7 +1340,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </textView>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الخدمات المجانية" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R61-gv-yzS" customClass="DCBorderedTextView" customModule="DCKit">
-                                    <rect key="frame" x="8" y="84" width="126" height="63"/>
+                                    <rect key="frame" x="8" y="92" width="126" height="63"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.16160102740000001" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1351,6 +1351,18 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHl-We-a68">
+                                    <rect key="frame" x="123" y="72" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn9-lf-4e5">
+                                    <rect key="frame" x="123" y="57" width="22" height="19"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" backgroundImage="pencil-black-circular-button"/>
+                                    <connections>
+                                        <action selector="changeImage:" destination="eJZ-gS-Zgt" eventType="touchUpInside" id="XG5-nf-Lkb"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         </view>
@@ -3062,6 +3074,7 @@
         <image name="line-black-1px" width="16" height="16"/>
         <image name="list-square-rounded-interface-symbol-2" width="24" height="24"/>
         <image name="password" width="256" height="256"/>
+        <image name="pencil-black-circular-button" width="32" height="32"/>
         <image name="prof" width="1500" height="611"/>
         <image name="profile-2" width="24" height="24"/>
         <image name="speech-bubble-with-text-lines" width="24" height="24"/>
