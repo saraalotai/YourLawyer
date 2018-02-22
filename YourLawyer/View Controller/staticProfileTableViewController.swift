@@ -13,12 +13,13 @@ import FirebaseStorage
 import FirebaseDatabase
 
 class staticProfileTableViewController: UITableViewController {
+    
     @IBOutlet weak var lawyerName: UILabel!
-    
     @IBOutlet weak var phoneNo: UILabel!
-    
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var officeName: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +32,7 @@ class staticProfileTableViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool)
     {
-        let userID = Auth.auth().currentUser!.uid
+       let userID = Auth.auth().currentUser!.uid
         let userRef = Database.database().reference().child("users/\(userID)")
         
         userRef.observe(.value, with: { (snapshot) in
@@ -46,6 +47,7 @@ class staticProfileTableViewController: UITableViewController {
                     
             
         })
+ 
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,14 +59,13 @@ class staticProfileTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return 1
     }
 
-   
 
 }
