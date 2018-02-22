@@ -24,10 +24,10 @@
 		CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
 		CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */; };
 		CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */; };
-		CC1AC4AA203B5166003A084E /* (null) in Sources */ = {isa = PBXBuildFile; };
+		CC1AC4AA203B5166003A084E /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		CC4043DD203CAABD00AADBAC /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043DC203CAABD00AADBAC /* AdminViewController.swift */; };
-		CC4043E5203DB15600AADBAC /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043E4203DB15600AADBAC /* DesignableTextField.swift */; };
 		CC4043E9203DF9E400AADBAC /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043E8203DF9E400AADBAC /* RegisterClientViewController.swift */; };
+		CC4043ED203E07E700AADBAC /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043EC203E07E700AADBAC /* DesignableTextField.swift */; };
 		CC5B005D203C3AD1000534C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */; };
 		CC5B005F203C3B0C000534C9 /* Cocon-Next-Arabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC5B005E203C3B0B000534C9 /* Cocon-Next-Arabic-Light.otf */; };
 		CC5B0061203C5DEB000534C9 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B0060203C5DEB000534C9 /* ServicesViewController.swift */; };
@@ -69,8 +69,8 @@
 		CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDomainViewController.swift; sourceTree = "<group>"; };
 		CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArabicFont-HelpMac-Net-07.ttf"; sourceTree = "<group>"; };
 		CC4043DC203CAABD00AADBAC /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
-		CC4043E4203DB15600AADBAC /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = ../../../Desktop/DesignableTextField.swift; sourceTree = "<group>"; };
 		CC4043E8203DF9E400AADBAC /* RegisterClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
+		CC4043EC203E07E700AADBAC /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC5B005E203C3B0B000534C9 /* Cocon-Next-Arabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocon-Next-Arabic-Light.otf"; sourceTree = "<group>"; };
 		CC5B0060203C5DEB000534C9 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		CC13CED4201E581000CBFA83 /* YourLawyer */ = {
 			isa = PBXGroup;
 			children = (
-				CC4043E4203DB15600AADBAC /* DesignableTextField.swift */,
+				CC4043EC203E07E700AADBAC /* DesignableTextField.swift */,
 				CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */,
 				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
@@ -310,6 +310,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DCKit/DCKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -319,6 +320,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -361,7 +363,6 @@
 				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
 				CCA1BB8620335D1300A1D1B8 /* ListDomainsViewController.swift in Sources */,
 				CCA1BB902034DC0B00A1D1B8 /* ResetPasswordViewController.swift in Sources */,
-				CC4043E5203DB15600AADBAC /* DesignableTextField.swift in Sources */,
 				040A983A2038CCB400CBCCB2 /* profileDetails.swift in Sources */,
 				CCA1BB8A20335DED00A1D1B8 /* ChooseIssueViewController.swift in Sources */,
 				CCC2585C202E1C8D00641CB5 /* CellNTableViewCell.swift in Sources */,
@@ -373,12 +374,13 @@
 				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
 				CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
-				CC1AC4AA203B5166003A084E /* (null) in Sources */,
+				CC1AC4AA203B5166003A084E /* BuildFile in Sources */,
 				CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */,
 				CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */,
 				CC5B0061203C5DEB000534C9 /* ServicesViewController.swift in Sources */,
 				CC4043E9203DF9E400AADBAC /* RegisterClientViewController.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
+				CC4043ED203E07E700AADBAC /* DesignableTextField.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
 				0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */,
 				CCA1BB8820335D8200A1D1B8 /* ChooseIssueTableViewCell.swift in Sources */,
