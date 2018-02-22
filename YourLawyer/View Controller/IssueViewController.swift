@@ -18,8 +18,8 @@ class IssueViewController: UIViewController ,AVAudioRecorderDelegate, AVAudioPla
         return 1
     }
     ////////
-    @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var recordButton: UIButton!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var audioPlayer: AVAudioPlayer?

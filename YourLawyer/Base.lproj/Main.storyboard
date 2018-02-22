@@ -2910,6 +2910,8 @@
                     <navigationItem key="navigationItem" id="bu7-qo-m7X"/>
                     <connections>
                         <outlet property="imageofdoc" destination="SzQ-2B-tAe" id="08J-Ia-B0p"/>
+                        <outlet property="playButton" destination="8tF-jJ-vOj" id="C9Y-sX-Oq5"/>
+                        <outlet property="recordButton" destination="j0O-og-fam" id="4Ex-WG-291"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1D-Cn-maT" userLabel="First Responder" sceneMemberID="firstResponder"/>
