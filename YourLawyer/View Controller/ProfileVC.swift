@@ -46,7 +46,7 @@ var info=[profileDetails] ()
             self.information.append(user.fullName!)
             self.information.append(user.email!)
             self.information.append(user.phoneNo!)
-            self.information.append(user.officeName!)
+          //  self.information.append(user.officeName!)
             
         })
      /*
