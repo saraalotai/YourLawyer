@@ -37,6 +37,9 @@ class staticProfileTableViewController: UITableViewController,UIImagePickerContr
         super.viewDidLoad()
         imagePacker = UIImagePickerController()
         imagePacker.delegate = self
+        
+        self.profileImage.layer.cornerRadius = profileImage.frame.size.height / 2
+        self.profileImage.clipsToBounds = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

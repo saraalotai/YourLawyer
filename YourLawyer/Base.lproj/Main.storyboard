@@ -1323,9 +1323,12 @@
                             <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Qcq-dC-s3H">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Qcq-dC-s3H">
                                     <rect key="frame" x="123" y="8" width="74" height="68"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="Vpg-fQ-XJo"/>
+                                        <constraint firstAttribute="height" constant="100" id="e2w-MU-54Q"/>
+                                    </constraints>
                                 </imageView>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إجمالي الاستشارات المطروحة" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y2s-Yc-KCE" customClass="DCBorderedTextView" customModule="DCKit">
                                     <rect key="frame" x="186" y="92" width="126" height="63"/>
@@ -2269,7 +2272,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="من نحن" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0p-Dy-rwv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="عن محاميك الإلكتروني" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0p-Dy-rwv">
                                 <rect key="frame" x="62" y="330" width="196" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
