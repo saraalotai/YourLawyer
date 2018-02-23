@@ -39,9 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
             }else {
                 UNUserNotificationCenter.current().delegate = self
                 Messaging.messaging().delegate = self
-               
+              //registerForRemoteNotification()
                 
-             //   UIApplication.shared.registerForRemoteNotifications()
+                
+             //  UIApplication.shared.registerForRemoteNotifications()
  
                 
             }
