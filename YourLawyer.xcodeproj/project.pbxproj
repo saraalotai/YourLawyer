@@ -25,9 +25,8 @@
 		CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13CEDE201E581000CBFA83 /* LaunchScreen.storyboard */; };
 		CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */; };
 		CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */; };
-		CC1AC4AA203B5166003A084E /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		CC1AC4AA203B5166003A084E /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CC4043DD203CAABD00AADBAC /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043DC203CAABD00AADBAC /* AdminViewController.swift */; };
-		CC4043E9203DF9E400AADBAC /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043E8203DF9E400AADBAC /* RegisterClientViewController.swift */; };
 		CC4043ED203E07E700AADBAC /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4043EC203E07E700AADBAC /* DesignableTextField.swift */; };
 		CC5B005D203C3AD1000534C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */; };
 		CC5B005F203C3B0C000534C9 /* Cocon-Next-Arabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC5B005E203C3B0B000534C9 /* Cocon-Next-Arabic-Light.otf */; };
@@ -36,6 +35,10 @@
 		CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E18E202B393600B20910 /* LawyersVC.swift */; };
 		CC86E191202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E190202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift */; };
 		CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */; };
+		CC86FD56203F1B5600802F21 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86FD55203F1B5600802F21 /* WebViewController.swift */; };
+		CC86FD5E203F206600802F21 /* agreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86FD5D203F206500802F21 /* agreement.swift */; };
+		CC86FD60203F24FB00802F21 /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = CC86FD5F203F24FB00802F21 /* template.html */; };
+		CC86FD66203F544700802F21 /* PageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86FD65203F544700802F21 /* PageRenderer.swift */; };
 		CCA1BB8620335D1300A1D1B8 /* ListDomainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8520335D1300A1D1B8 /* ListDomainsViewController.swift */; };
 		CCA1BB8820335D8200A1D1B8 /* ChooseIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8720335D8100A1D1B8 /* ChooseIssueTableViewCell.swift */; };
 		CCA1BB8A20335DED00A1D1B8 /* ChooseIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8920335DED00A1D1B8 /* ChooseIssueViewController.swift */; };
@@ -71,7 +74,6 @@
 		CC19D3582035E1B300C879A5 /* AddDomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDomainViewController.swift; sourceTree = "<group>"; };
 		CC19D35F203607A700C879A5 /* ArabicFont-HelpMac-Net-07.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArabicFont-HelpMac-Net-07.ttf"; sourceTree = "<group>"; };
 		CC4043DC203CAABD00AADBAC /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
-		CC4043E8203DF9E400AADBAC /* RegisterClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CC4043EC203E07E700AADBAC /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC5B005E203C3B0B000534C9 /* Cocon-Next-Arabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocon-Next-Arabic-Light.otf"; sourceTree = "<group>"; };
@@ -80,6 +82,10 @@
 		CC86E18E202B393600B20910 /* LawyersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersVC.swift; sourceTree = "<group>"; };
 		CC86E190202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDomainsTableViewCell.swift; sourceTree = "<group>"; };
 		CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainsVCViewController.swift; sourceTree = "<group>"; };
+		CC86FD55203F1B5600802F21 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CC86FD5D203F206500802F21 /* agreement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = agreement.swift; sourceTree = "<group>"; };
+		CC86FD5F203F24FB00802F21 /* template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
+		CC86FD65203F544700802F21 /* PageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRenderer.swift; sourceTree = "<group>"; };
 		CCA1BB8520335D1300A1D1B8 /* ListDomainsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDomainsViewController.swift; sourceTree = "<group>"; };
 		CCA1BB8720335D8100A1D1B8 /* ChooseIssueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseIssueTableViewCell.swift; sourceTree = "<group>"; };
 		CCA1BB8920335DED00A1D1B8 /* ChooseIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseIssueViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +166,9 @@
 				CC13CEE1201E581000CBFA83 /* Info.plist */,
 				CC19D35D2036078700C879A5 /* font */,
 				0419F6242023B15000637FE9 /* RoundedButton.swift */,
+				CC86FD5D203F206500802F21 /* agreement.swift */,
+				CC86FD5F203F24FB00802F21 /* template.html */,
+				CC86FD65203F544700802F21 /* PageRenderer.swift */,
 			);
 			path = YourLawyer;
 			sourceTree = "<group>";
@@ -185,6 +194,7 @@
 				CC86E192202B6C8B00B20910 /* DomainsVCViewController.swift */,
 				CC86E18E202B393600B20910 /* LawyersVC.swift */,
 				CC4043DC203CAABD00AADBAC /* AdminViewController.swift */,
+				CC86FD55203F1B5600802F21 /* WebViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -278,6 +288,7 @@
 				CC5B005F203C3B0C000534C9 /* Cocon-Next-Arabic-Light.otf in Resources */,
 				CC19D3632037271A00C879A5 /* ArabicFont-HelpMac-Net-07.ttf in Resources */,
 				CC13CEE0201E581000CBFA83 /* LaunchScreen.storyboard in Resources */,
+				CC86FD60203F24FB00802F21 /* template.html in Resources */,
 				CC5B005D203C3AD1000534C9 /* GoogleService-Info.plist in Resources */,
 				CC13CEDD201E581000CBFA83 /* Assets.xcassets in Resources */,
 				CC13CEDB201E581000CBFA83 /* Main.storyboard in Resources */,
@@ -359,6 +370,7 @@
 			files = (
 				CC86E191202B6B9B00B20910 /* DisplayDomainsTableViewCell.swift in Sources */,
 				CCC2585A202C7AA000641CB5 /* ProfileDataTableViewCell.swift in Sources */,
+				CC86FD5E203F206600802F21 /* agreement.swift in Sources */,
 				CC13CED8201E581000CBFA83 /* ViewController.swift in Sources */,
 				CCA1BB8C20335E6400A1D1B8 /* DomainsTableViewCell.swift in Sources */,
 				CC4043DD203CAABD00AADBAC /* AdminViewController.swift in Sources */,
@@ -376,16 +388,17 @@
 				CC86E18F202B393600B20910 /* LawyersVC.swift in Sources */,
 				CCC25858202C744700641CB5 /* ProfileVC.swift in Sources */,
 				CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */,
-				CC1AC4AA203B5166003A084E /* BuildFile in Sources */,
+				CC1AC4AA203B5166003A084E /* (null) in Sources */,
 				CC19D3592035E1B300C879A5 /* AddDomainViewController.swift in Sources */,
 				CCF35D2E203051E600FC2856 /* RegisterLawyerViewController.swift in Sources */,
 				CC5B0061203C5DEB000534C9 /* ServicesViewController.swift in Sources */,
-				CC4043E9203DF9E400AADBAC /* RegisterClientViewController.swift in Sources */,
 				0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */,
 				CC4043ED203E07E700AADBAC /* DesignableTextField.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
 				0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */,
+				CC86FD66203F544700802F21 /* PageRenderer.swift in Sources */,
 				CCA1BB8820335D8200A1D1B8 /* ChooseIssueTableViewCell.swift in Sources */,
+				CC86FD56203F1B5600802F21 /* WebViewController.swift in Sources */,
 				04C37ED1203ECBD7007E0EBE /* staticProfileTableViewController.swift in Sources */,
 				040A983C203B83F600CBCCB2 /* EditViewController.swift in Sources */,
 			);

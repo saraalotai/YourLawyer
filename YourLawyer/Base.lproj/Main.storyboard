@@ -254,7 +254,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المحامي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tu-RQ-XJd">
-                                                            <rect key="frame" x="85.5" y="33" width="75.5" height="20.5"/>
+                                                            <rect key="frame" x="76" y="33" width="85" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -845,7 +845,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="12/12/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykf-rk-xwO">
-                                                <rect key="frame" x="0.0" y="0.0" width="254" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="255" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="17" id="63f-yU-Ntc"/>
                                                 </constraints>
@@ -854,7 +854,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحاله" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT4-ds-3L2">
-                                                <rect key="frame" x="254" y="0.0" width="34" height="17"/>
+                                                <rect key="frame" x="255" y="0.0" width="33" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="17" id="zdO-wd-Ftp"/>
                                                 </constraints>
@@ -878,7 +878,7 @@
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ملخص القضية  .................................................................................................................." textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-9f-u7s" customClass="DCBorderedTextView" customModule="DCKit">
                                         <rect key="frame" x="0.0" y="17" width="288" height="130"/>
-                                        <color key="backgroundColor" red="0.82061493396759033" green="0.9219929575920105" blue="0.92253291606903076" alpha="0.63706656678082196" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.45882352941176469" green="0.72156862745098038" blue="0.77647058823529413" alpha="0.20751284246575341" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
@@ -1927,7 +1927,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرفقات القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc1-Qz-la6">
-                                <rect key="frame" x="212.5" y="319" width="87.5" height="32"/>
+                                <rect key="frame" x="205.5" y="319" width="94.5" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="RHC-Us-TPs"/>
                                 </constraints>
@@ -1936,7 +1936,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-h7-IAD" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="57.5" y="308" width="55" height="55"/>
+                                <rect key="frame" x="50.5" y="308" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.45882352941176469" green="0.72156862745098038" blue="0.77647058823529413" alpha="0.95390089897260277" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="ehI-Zb-bf3"/>
@@ -1945,7 +1945,7 @@
                                 <state key="normal" image="downloading-action"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXd-2v-xHO" customClass="RoundedButton" customModule="YourLawyer" customModuleProvider="target">
-                                <rect key="frame" x="129.5" y="308" width="55" height="55"/>
+                                <rect key="frame" x="122.5" y="308" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.45882352941176469" green="0.72156862745098038" blue="0.77647058823529413" alpha="0.95031571056986297" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="E1x-R1-lFa"/>
@@ -1969,13 +1969,13 @@
                                 <rect key="frame" x="20" y="85" width="280" height="214"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-Xs-M08">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="14"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="15.5"/>
                                         <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم مقدم القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hF-Jb-pgf">
-                                        <rect key="frame" x="0.0" y="14" width="280" height="20"/>
+                                        <rect key="frame" x="0.0" y="15.5" width="280" height="18.5"/>
                                         <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2987,7 +2987,7 @@
         <!--عقد القضية-->
         <scene sceneID="1gP-3x-LBx">
             <objects>
-                <viewController id="MBV-iK-2Kz" sceneMemberID="viewController">
+                <viewController id="MBV-iK-2Kz" customClass="WebViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KXw-gO-drS"/>
                         <viewControllerLayoutGuide type="bottom" id="P5e-zC-Lmf"/>
@@ -2997,24 +2997,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAY-x4-Wzx">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <rect key="frame" x="-20" y="64" width="360" height="455"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="455" id="Pvt-wW-Ae3"/>
+                                    <constraint firstAttribute="height" constant="455" id="lUf-2k-RhV"/>
                                 </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="YAY-x4-Wzx" secondAttribute="trailing" id="jkA-W5-ocb"/>
-                            <constraint firstItem="P5e-zC-Lmf" firstAttribute="top" secondItem="YAY-x4-Wzx" secondAttribute="bottom" id="oqe-Gz-iMc"/>
-                            <constraint firstItem="YAY-x4-Wzx" firstAttribute="top" secondItem="KXw-gO-drS" secondAttribute="bottom" id="qLB-dm-sPq"/>
-                            <constraint firstItem="YAY-x4-Wzx" firstAttribute="leading" secondItem="w21-0j-4LK" secondAttribute="leading" id="u0z-lZ-k5a"/>
+                            <constraint firstItem="P5e-zC-Lmf" firstAttribute="top" secondItem="YAY-x4-Wzx" secondAttribute="bottom" id="NFS-Ze-fqC"/>
+                            <constraint firstItem="YAY-x4-Wzx" firstAttribute="leading" secondItem="w21-0j-4LK" secondAttribute="leading" constant="-20" id="UF7-ZI-xsn"/>
+                            <constraint firstItem="YAY-x4-Wzx" firstAttribute="top" secondItem="KXw-gO-drS" secondAttribute="bottom" id="kwZ-CI-ucR"/>
+                            <constraint firstAttribute="trailing" secondItem="YAY-x4-Wzx" secondAttribute="trailing" constant="-20" id="mny-Xc-Twa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="عقد القضية" id="L96-f5-meJ">
-                        <barButtonItem key="rightBarButtonItem" title="حفظ" id="LmZ-iJ-Pkp"/>
+                        <barButtonItem key="rightBarButtonItem" title="PDF" id="LmZ-iJ-Pkp">
+                            <connections>
+                                <action selector="Review:" destination="MBV-iK-2Kz" id="wLu-8h-fLm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="web" destination="YAY-x4-Wzx" id="8Rm-cM-9Vd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRb-jp-Cky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
