@@ -16,6 +16,7 @@ class EditViewController: UIViewController {
 
     @IBOutlet weak var fullName: UITextField!
     
+   
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var cardNo: UITextField!
     @IBOutlet weak var phoneNo: UITextField!
@@ -56,20 +57,26 @@ class EditViewController: UIViewController {
                 })
     }
     
+    @IBAction func saveUpdatedInfo(_ sender: Any) {
+        
+        let name = fullName.text
+        let card = cardNo.text
+        let emaill = email.text
+        let officename = officeName.text
+        
+        self.updatInfo(name: name!, officeName: officename!, cardNo: card!, email:emaill!)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    func updatInfo(name: String, officeName: String, cardNo: String, email: String){
+        
+        let information = [ "Name": name, "offic name": officeName, "card no":cardNo, "email": email]
+        let userID = Auth.auth().currentUser!.uid
+        let userRef = Database.database().reference()
+        userRef.child("users/\(userID)").setValue(information)
+            }
 }

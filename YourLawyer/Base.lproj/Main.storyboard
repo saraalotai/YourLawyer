@@ -1460,7 +1460,13 @@
                             <outlet property="delegate" destination="eJZ-gS-Zgt" id="Wgw-he-78R"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="الصفحة الشخصية" id="QLV-Qs-IPl"/>
+                    <navigationItem key="navigationItem" title="الصفحة الشخصية" id="QLV-Qs-IPl">
+                        <barButtonItem key="rightBarButtonItem" title="تعديل" id="9aw-Rh-FJP">
+                            <connections>
+                                <segue destination="Svm-Qt-PHt" kind="push" id="ydP-44-B27"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lawyerName" destination="F8A-7R-Upj" id="pMV-Ze-1bg"/>
                         <outlet property="officeName" destination="Szd-an-g9I" id="yRO-dU-ZIp"/>
@@ -1592,11 +1598,7 @@
                                 <action selector="logout:" destination="C4i-CG-QPE" id="r7H-Sf-REI"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="تعديل" id="bBv-al-gOz">
-                            <connections>
-                                <segue destination="Svm-Qt-PHt" kind="push" id="5tr-RK-2X0"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="تعديل" id="bBv-al-gOz"/>
                     </navigationItem>
                     <connections>
                         <outlet property="image" destination="zFS-6C-vBv" id="h3b-rA-Bch"/>
@@ -1629,7 +1631,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم مكتب المحاماة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2M4-w3-R7F">
-                                <rect key="frame" x="16" y="180" width="288" height="30"/>
+                                <rect key="frame" x="16" y="237" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mV0-Ru-f07"/>
                                 </constraints>
@@ -1638,7 +1640,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الإلكتروني" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1jc-y4-WUM">
-                                <rect key="frame" x="16" y="142" width="288" height="30"/>
+                                <rect key="frame" x="16" y="176" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="c0i-Ja-qnR"/>
                                 </constraints>
@@ -1646,19 +1648,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم المحامي الكامل" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8GT-Df-oa4">
-                                <rect key="frame" x="16" y="66" width="288" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم رخصة المحاماة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVM-11-Dur">
+                                <rect key="frame" x="16" y="291" width="288" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="WgF-Zm-eVH"/>
+                                    <constraint firstAttribute="height" constant="30" id="tsQ-AP-OOZ"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم رخصة المحاماة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVM-11-Dur">
-                                <rect key="frame" x="16" y="218" width="288" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم المحامي الكامل" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8GT-Df-oa4">
+                                <rect key="frame" x="16" y="119" width="288" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="tsQ-AP-OOZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="WgF-Zm-eVH"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1685,7 +1687,7 @@
                     <navigationItem key="navigationItem" title="تعديل معلومات الحساب" id="7wq-Ph-quJ">
                         <barButtonItem key="rightBarButtonItem" title="حفظ" id="WUY-Hm-hYE">
                             <connections>
-                                <action selector="update:" destination="Svm-Qt-PHt" id="fjl-FP-P0H"/>
+                                <action selector="saveUpdatedInfo:" destination="Svm-Qt-PHt" id="Qgl-1l-rpT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1697,7 +1699,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5X-ib-gOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3307" y="-823"/>
+            <point key="canvasLocation" x="3293" y="-1458"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Tum-e9-CHr">
