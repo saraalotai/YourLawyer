@@ -37,11 +37,15 @@ class staticProfileTableViewController: UITableViewController,UIImagePickerContr
         super.viewDidLoad()
         imagePacker = UIImagePickerController()
         imagePacker.delegate = self
+        
+        self.profileImage.layer.cornerRadius = profileImage.frame.size.height / 2
+        self.profileImage.clipsToBounds = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -63,13 +67,16 @@ class staticProfileTableViewController: UITableViewController,UIImagePickerContr
             childUserImages.putData(data as Data, metadata: metaData)
             //save to database
             
-        }
+            let downloadedImage = metaData.downloadURL()
+            print(downloadedImage)
+            
         imagePacker.dismiss(animated: true, completion: nil)
         
+       
 
     }
     
-    
+    }
     
     
     override func viewWillAppear(_ animated: Bool)
