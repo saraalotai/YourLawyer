@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseMessaging
 class ccViewController: UIViewController {
-    var refArtists : DatabaseReference!
+    var ref : DatabaseReference!
     
     @IBOutlet weak var textfild: UITextField!
     @IBOutlet weak var choose: UISegmentedControl!
@@ -22,16 +22,16 @@ class ccViewController: UIViewController {
         FirebaseApp.configure()
         // Do any additional setup after loading the view.
         
-        refArtists = Database.database().reference().child("chat");
+        ref = Database.database().reference().child("chat");
         
     }
     func addqustion(){
-        let key = refArtists.childByAutoId().key
+        let key = ref.childByAutoId().key
         
         let artist = ["id":key,
                       "gustion": textfild.text!as String
         ]
-        refArtists.child(key).setValue(artist)
+        ref.child(key).setValue(artist)
         
     }
     override func didReceiveMemoryWarning() {

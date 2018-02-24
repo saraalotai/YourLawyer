@@ -11,11 +11,8 @@ import Firebase
 import FirebaseStorage
 import AVFoundation
 import FirebaseMessaging
-class IssueViewController: UIViewController , AVAudioRecorderDelegate, AVAudioPlayerDelegate, UITextFieldDelegate ,UIImagePickerControllerDelegate , UINavigationControllerDelegate{
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
+class IssueViewController: UIViewController , AVAudioRecorderDelegate, AVAudioPlayerDelegate{
+   
     ////////
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
@@ -25,17 +22,7 @@ class IssueViewController: UIViewController , AVAudioRecorderDelegate, AVAudioPl
     var path: URL!
     //////////////
   
-    
-    @IBOutlet weak var lawyer: UITextField!
-    
 
-    
-    @IBOutlet weak var dropLawyer: UIPickerView!
-    
-    var issue = ["جرائم الكترونيه" , "قضايا مدنية"]
-    
-    var lawyers = ["احمد","سعد"]
-    var choosenLawyer = String()
     var imagePacker:UIImagePickerController!
     
     
@@ -66,32 +53,15 @@ class IssueViewController: UIViewController , AVAudioRecorderDelegate, AVAudioPl
         }
         imagePacker.dismiss(animated: true, completion: nil)
     }
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-   
-        return lawyers.count
 
-    }
-    
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
- 
-       return lawyers[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-   self.choosenLawyer = lawyers[row]
-    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePacker=UIImagePickerController()
-        imagePacker.delegate=self
+       // imagePacker.delegate=self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
         //////////////////
-        playButton.isEnabled = false
+      //  playButton.isEnabled = false
         recordingSession = AVAudioSession.sharedInstance()
         
         do {

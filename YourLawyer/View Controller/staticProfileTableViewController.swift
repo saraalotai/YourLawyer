@@ -108,13 +108,24 @@ class staticProfileTableViewController: UITableViewController,UIImagePickerContr
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return 3
     }
 
 
+    @IBAction func SignOut(_ sender: Any) {
+        
+        do {
+            try Auth.auth().signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        let storyborad = UIStoryboard(name:"Main",bundle:nil)
+        let signInVC = storyborad.instantiateViewController(withIdentifier: "Main")
+        self.present(signInVC, animated: true, completion: nil)
+    }
 }
