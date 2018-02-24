@@ -21,7 +21,8 @@ class RegisterClientViewController: UIViewController, UIPickerViewDataSource ,UI
     @IBOutlet weak var PhoneNoTF: UITextField!
     //Varibles
     var ref = DatabaseReference.init()
- var genders = ["ذكر","أُنثى"]
+    var genders = ["ذكر","أُنثى"]
+    var UserGender = String()
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -35,7 +36,7 @@ class RegisterClientViewController: UIViewController, UIPickerViewDataSource ,UI
         return genders[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        genderTF.text = genders[row]
+        self.UserGender = genders[row]
     }
     
     override func viewDidLoad() {
@@ -92,7 +93,7 @@ class RegisterClientViewController: UIViewController, UIPickerViewDataSource ,UI
             let msg = ["fullName":self.nameTF.text!,
                        "email":self.emailTF.text!,
                        "PhoneNo":self.PhoneNoTF.text!,
-                       "gender":self.genderTF.text!,
+                       "gender":self.UserGender,
                        "password":self.passwordTF.text!,
                        "ID":self.IDTF.text!,
                        "UserImage":"",

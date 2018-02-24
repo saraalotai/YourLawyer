@@ -26,18 +26,16 @@ class IssueViewController: UIViewController , AVAudioRecorderDelegate, AVAudioPl
     //////////////
   
     
-    @IBOutlet weak var issueType: UITextField!
-    
     @IBOutlet weak var lawyer: UITextField!
     
-    @IBOutlet weak var dropIssue: UIPickerView!
+
     
     @IBOutlet weak var dropLawyer: UIPickerView!
     
     var issue = ["جرائم الكترونيه" , "قضايا مدنية"]
     
     var lawyers = ["احمد","سعد"]
-    
+    var choosenLawyer = String()
     var imagePacker:UIImagePickerController!
     
     
@@ -68,53 +66,26 @@ class IssueViewController: UIViewController , AVAudioRecorderDelegate, AVAudioPl
         }
         imagePacker.dismiss(animated: true, completion: nil)
     }
-    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        var countraws : Int = issue.count
-        if pickerView == dropLawyer {
-            countraws = self.lawyers.count
-            
-        }
-        return countraws
+   
+        return lawyers.count
 
     }
     
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-       
-        if pickerView == dropIssue{
-            let  titleRow = issue[row]
-            return titleRow
-        }
-        else if pickerView == dropLawyer {
-            let titleRow = lawyers[row]
-            return titleRow
-        }
-       return ""
+ 
+       return lawyers[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView == dropIssue{
-            self.issueType.text = issue[row]
-            self.dropIssue.isHidden = true
-            
-        }
-        else if pickerView == dropLawyer{
-            self.lawyer.text = lawyers[row]
-            self.dropLawyer.isHidden = true
-            
-        }
+   self.choosenLawyer = lawyers[row]
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        if (textField == self.issueType){
-         self.dropIssue.isHidden = false
-            
-        }
-        else if (textField == self.lawyer){
-            self.dropLawyer.isHidden = false
-        }
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePacker=UIImagePickerController()
