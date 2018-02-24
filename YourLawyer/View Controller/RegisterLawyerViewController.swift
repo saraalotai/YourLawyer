@@ -12,7 +12,7 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
     //varibles
     var genders = ["ذكر","أُنثى"]
     var UserGender = String()
-     var imagePacker:UIImagePickerController!
+    var imagePacker:UIImagePickerController!
     var UserUID:String?
        var ref = DatabaseReference.init()
     
@@ -35,7 +35,6 @@ class RegisterLawyerViewController: UIViewController,UIImagePickerControllerDele
     @IBOutlet weak var fullnameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var phoneNoTF: UITextField!
-    @IBOutlet weak var genderTF: UITextField!
     @IBOutlet weak var cityTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var IDTF: UITextField!

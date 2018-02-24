@@ -2313,7 +2313,7 @@
             </objects>
             <point key="canvasLocation" x="2772" y="2596"/>
         </scene>
-        <!--DomainsVC View Controller-->
+        <!--نوع القضية-->
         <scene sceneID="68T-W1-XyZ">
             <objects>
                 <viewController id="Nfh-XO-8ea" customClass="DomainsVCViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
@@ -2326,10 +2326,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YXe-Nr-j6j">
-                                <rect key="frame" x="0.0" y="256" width="320" height="312"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="312" id="A3e-DO-yTg"/>
+                                    <constraint firstAttribute="height" constant="504" id="e9b-ky-d7n"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="domaincell" textLabel="yVw-RY-Bgy" style="IBUITableViewCellStyleDefault" id="CEu-h3-DQX" customClass="DisplayDomainsTableViewCell" customModule="YourLawyer" customModuleProvider="target">
@@ -2356,23 +2356,18 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إختر نوع القضية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g73-Is-IeN">
-                                <rect key="frame" x="106" y="208" width="108.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YXe-Nr-j6j" firstAttribute="leading" secondItem="9FM-SL-Ybf" secondAttribute="leading" id="1a0-km-TK8"/>
-                            <constraint firstAttribute="trailing" secondItem="YXe-Nr-j6j" secondAttribute="trailing" id="50z-ce-ClX"/>
-                            <constraint firstItem="YXe-Nr-j6j" firstAttribute="top" secondItem="g73-Is-IeN" secondAttribute="bottom" constant="27" id="7HQ-lh-h7I"/>
-                            <constraint firstItem="f2N-ZX-hQd" firstAttribute="top" secondItem="YXe-Nr-j6j" secondAttribute="bottom" id="9c8-Mw-lt0"/>
-                            <constraint firstItem="YXe-Nr-j6j" firstAttribute="centerX" secondItem="g73-Is-IeN" secondAttribute="centerX" id="TwU-2N-87C"/>
+                            <constraint firstItem="YXe-Nr-j6j" firstAttribute="top" secondItem="Buo-HN-9mg" secondAttribute="bottom" id="FuN-Rv-DgD"/>
+                            <constraint firstItem="YXe-Nr-j6j" firstAttribute="leading" secondItem="9FM-SL-Ybf" secondAttribute="leading" id="Mcl-qq-bWa"/>
+                            <constraint firstAttribute="trailing" secondItem="YXe-Nr-j6j" secondAttribute="trailing" id="b95-sM-CEF"/>
+                            <constraint firstItem="f2N-ZX-hQd" firstAttribute="top" secondItem="YXe-Nr-j6j" secondAttribute="bottom" id="hE9-Bk-HHH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2Jd-P3-9h2"/>
+                    <navigationItem key="navigationItem" title="نوع القضية" id="2Jd-P3-9h2">
+                        <barButtonItem key="backBarButtonItem" title=" " id="vCS-2A-Zl8"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="domains" destination="YXe-Nr-j6j" id="O96-fP-5Jl"/>
                     </connections>
@@ -2749,7 +2744,7 @@
             </objects>
             <point key="canvasLocation" x="20" y="760"/>
         </scene>
-        <!--تقديم قضية-->
+        <!--تقديم القضية-->
         <scene sceneID="TMJ-4K-rKP">
             <objects>
                 <viewController id="8FH-2c-1NZ" customClass="IssueViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
@@ -2761,13 +2756,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="مجال القضية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-pG-wR0">
-                                <rect key="frame" x="217" y="84" width="88" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="المحامي الذي تفضل ان يطلع على قضيتك" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-f9-ZYK">
                                 <rect key="frame" x="15" y="348" width="278" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2817,24 +2805,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CxH-K4-1sw">
-                                <rect key="frame" x="64" y="86" width="145" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="8FH-2c-1NZ" id="pYd-Kj-T59"/>
-                                </connections>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qtn-jh-wfq">
-                                <rect key="frame" x="71" y="102" width="145" height="84"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="8FH-2c-1NZ" id="1ig-mU-dl9"/>
-                                    <outlet property="delegate" destination="8FH-2c-1NZ" id="kwx-L4-U9w"/>
-                                </connections>
-                            </pickerView>
                             <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96i-eK-jEO">
                                 <rect key="frame" x="89" y="405" width="145" height="84"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -2867,17 +2837,15 @@
                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="تقديم قضية" id="q25-72-g3l"/>
+                    <navigationItem key="navigationItem" title="تقديم القضية" id="q25-72-g3l"/>
                     <connections>
-                        <outlet property="dropIssue" destination="Qtn-jh-wfq" id="b7n-HY-9jf"/>
                         <outlet property="dropLawyer" destination="96i-eK-jEO" id="QlU-zA-Bha"/>
-                        <outlet property="issueType" destination="CxH-K4-1sw" id="Oe0-hk-6Fo"/>
                         <outlet property="lawyer" destination="c65-NN-8e2" id="tJg-ai-Y9z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZwM-18-g82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3958" y="2682"/>
+            <point key="canvasLocation" x="4039" y="2821"/>
         </scene>
         <!--Issue View Controller-->
         <scene sceneID="HcC-m6-qSP">
