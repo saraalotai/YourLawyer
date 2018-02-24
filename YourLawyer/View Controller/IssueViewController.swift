@@ -8,13 +8,22 @@
 
 import UIKit
 import Firebase
-
-class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerViewDelegate ,UITextFieldDelegate ,UIImagePickerControllerDelegate , UINavigationControllerDelegate{
+import FirebaseStorage
+import AVFoundation
+import FirebaseMessaging
+class IssueViewController: UIViewController , AVAudioRecorderDelegate, AVAudioPlayerDelegate, UITextFieldDelegate ,UIImagePickerControllerDelegate , UINavigationControllerDelegate{
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
+    ////////
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
+    var recordingSession: AVAudioSession!
+    var audioRecorder: AVAudioRecorder!
+    var audioPlayer: AVAudioPlayer?
+    var path: URL!
+    //////////////
   
     
     @IBOutlet weak var issueType: UITextField!
@@ -110,24 +119,138 @@ class IssueViewController: UIViewController , UIPickerViewDataSource ,UIPickerVi
         super.viewDidLoad()
         imagePacker=UIImagePickerController()
         imagePacker.delegate=self
+        //////////////////
+        playButton.isEnabled = false
+        recordingSession = AVAudioSession.sharedInstance()
+        
+        do {
+            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try recordingSession.setActive(true)
+            recordingSession.requestRecordPermission() { [unowned self] allowed in
+                DispatchQueue.main.async {
+                    if allowed {
+                        self.recordButton.setTitle("تسجيل", for: .normal)
+                    } else {
+                        // failed to record!
+                    }
+                }
+            }
+        } catch {
+            // failed to record!
+        }        /////////////////
 
         // Do any additional setup after loading the view.
     }
-
+/////////////////////
+    func startRecording() {
+        let audioFilename = getDocumentsDirectory().appendingPathComponent("recording.m4a") //1
+        path = audioFilename
+        playButton.isEnabled = false
+        
+        let settings = [ //2
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
+        
+        do {
+           let audioFilerUrl = getAudiFileURL()
+            audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings) //3
+            audioRecorder.delegate = self
+            audioRecorder.record()
+             playButton.isEnabled = false
+            recordButton.setTitle("ايقاف التسجيل", for: .normal)
+        } catch {
+            finishRecording(success: false)
+        }
+    }
+    ////////////////////
+    func handleAudioSendWith(url: String) {
+        guard let fileUrl = URL(string: url) else {
+            return
+        }
+        let fileName = NSUUID().uuidString + ".m4a"
+        
+        Storage.storage().reference().child("message_voice").child(fileName).putFile(from: fileUrl, metadata: nil) { (metadata, error) in
+            if error != nil {
+                print(error ?? "error")
+            }
+            
+            if let downloadUrl = metadata?.downloadURL()?.absoluteString {
+                print(downloadUrl)
+                let values: [String : Any] = ["audioUrl": downloadUrl]
+                
+            }
+        }
+    }
+    /////////////////
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    /////////////////////
+    func getAudiFileURL() ->URL
+    {
+        return getDocumentsDirectory().appendingPathComponent(".m4a")
+    }
+    /////////////////////
+   // func handleAudioPLay(){
+       // if let audioUrl = message?.audioUrl,let
+       // if  let url = URL(String : audioUrl) {
+            //do{
+              //  try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+              //  audioPlayer = try AVAudioPlayer(contents: url)
+              //  audioPlayer?.delegate = self
+               // audioPlayer?.prepareToPlay()
+              //  audioPlayer?.play()
+              //  print("ready to play")
+            //}catch{
+               // print(error.localizedDescription)
+            //}
+           // }
+   // }
+    
+    ////////////////////
+    func finishRecording(success: Bool) {
+        audioRecorder.stop()
+        audioRecorder = nil
+        playButton.isEnabled = true
+        
+        if success {
+            recordButton.setTitle("اعادة التسجيل", for: .normal)
+        } else {
+            recordButton.setTitle("تسجيل", for: .normal)
+            // recording failed :(
+        }
+    }
+    ////////////////////
+    
+    @IBAction func recordTapped(_ sender: Any) {
+        if audioRecorder == nil {
+            startRecording()
+        } else {
+            finishRecording(success: true)
+        }
+        
+    }
+    
+    @IBAction func playTapped(_ sender: Any) {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: path)
+            audioPlayer?.delegate = self
+            audioPlayer?.play()
+            recordButton.isEnabled = false
+        } catch {
+            // couldn't load file :(
+        }
+    }
+    ///////////////////
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+

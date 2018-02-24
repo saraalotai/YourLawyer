@@ -453,10 +453,10 @@
             </objects>
             <point key="canvasLocation" x="1808" y="2741"/>
         </scene>
-        <!--View Controller-->
+        <!--Cc View Controller-->
         <scene sceneID="uVw-2X-xgI">
             <objects>
-                <viewController id="apJ-pw-rXi" sceneMemberID="viewController">
+                <viewController id="apJ-pw-rXi" customClass="ccViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jqM-L1-Qrh"/>
                         <viewControllerLayoutGuide type="bottom" id="rwr-ko-AbS"/>
@@ -499,9 +499,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T1Y-Hc-VYz">
-                                <rect key="frame" x="0.0" y="308" width="320" height="252"/>
+                                <rect key="frame" x="0.0" y="301" width="320" height="267"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="AlK-MQ-cvb" customClass="cc1TableViewCell" customModule="YourLawyer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AlK-MQ-cvb" id="wTE-QL-YB6">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64H-rG-V1n">
+                                                    <rect key="frame" x="15" y="0.0" width="275" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-B7-Esv">
                                 <rect key="frame" x="129" y="256" width="63" height="30"/>
@@ -510,10 +529,17 @@
                                 <state key="normal" title="إرسال">
                                     <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.45004815920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="butten:" destination="apJ-pw-rXi" eventType="touchUpInside" id="lUQ-i3-5Ys"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="choose" destination="RcJ-Ig-xWF" id="cJf-qZ-gjq"/>
+                        <outlet property="textfild" destination="ouC-t2-77i" id="45W-2U-GYb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdM-m2-Tm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2829,6 +2855,23 @@
                                         <state key="normal" title="إدراج صورة من المستندات "/>
                                         <connections>
                                             <action selector="docPic:" destination="rkb-ou-Alt" eventType="touchUpInside" id="q8z-iz-9D7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVU-h2-qfu">
+                                        <rect key="frame" x="121" y="242" width="93" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="playTapped"/>
+                                        <connections>
+                                            <action selector="playTapped:" destination="rkb-ou-Alt" eventType="touchUpInside" id="SMc-JA-ihq"/>
+                                            <action selector="recordTapped:" destination="rkb-ou-Alt" eventType="touchUpInside" id="dxT-Ze-837"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm2-QR-0Ci">
+                                        <rect key="frame" x="102" y="191" width="112" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="recordTapped"/>
+                                        <connections>
+                                            <action selector="recordTapped:" destination="rkb-ou-Alt" eventType="touchUpInside" id="xaZ-pH-Evt"/>
                                         </connections>
                                     </button>
                                 </subviews>
