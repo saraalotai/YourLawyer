@@ -15,8 +15,6 @@ import FirebaseDatabase
 class EditViewController: UIViewController {
 
     @IBOutlet weak var fullName: UITextField!
-    
-   
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var cardNo: UITextField!
     @IBOutlet weak var phoneNo: UITextField!

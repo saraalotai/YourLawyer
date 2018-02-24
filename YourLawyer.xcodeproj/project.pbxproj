@@ -39,6 +39,7 @@
 		CC86FD5E203F206600802F21 /* agreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86FD5D203F206500802F21 /* agreement.swift */; };
 		CC86FD60203F24FB00802F21 /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = CC86FD5F203F24FB00802F21 /* template.html */; };
 		CC86FD66203F544700802F21 /* PageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86FD65203F544700802F21 /* PageRenderer.swift */; };
+		CC86FD682040CFDF00802F21 /* RegisterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86FD672040CFDE00802F21 /* RegisterClientViewController.swift */; };
 		CCA1BB8620335D1300A1D1B8 /* ListDomainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8520335D1300A1D1B8 /* ListDomainsViewController.swift */; };
 		CCA1BB8820335D8200A1D1B8 /* ChooseIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8720335D8100A1D1B8 /* ChooseIssueTableViewCell.swift */; };
 		CCA1BB8A20335DED00A1D1B8 /* ChooseIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1BB8920335DED00A1D1B8 /* ChooseIssueViewController.swift */; };
@@ -86,6 +87,7 @@
 		CC86FD5D203F206500802F21 /* agreement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = agreement.swift; sourceTree = "<group>"; };
 		CC86FD5F203F24FB00802F21 /* template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		CC86FD65203F544700802F21 /* PageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRenderer.swift; sourceTree = "<group>"; };
+		CC86FD672040CFDE00802F21 /* RegisterClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterClientViewController.swift; sourceTree = "<group>"; };
 		CCA1BB8520335D1300A1D1B8 /* ListDomainsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDomainsViewController.swift; sourceTree = "<group>"; };
 		CCA1BB8720335D8100A1D1B8 /* ChooseIssueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseIssueTableViewCell.swift; sourceTree = "<group>"; };
 		CCA1BB8920335DED00A1D1B8 /* ChooseIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseIssueViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				040A98392038CCB400CBCCB2 /* profileDetails.swift */,
 				CC13CED7201E581000CBFA83 /* ViewController.swift */,
 				0456A3D0203053EA00323026 /* ListIssuesViewController.swift */,
+				CC86FD672040CFDE00802F21 /* RegisterClientViewController.swift */,
 				040BA70F202DA65A00C4B69E /* NotificationViewController.swift */,
 				04141EA620274C1900B3266B /* LawyerListViewController.swift */,
 				CC86E18C2028DEC600B20910 /* IssueViewController.swift */,
@@ -396,6 +399,7 @@
 				CC4043ED203E07E700AADBAC /* DesignableTextField.swift in Sources */,
 				CC86E193202B6C8B00B20910 /* DomainsVCViewController.swift in Sources */,
 				0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */,
+				CC86FD682040CFDF00802F21 /* RegisterClientViewController.swift in Sources */,
 				CC86FD66203F544700802F21 /* PageRenderer.swift in Sources */,
 				CCA1BB8820335D8200A1D1B8 /* ChooseIssueTableViewCell.swift in Sources */,
 				CC86FD56203F1B5600802F21 /* WebViewController.swift in Sources */,
