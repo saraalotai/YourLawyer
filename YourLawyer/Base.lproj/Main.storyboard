@@ -1150,6 +1150,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="E9d-Rf-xjY"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="إضافة مجال قانوني">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -1183,52 +1184,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaL-yw-PDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4206" y="-308"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Ch7-nD-ehL">
-            <objects>
-                <viewController id="psv-Bf-OyH" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nqf-lE-5R1"/>
-                        <viewControllerLayoutGuide type="bottom" id="JAt-uI-JEg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZPf-rv-hNs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7N-Cv-KfY">
-                                <rect key="frame" x="33" y="166" width="254" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إضافة قالب إتفاقية">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXF-eP-Mpe">
-                                <rect key="frame" x="33" y="221" width="254" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="إلغاء الأمر">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لرفع قوالب الإتفاقية فضلاً انقر الزر أدناه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnB-T1-odJ">
-                                <rect key="frame" x="38" y="78" width="245" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Vh8-xr-3pK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="clI-Ph-uEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4678" y="348"/>
         </scene>
         <!--Admin View Controller-->
         <scene sceneID="xec-8q-yBB">
@@ -1327,6 +1282,7 @@
                                 <rect key="frame" x="40" y="161" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="تنزيل الملف">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -1341,7 +1297,7 @@
             </objects>
             <point key="canvasLocation" x="4206" y="348"/>
         </scene>
-        <!--الصفحة الشخصية-->
+        <!--ملفي الشخصي-->
         <scene sceneID="IrU-Ky-Jdn">
             <objects>
                 <tableViewController id="eJZ-gS-Zgt" customClass="staticProfileTableViewController" customModule="YourLawyer" customModuleProvider="target" sceneMemberID="viewController">
@@ -1367,7 +1323,7 @@
                                         <constraint firstAttribute="width" constant="126" id="PpA-qM-g2y"/>
                                         <constraint firstAttribute="height" constant="63" id="pNM-7F-1ex"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1382,7 +1338,7 @@
                                         <constraint firstAttribute="height" constant="63" id="NQI-uy-Frc"/>
                                         <constraint firstAttribute="width" constant="126" id="PIF-Su-kaZ"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1430,14 +1386,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="اسم المحامي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WXt-8z-crG">
-                                                    <rect key="frame" x="16" y="5" width="88" height="20.5"/>
+                                                    <rect key="frame" x="16" y="6" width="85" height="18.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F8A-7R-Upj">
-                                                    <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="16" y="24.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -1454,14 +1410,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="رقم الجوال" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="61V-uC-7MN">
-                                                    <rect key="frame" x="16" y="3" width="72.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="4" width="67" height="18.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vBz-sP-YV2">
-                                                    <rect key="frame" x="16" y="23.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="16" y="22.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -1478,14 +1434,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="مكتب المحاماة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4u4-Cg-MOr">
-                                                    <rect key="frame" x="16" y="7" width="101.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="8" width="89" height="18.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Szd-an-g9I">
-                                                    <rect key="frame" x="16" y="27.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="16" y="26.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -1502,7 +1458,7 @@
                             <outlet property="delegate" destination="eJZ-gS-Zgt" id="Wgw-he-78R"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="الصفحة الشخصية" id="QLV-Qs-IPl">
+                    <navigationItem key="navigationItem" title="ملفي الشخصي" id="QLV-Qs-IPl">
                         <barButtonItem key="backBarButtonItem" title=" " id="MoQ-Aw-RMv"/>
                         <barButtonItem key="leftBarButtonItem" title="تسجيل الخروج" id="tZg-oV-xbY">
                             <connections>
@@ -1658,7 +1614,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="cB6-3B-Z1T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="التسجيل كعميل ">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -1689,7 +1645,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="qdw-dX-HMh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="التسجيل كمحامي ">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -1787,8 +1743,9 @@
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7G-ff-Wh8">
-                                <rect key="frame" x="33" y="328" width="254" height="30"/>
+                                <rect key="frame" x="33" y="328" width="254" height="31"/>
                                 <color key="backgroundColor" red="0.0030407370069999999" green="0.38705790039999999" blue="0.48325443270000001" alpha="0.83144263699999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="التسجيل">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -2049,6 +2006,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="khw-oF-7gp"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="صورة من رخصة المحاماة" image="add-2">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -2093,6 +2051,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="im0-Pk-V8n"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="CoconNextArabic-Light" family="CoconÆ Next Arabic" pointSize="17"/>
                                 <color key="tintColor" red="0.0057498370299999997" green="0.39491754769999998" blue="0.49113589530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="التسجيل">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
