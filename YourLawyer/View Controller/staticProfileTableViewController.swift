@@ -69,12 +69,10 @@ class staticProfileTableViewController: UITableViewController,UIImagePickerContr
             
             let downloadedImage = metaData.downloadURL()
             print(downloadedImage)
-            
+        }
+        
         imagePacker.dismiss(animated: true, completion: nil)
         
-       
-
-    }
     
     }
     
@@ -92,11 +90,28 @@ class staticProfileTableViewController: UITableViewController,UIImagePickerContr
             self.lawyerName.text = user.fullName
             self.phoneNo.text = user.phoneNo
             self.officeName.text = user.officeName
+            let ID = user.ID
+            let type = user.type
+            let gender = user.gender
+            let pass = user.password
+            let city = user.city
+            let cardImage = user.cardImage
+            let legalDomain = user.legalDomain
+            let email = user.email
             
-                    
+            self.saveInfo(ID : ID! ,fullName:  self.lawyerName.text!, Phone : self.phoneNo.text!, officeName: self.officeName.text!, cardNo: cardImage!, email:emaill!, UserImage: imagepath!, type: type!, pass: pass!, gender: gender!,city: city!, cardImage:cardImage!,legalDomain: legalDomain!)
+
             
         })
  
+    }
+    
+    func saveInfo(ID : String,fullName: String, Phone: String, officeName: String, cardNo: String, email: String, UserImage: String, type: String, pass: String,  gender: String, city:String , cardImage:String ,legalDomain: String){
+        
+        let information = [ "ID":ID ,"PhoneNo":Phone,"UserImage":UserImage,"cardNo":cardNo, "city":city, "email": email, "fullName": fullName,"gender":gender,"imagepath":cardImage,"legalDomain":legalDomain,"officeName": officeName,"password":pass , "type":type]
+        let userID = Auth.auth().currentUser!.uid
+        let userRef = Database.database().reference()
+        userRef.child("users/\(userID)").setValue(information)
     }
     
     override func didReceiveMemoryWarning() {
