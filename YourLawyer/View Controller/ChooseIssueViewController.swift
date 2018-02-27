@@ -16,6 +16,7 @@ class ChooseIssueViewController: UIViewController ,UITableViewDelegate, UITableV
     var databaseHandle:DatabaseHandle?
     var postData=[String]()
     let names = ["1", "2","3"]
+    var str = String()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count

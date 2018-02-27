@@ -13,10 +13,10 @@
 		04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04141EA620274C1900B3266B /* LawyerListViewController.swift */; };
 		0419F6252023B15000637FE9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419F6242023B15000637FE9 /* RoundedButton.swift */; };
 		044088502027369900A33AC8 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440884F2027369900A33AC8 /* CustomTableView.swift */; };
+		0447CC3B2045A09C00CBEBF3 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447CC3A2045A09B00CBEBF3 /* DesignableTextField.swift */; };
 		0456A3CF203052FF00323026 /* ListIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */; };
 		0456A3D1203053EA00323026 /* ListIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A3D0203053EA00323026 /* ListIssuesViewController.swift */; };
 		045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */; };
-		994888FB203F039600B441F2 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994888FA203F039600B441F2 /* DesignableTextField.swift */; };
 		99A52D4F2040A766003543DE /* ccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A52D4E2040A766003543DE /* ccViewController.swift */; };
 		A251A0057CFBDE3130502092 /* Pods_YourLawyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8911963875F60E30F3265A4 /* Pods_YourLawyer.framework */; };
 		CC13CED6201E581000CBFA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13CED5201E581000CBFA83 /* AppDelegate.swift */; };
@@ -59,12 +59,12 @@
 		04141EA620274C1900B3266B /* LawyerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerListViewController.swift; sourceTree = "<group>"; };
 		0419F6242023B15000637FE9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		0440884F2027369900A33AC8 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		0447CC3A2045A09B00CBEBF3 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = "../../YourLawyer-2/YourLawyer/DesignableTextField.swift"; sourceTree = "<group>"; };
 		0456A3CE203052FF00323026 /* ListIssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIssueTableViewCell.swift; sourceTree = "<group>"; };
 		0456A3D0203053EA00323026 /* ListIssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIssuesViewController.swift; sourceTree = "<group>"; };
 		045A778D2029C6190074F0F9 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		4429F85A8E80132FBC4E13AC /* Pods-YourLawyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.debug.xcconfig"; sourceTree = "<group>"; };
 		5A90D45D355DA3FBAAC436FF /* Pods-YourLawyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLawyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YourLawyer/Pods-YourLawyer.release.xcconfig"; sourceTree = "<group>"; };
-		994888FA203F039600B441F2 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = ../../DesignableTextField.swift; sourceTree = "<group>"; };
 		99A52D4E2040A766003543DE /* ccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ccViewController.swift; sourceTree = "<group>"; };
 		B8911963875F60E30F3265A4 /* Pods_YourLawyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLawyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC13CED2201E581000CBFA83 /* YourLawyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLawyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +159,7 @@
 		CC13CED4201E581000CBFA83 /* YourLawyer */ = {
 			isa = PBXGroup;
 			children = (
-				994888FA203F039600B441F2 /* DesignableTextField.swift */,
+				0447CC3A2045A09B00CBEBF3 /* DesignableTextField.swift */,
 				CC5B005C203C3AD1000534C9 /* GoogleService-Info.plist */,
 				CC13CED5201E581000CBFA83 /* AppDelegate.swift */,
 				CC13CED9201E581000CBFA83 /* Main.storyboard */,
@@ -382,7 +382,6 @@
 				CC4043DD203CAABD00AADBAC /* AdminViewController.swift in Sources */,
 				045A778E2029C6190074F0F9 /* InfoTableViewCell.swift in Sources */,
 				CCA1BB8620335D1300A1D1B8 /* ListDomainsViewController.swift in Sources */,
-				994888FB203F039600B441F2 /* DesignableTextField.swift in Sources */,
 				99A52D4F2040A766003543DE /* ccViewController.swift in Sources */,
 				CCA1BB902034DC0B00A1D1B8 /* ResetPasswordViewController.swift in Sources */,
 				040A983A2038CCB400CBCCB2 /* profileDetails.swift in Sources */,
@@ -393,6 +392,7 @@
 				CC560789204214DA00B81C01 /* QuestionViewController.swift in Sources */,
 				04141EA720274C1900B3266B /* LawyerListViewController.swift in Sources */,
 				CC560787204201BF00B81C01 /* staticProfileTableViewController.swift in Sources */,
+				0447CC3B2045A09C00CBEBF3 /* DesignableTextField.swift in Sources */,
 				0456A3CF203052FF00323026 /* ListIssueTableViewCell.swift in Sources */,
 				CC560785204200F900B81C01 /* WebViewController.swift in Sources */,
 				CC86E18D2028DEC600B20910 /* IssueViewController.swift in Sources */,

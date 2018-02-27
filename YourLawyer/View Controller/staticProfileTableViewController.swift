@@ -99,7 +99,7 @@ class staticProfileTableViewController: UITableViewController,UIImagePickerContr
             let legalDomain = user.legalDomain
             let email = user.email
             
-            self.saveInfo(ID : ID! ,fullName:  self.lawyerName.text!, Phone : self.phoneNo.text!, officeName: self.officeName.text!, cardNo: cardImage!, email:emaill!, UserImage: imagepath!, type: type!, pass: pass!, gender: gender!,city: city!, cardImage:cardImage!,legalDomain: legalDomain!)
+            self.saveInfo(ID : ID! ,fullName:  self.lawyerName.text!, Phone : self.phoneNo.text!, officeName: self.officeName.text!, cardNo: cardImage!, email:email!, UserImage: self.imagepath, type: type!, pass: pass!, gender: gender!,city: city!, cardImage:cardImage!,legalDomain: legalDomain!)
 
             
         })
